@@ -17,19 +17,20 @@ const formEndpoint = import.meta.env.PUBLIC_CONTACT_FORM_ENDPOINT ?? "";
       <div class="mt-8 rounded-2xl border border-brand-200 bg-surface p-5 shadow-soft">
         <h2 class="text-xl text-brand-900">Local</h2>
         <address class="mt-3 not-italic text-sm leading-relaxed text-neutral-700">
-          Faculdade de Engenharia da Universidade Federal de Minas Gerais (UFMG)<br />
-          Avenida Antônio Carlos, 6627 - Pampulha<br />
-          Belo Horizonte - MG, Brasil
+          Rua da Paisagem, 220 - Vila da Serra<br />
+          Belo Horizonte - MG, CEP 30720-600<br />
+          Brasil
         </address>
         <p class="mt-3 text-sm text-neutral-700">
-          E-mail institucional: <a href="mailto:contato@lapan.org.br" class="font-semibold text-accent-700">contato@lapan.org.br</a>
+          Tel.: +55 31 3289-2035<br />
+          E-mail institucional: <a href="mailto:contato@lapan.com.br" class="font-semibold text-accent-700">contato@lapan.com.br</a>
         </p>
       </div>
 
       <div class="mt-8 overflow-hidden rounded-2xl border border-brand-200 bg-surface shadow-soft">
         <iframe
-          title="Mapa da UFMG - endereço do laboratório"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.310940841378!2d-43.966384!3d-19.869087999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa690ee806be67d%3A0xbb1391cea62811dd!2sUniversidade+Federal+de+Minas+Gerais!5e0!3m2!1spt-BR!2sbr!4v1434131292053"
+          title="Mapa do endereço do laboratório"
+          src="https://www.google.com/maps?q=Rua+da+Paisagem,+220,+Vila+da+Serra,+Belo+Horizonte,+MG,+30720-600&output=embed"
           class="h-[360px] w-full"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
@@ -123,7 +124,7 @@ const formEndpoint = import.meta.env.PUBLIC_CONTACT_FORM_ENDPOINT ?? "";
         const endpoint = form.getAttribute("data-endpoint");
         if (!endpoint) {
           event.preventDefault();
-          status.textContent = "Envio online ainda não configurado. Utilize o e-mail contato@lapan.org.br.";
+          status.textContent = "Envio online ainda não configurado. Utilize o e-mail contato@lapan.com.br.";
           status.className = "text-sm text-accent-700";
           return;
         }
@@ -162,7 +163,7 @@ const formEndpoint = import.meta.env.PUBLIC_CONTACT_FORM_ENDPOINT ?? "";
           status.textContent = "Mensagem enviada com sucesso.";
           status.className = "text-sm text-brand-800";
         } catch {
-          status.textContent = "Não foi possível enviar agora. Tente novamente ou use contato@lapan.org.br.";
+          status.textContent = "Não foi possível enviar agora. Tente novamente ou use contato@lapan.com.br.";
           status.className = "text-sm text-accent-700";
         }
       });

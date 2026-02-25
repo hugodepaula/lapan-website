@@ -1,0 +1,74 @@
+backend:
+  name: github
+  repo: hugodepaula/lapan-website
+  branch: main
+
+publish_mode: editorial_workflow
+editorial_workflow: true
+locale: "pt"
+
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+site_url: "/"
+display_url: "/"
+logo_url: "/images/logo_rect.png"
+
+collections:
+  - name: "team"
+    label: "Equipe"
+    label_singular: "Membro"
+    folder: "src/content/team"
+    create: true
+    extension: "md"
+    format: "frontmatter"
+    slug: "{{slug}}"
+    summary: "{{nome}} - {{tipo}}"
+    fields:
+      - { label: "Nome", name: "nome", widget: "string" }
+      - { label: "Cargo", name: "cargo", widget: "string" }
+      - { label: "Tipo", name: "tipo", widget: "select", options: ["Mestrado", "Doutorado", "Iniciação Científica", "Pesquisador", "Colaborador"] }
+      - { label: "Foto", name: "foto", widget: "image", required: false }
+      - { label: "Biografia", name: "bio", widget: "text" }
+      - label: "Links"
+        name: "links"
+        widget: "list"
+        required: false
+        summary: "{{fields.rotulo}}"
+        fields:
+          - { label: "Rótulo", name: "rotulo", widget: "string" }
+          - { label: "URL", name: "url", widget: "string" }
+
+  - name: "events"
+    label: "Eventos"
+    label_singular: "Evento"
+    folder: "src/content/events"
+    create: true
+    extension: "md"
+    format: "frontmatter"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{titulo}} - {{data}}"
+    fields:
+      - { label: "Título", name: "titulo", widget: "string" }
+      - { label: "Data", name: "data", widget: "datetime", format: "YYYY-MM-DD" }
+      - { label: "Local", name: "local", widget: "string" }
+      - { label: "Descrição", name: "descricao", widget: "text" }
+      - { label: "Link (opcional)", name: "link", widget: "string", required: false }
+      - { label: "Imagem (opcional)", name: "imagem", widget: "image", required: false }
+
+  - name: "projects"
+    label: "Projetos"
+    label_singular: "Projeto"
+    folder: "src/content/projects"
+    create: true
+    extension: "md"
+    format: "frontmatter"
+    slug: "{{slug}}"
+    summary: "{{titulo}}"
+    fields:
+      - { label: "Título", name: "titulo", widget: "string" }
+      - { label: "Resumo", name: "resumo", widget: "text" }
+      - { label: "Área", name: "area", widget: "string", required: false }
+      - { label: "Status", name: "status", widget: "select", options: ["Em andamento", "Concluído", "Planejado"], default: "Em andamento" }
+      - { label: "Imagem (opcional)", name: "imagem", widget: "image", required: false }
+      - { label: "Link (opcional)", name: "link", widget: "string", required: false }

@@ -1,0 +1,78 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import publicacoesBrutas from "../../content/zotero.json";
+import { agruparPublicacoesPorAno, normalizarPublicacoes } from "../lib/publicacoes";
+
+const { publicacoes, problemas } = normalizarPublicacoes(publicacoesBrutas);
+const publicacoesPorAno = agruparPublicacoesPorAno(publicacoes);
+---
+
+<BaseLayout title="Publicações | LAPAN" description="Publicações científicas do laboratório agrupadas por ano.">
+  <section>
+    <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent-700">Produção científica</p>
+    <h1 class="mt-3 text-4xl text-brand-900 sm:text-5xl">Publicações</h1>
+    <p class="mt-4 max-w-3xl text-base leading-relaxed text-neutral-700">
+      Publicações acadêmicas do laboratório organizadas por ano em ordem decrescente.
+    </p>
+  </section>
+
+  {publicacoes.length === 0 ? (
+    <section class="mt-8 rounded-2xl border border-brand-200 bg-surface p-6">
+      <p class="text-neutral-700">Nenhuma publicação disponível no momento.</p>
+    </section>
+  ) : (
+    <section class="pt-10 space-y-8">
+      {publicacoesPorAno.map(([ano, itens]) => (
+        <section aria-labelledby={`ano-${ano}`} class="rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft">
+          <div class="flex items-center justify-between gap-3 border-b border-brand-100 pb-3">
+            <h2 id={`ano-${ano}`} class="text-2xl text-brand-900">Ano {ano}</h2>
+            <p class="text-sm text-neutral-700">{itens.length} publicação(ões)</p>
+          </div>
+
+          <ol class="mt-5 space-y-4">
+            {itens.map((publicacao) => (
+              <li class="rounded-xl border border-brand-100 bg-neutral-50 p-4">
+                <p class="text-sm leading-relaxed text-neutral-800">{publicacao.titulo}</p>
+
+                {(publicacao.doiUrl || publicacao.urlExterna) && (
+                  <p class="mt-3 text-sm text-neutral-700">
+                    <span class="font-semibold text-brand-800">Acesso:</span>{" "}
+                    {publicacao.doiUrl && (
+                      <a
+                        href={publicacao.doiUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        class="font-semibold text-accent-700 transition hover:text-accent-600"
+                      >
+                        DOI
+                      </a>
+                    )}
+                    {publicacao.doiUrl && publicacao.urlExterna && <span class="text-neutral-400"> | </span>}
+                    {publicacao.urlExterna && (
+                      <a
+                        href={publicacao.urlExterna}
+                        target="_blank"
+                        rel="noreferrer"
+                        class="font-semibold text-accent-700 transition hover:text-accent-600"
+                      >
+                        URL externa
+                      </a>
+                    )}
+                  </p>
+                )}
+              </li>
+            ))}
+          </ol>
+        </section>
+      ))}
+    </section>
+  )}
+
+  {problemas.length > 0 && (
+    <section class="mt-10 rounded-2xl border border-accent-100 bg-accent-50 p-5">
+      <p class="text-sm text-accent-700">
+        Validação: {problemas.length} registro(s) de publicação foram ignorados por inconsistências de título ou ano.
+      </p>
+    </section>
+  )}
+</BaseLayout>

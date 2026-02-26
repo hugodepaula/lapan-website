@@ -2,6 +2,13 @@
 
 Site institucional do LAPAN, construído com Astro + Tailwind CSS + Decap CMS.
 
+## Estado atual do conteúdo
+
+- Equipe: conteúdos em `src/content/team`, com imagens normalizadas em `public/images/team`.
+- Eventos: histórico migrado de `/_migration/jekyll/_drafts` para `src/content/events`.
+- Projetos: conteúdos em `src/content/projects`.
+- Inconsistências da migração para revisão manual: `INCONSISTENCIAS_MIGRACAO.md`.
+
 ## Guia rápido
 
 1. Instale dependências:
@@ -26,7 +33,7 @@ O site final é gerado em `dist/`.
   - `Equipe`
   - `Eventos`
   - `Projetos`
-- Publicações continuam fora do CMS (fonte atual: `content/zotero.json`).
+- Publicações continuam fora do CMS.
 
 ## Deploy sem conhecimento técnico
 

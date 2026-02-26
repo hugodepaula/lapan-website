@@ -17,9 +17,9 @@
   --color-accent-600: 218 93 20;
   --color-accent-700: 175 72 9;
 
-  --color-neutral-50: 250 250 251;
-  --color-neutral-100: 243 244 246;
-  --color-neutral-200: 228 229 232;
+  --color-neutral-50: 241 243 246;
+  --color-neutral-100: 232 235 239;
+  --color-neutral-200: 219 223 228;
   --color-neutral-400: 121 124 130;
   --color-neutral-700: 52 56 63;
   --color-neutral-900: 24 27 33;
@@ -29,11 +29,11 @@
 }
 
 html {
-  @apply scroll-smooth bg-neutral-50;
+  @apply scroll-smooth bg-neutral-100;
 }
 
 body {
-  @apply m-0 bg-neutral-50 text-ink antialiased;
+  @apply m-0 bg-neutral-100 text-ink antialiased;
   font-family: "Source Sans 3", ui-sans-serif, sans-serif;
 }
 

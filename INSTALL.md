@@ -76,6 +76,10 @@ Uploads de mídia:
 - pasta física: `public/images/uploads`
 - URL pública: `/images/uploads/...`
 
+Observação importante sobre imagens já migradas:
+- Fotos da equipe atualmente usadas no site estão em `public/images/team` (nomes normalizados).
+- Esses arquivos já estão vinculados nos conteúdos de `src/content/team`.
+
 Observações para o GitHub backend:
 - Repositório configurado: `hugodepaula/lapan-website`
 - Branch: `main`
@@ -161,10 +165,19 @@ rsync -avz dist/ usuario@servidor:/var/www/lapan/
   - `/parceiros`
   - `/contato`
 - Imagens aparecem corretamente
+- Página de equipe:
+  - filtros por tipo funcionando
+  - fotos em proporção 3:4
 - Formulário de contato:
   - com endpoint: envia com sucesso
   - sem endpoint: mostra orientação de contato por e-mail
 - Responsividade em mobile e desktop
+
+## 8.1) Conferência de conteúdo migrado
+
+- Eventos históricos devem aparecer em `/eventos` (incluindo edições antigas de congresso e cursos DARV).
+- Arquivo de pendências para revisão manual:
+  - `INCONSISTENCIAS_MIGRACAO.md`
 
 ## 9) Comandos úteis
 

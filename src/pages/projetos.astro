@@ -13,13 +13,11 @@ const ordenados = [...projetos].sort((a, b) => {
 });
 ---
 
-<BaseLayout title="Projetos | LAPAN" description="Projetos institucionais do laboratório com edição via CMS.">
+<BaseLayout title="Projetos | LAPAN" description="Projetos institucionais do laboratório.">
   <section>
     <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent-700">Pesquisa aplicada</p>
     <h1 class="mt-3 text-4xl text-brand-900 sm:text-5xl">Projetos</h1>
-    <p class="mt-4 max-w-3xl text-base leading-relaxed text-neutral-700">
-      Esta página consolida projetos editáveis no Decap CMS.
-    </p>
+    <p class="mt-4 max-w-3xl text-base leading-relaxed text-neutral-700">Projetos institucionais em andamento e concluídos.</p>
   </section>
 
   {ordenados.length === 0 ? (

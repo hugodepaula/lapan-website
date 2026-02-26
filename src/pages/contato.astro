@@ -9,21 +9,17 @@ const formEndpoint = import.meta.env.PUBLIC_CONTACT_FORM_ENDPOINT ?? "";
     <div>
       <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent-700">Fale conosco</p>
       <h1 class="mt-3 text-4xl text-brand-900 sm:text-5xl">Contato</h1>
-      <p class="mt-5 text-base leading-relaxed text-neutral-700">
-        A página original incluía um formulário de mensagem. O formulário abaixo mantém os mesmos campos e
-        pode enviar diretamente para o endpoint configurado pelo projeto.
-      </p>
 
       <div class="mt-8 rounded-2xl border border-brand-200 bg-surface p-5 shadow-soft">
         <h2 class="text-xl text-brand-900">Local</h2>
         <address class="mt-3 not-italic text-sm leading-relaxed text-neutral-700">
-          Rua da Paisagem, 220 - Vila da Serra<br />
-          Belo Horizonte - MG, CEP 30720-600<br />
+          Rua da Paisagem, 220 - Vale do Sereno<br />
+          Nova Lima - MG, CEP 30720-600<br />
           Brasil
         </address>
         <p class="mt-3 text-sm text-neutral-700">
           Tel.: +55 31 3289-2035<br />
-          E-mail institucional: <a href="mailto:contato@lapan.com.br" class="font-semibold text-accent-700">contato@lapan.com.br</a>
+          E-mail institucional: <a href="mailto:lapan.hugodepaula@gmail.com" class="font-semibold text-accent-700">lapan.hugodepaula@gmail.com</a>
         </p>
       </div>
 
@@ -124,7 +120,7 @@ const formEndpoint = import.meta.env.PUBLIC_CONTACT_FORM_ENDPOINT ?? "";
         const endpoint = form.getAttribute("data-endpoint");
         if (!endpoint) {
           event.preventDefault();
-          status.textContent = "Envio online ainda não configurado. Utilize o e-mail contato@lapan.com.br.";
+          status.textContent = "Envio online ainda não configurado. Utilize o e-mail lapan.hugodepaula@gmail.com.";
           status.className = "text-sm text-accent-700";
           return;
         }
@@ -163,7 +159,7 @@ const formEndpoint = import.meta.env.PUBLIC_CONTACT_FORM_ENDPOINT ?? "";
           status.textContent = "Mensagem enviada com sucesso.";
           status.className = "text-sm text-brand-800";
         } catch {
-          status.textContent = "Não foi possível enviar agora. Tente novamente ou use contato@lapan.com.br.";
+          status.textContent = "Não foi possível enviar agora. Tente novamente ou use lapan.hugodepaula@gmail.com.";
           status.className = "text-sm text-accent-700";
         }
       });

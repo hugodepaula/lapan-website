@@ -7,4 +7,6 @@ tipo: "Mestrado"
 links:
   - rotulo: "Lattes"
     url: "http://lattes.cnpq.br/3370857296429032"
+  - rotulo: "LinkedIn"
+    url: "https://www.linkedin.com/in/poliany-santos-24168127/"
 ---

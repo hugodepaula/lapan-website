@@ -1,78 +1,148 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import publicacoesBrutas from "../../content/zotero.json";
-import { agruparPublicacoesPorAno, normalizarPublicacoes } from "../lib/publicacoes";
+import {
+  agruparPublicacoesPorAno,
+  normalizarPublicacoes,
+} from "../lib/publicacoes";
 
 const { publicacoes, problemas } = normalizarPublicacoes(publicacoesBrutas);
 const publicacoesPorAno = agruparPublicacoesPorAno(publicacoes);
 ---
 
-<BaseLayout title="Publicações | LAPAN" description="Publicações científicas do laboratório agrupadas por ano.">
+<BaseLayout
+  title="Publicações | LAPAN"
+  description="Publicações científicas do laboratório agrupadas por ano."
+>
   <section>
-    <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent-700">Produção científica</p>
-    <h1 class="mt-3 text-4xl text-brand-900 sm:text-5xl">Publicações</h1>
-    <p class="mt-4 max-w-3xl text-base leading-relaxed text-neutral-700">
-      Publicações acadêmicas do laboratório organizadas por ano em ordem decrescente.
+    <p
+      class="text-xs font-semibold uppercase tracking-[0.14em] text-accent-700"
+    >
+      Produção científica
     </p>
+    <h1 class="mt-3 text-4xl text-brand-900 sm:text-5xl">Publicações</h1>
   </section>
 
-  {publicacoes.length === 0 ? (
-    <section class="mt-8 rounded-2xl border border-brand-200 bg-surface p-6">
-      <p class="text-neutral-700">Nenhuma publicação disponível no momento.</p>
-    </section>
-  ) : (
-    <section class="pt-10 space-y-8">
-      {publicacoesPorAno.map(([ano, itens]) => (
-        <section aria-labelledby={`ano-${ano}`} class="rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft">
-          <div class="flex items-center justify-between gap-3 border-b border-brand-100 pb-3">
-            <h2 id={`ano-${ano}`} class="text-2xl text-brand-900">Ano {ano}</h2>
-            <p class="text-sm text-neutral-700">{itens.length} publicação(ões)</p>
-          </div>
+  {
+    publicacoes.length > 0 && (
+      <section class="mt-6 flex flex-wrap items-center gap-4">
+        <label for="filtro-ano" class="text-sm font-semibold text-neutral-700">
+          Filtrar por ano:
+        </label>
+        <select
+          id="filtro-ano"
+          class="rounded-lg border border-brand-200 bg-surface px-4 py-2 text-sm text-brand-900 shadow-sm focus:border-accent-500 focus:outline-none focus:ring-1 focus:ring-accent-500"
+        >
+          <option value="todos">Todos os anos</option>
+          {publicacoesPorAno.map(([ano]) => (
+            <option value={ano}>{ano}</option>
+          ))}
+        </select>
+      </section>
+    )
+  }
 
-          <ol class="mt-5 space-y-4">
-            {itens.map((publicacao) => (
-              <li class="rounded-xl border border-brand-100 bg-neutral-50 p-4">
-                <p class="text-sm leading-relaxed text-neutral-800">{publicacao.titulo}</p>
+  {
+    publicacoes.length === 0 ? (
+      <section class="mt-8 rounded-2xl border border-brand-200 bg-surface p-6">
+        <p class="text-neutral-700">
+          Nenhuma publicação disponível no momento.
+        </p>
+      </section>
+    ) : (
+      <section class="pt-8 space-y-8" id="lista-publicacoes">
+        {publicacoesPorAno.map(([ano, itens]) => (
+          <section
+            aria-labelledby={`ano-${ano}`}
+            class="secao-ano rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft"
+            data-ano={ano}
+          >
+            <div class="flex items-center justify-between gap-3 border-b border-brand-100 pb-3">
+              <h2 id={`ano-${ano}`} class="text-2xl text-brand-900">
+                Ano {ano}
+              </h2>
+              <p class="text-sm text-neutral-700">
+                {itens.length} publicação(ões)
+              </p>
+            </div>
 
-                {(publicacao.doiUrl || publicacao.urlExterna) && (
-                  <p class="mt-3 text-sm text-neutral-700">
-                    <span class="font-semibold text-brand-800">Acesso:</span>{" "}
-                    {publicacao.doiUrl && (
-                      <a
-                        href={publicacao.doiUrl}
-                        target="_blank"
-                        rel="noreferrer"
-                        class="font-semibold text-accent-700 transition hover:text-accent-600"
-                      >
-                        DOI
-                      </a>
-                    )}
-                    {publicacao.doiUrl && publicacao.urlExterna && <span class="text-neutral-400"> | </span>}
-                    {publicacao.urlExterna && (
-                      <a
-                        href={publicacao.urlExterna}
-                        target="_blank"
-                        rel="noreferrer"
-                        class="font-semibold text-accent-700 transition hover:text-accent-600"
-                      >
-                        URL externa
-                      </a>
-                    )}
+            <ol class="mt-5 space-y-4">
+              {itens.map((publicacao) => (
+                <li class="rounded-xl border border-brand-100 bg-neutral-50 p-4">
+                  <p class="text-sm leading-relaxed text-neutral-800">
+                    {publicacao.titulo}
                   </p>
-                )}
-              </li>
-            ))}
-          </ol>
-        </section>
-      ))}
-    </section>
-  )}
 
-  {problemas.length > 0 && (
-    <section class="mt-10 rounded-2xl border border-accent-100 bg-accent-50 p-5">
-      <p class="text-sm text-accent-700">
-        Validação: {problemas.length} registro(s) de publicação foram ignorados por inconsistências de título ou ano.
-      </p>
-    </section>
-  )}
+                  {(publicacao.doiUrl || publicacao.urlExterna) && (
+                    <p class="mt-3 text-sm text-neutral-700">
+                      <span class="font-semibold text-brand-800">Acesso:</span>{" "}
+                      {publicacao.doiUrl && (
+                        <a
+                          href={publicacao.doiUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          class="font-semibold text-accent-700 transition hover:text-accent-600"
+                        >
+                          DOI
+                        </a>
+                      )}
+                      {publicacao.doiUrl && publicacao.urlExterna && (
+                        <span class="text-neutral-400"> | </span>
+                      )}
+                      {publicacao.urlExterna && (
+                        <a
+                          href={publicacao.urlExterna}
+                          target="_blank"
+                          rel="noreferrer"
+                          class="font-semibold text-accent-700 transition hover:text-accent-600"
+                        >
+                          URL externa
+                        </a>
+                      )}
+                    </p>
+                  )}
+                </li>
+              ))}
+            </ol>
+          </section>
+        ))}
+      </section>
+    )
+  }
+
+  {
+    problemas.length > 0 && (
+      <section class="mt-10 rounded-2xl border border-accent-100 bg-accent-50 p-5">
+        <p class="text-sm text-accent-700">
+          Validação: {problemas.length} registro(s) de publicação foram
+          ignorados por inconsistências de título ou ano.
+        </p>
+      </section>
+    )
+  }
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const filtro = document.getElementById(
+        "filtro-ano",
+      ) as HTMLSelectElement | null;
+      const secoes = document.querySelectorAll<HTMLElement>(".secao-ano");
+
+      if (filtro) {
+        filtro.addEventListener("change", (e) => {
+          const anoSelecionado = (e.target as HTMLSelectElement).value;
+          secoes.forEach((secao) => {
+            if (
+              anoSelecionado === "todos" ||
+              secao.getAttribute("data-ano") === anoSelecionado
+            ) {
+              secao.style.display = "block";
+            } else {
+              secao.style.display = "none";
+            }
+          });
+        });
+      }
+    });
+  </script>
 </BaseLayout>

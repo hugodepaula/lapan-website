@@ -38,7 +38,9 @@ export default {
         content: '74rem'
       },
       boxShadow: {
-        soft: '0 10px 30px rgb(var(--color-brand-900) / 0.08)'
+        soft: '0 10px 30px rgb(var(--color-brand-900) / 0.08)',
+        premium: '0 20px 40px -5px rgb(var(--color-brand-900) / 0.12), 0 8px 16px -8px rgb(var(--color-brand-900) / 0.08)',
+        'premium-hover': '0 30px 60px -10px rgb(var(--color-brand-900) / 0.15), 0 15px 25px -10px rgb(var(--color-brand-900) / 0.10)'
       }
     }
   }

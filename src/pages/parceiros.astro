@@ -28,6 +28,7 @@ const apoio = [
 ];
 
 const semCorte = new Set(["LANEV (Laboratório de Neurodinâmica da Visão)"]);
+const semBorda = new Set(["LANEV (Laboratório de Neurodinâmica da Visão)"]);
 ---
 
 <BaseLayout
@@ -52,7 +53,11 @@ const semCorte = new Set(["LANEV (Laboratório de Neurodinâmica da Visão)"]);
     <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {
         fundadores.map((item) => (
-          <figure class="overflow-hidden rounded-xl border border-brand-200 bg-surface shadow-soft">
+          <figure
+            class={`overflow-hidden rounded-xl bg-surface shadow-soft ${
+              semBorda.has(item.nome) ? "" : "border border-brand-200"
+            }`}
+          >
             <img
               src={item.imagem}
               alt={item.nome}
@@ -78,7 +83,11 @@ const semCorte = new Set(["LANEV (Laboratório de Neurodinâmica da Visão)"]);
     <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {
         parceiros.map((item) => (
-          <figure class="overflow-hidden rounded-xl border border-brand-200 bg-surface shadow-soft">
+          <figure
+            class={`overflow-hidden rounded-xl bg-surface shadow-soft ${
+              semBorda.has(item.nome) ? "" : "border border-brand-200"
+            }`}
+          >
             <img
               src={item.imagem}
               alt={item.nome}
@@ -104,7 +113,11 @@ const semCorte = new Set(["LANEV (Laboratório de Neurodinâmica da Visão)"]);
     <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {
         apoio.map((item) => (
-          <figure class="overflow-hidden rounded-xl border border-brand-200 bg-surface shadow-soft">
+          <figure
+            class={`overflow-hidden rounded-xl bg-surface shadow-soft ${
+              semBorda.has(item.nome) ? "" : "border border-brand-200"
+            }`}
+          >
             <img
               src={item.imagem}
               alt={item.nome}

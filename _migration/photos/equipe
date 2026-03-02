@@ -1,0 +1,24 @@
+Eu tenho novas informações para serem atualizadas no site.
+Na pasta lapan-website/_migration/photos/ tem novas imagens de integrantes da equipe do laboratório.
+Eu também identifiquei links para o curriculo Lattes e para alguns perfis do Linkedin.
+
+Sua tarefa é atualizar a página da equipe, com os dados listado abaixo na seção CONTEÚDO. A atualização consiste nas etapas:
+1. Verificar o nome. Se o nome estiver incompleto, você deve atualizar o nome, mantendo o pronome de tratamento. Por exemplo, você sempre deve manter o prefixo Dr. ou Dra. 
+2. Verificar o link para o currículo lattes de cada nome e adicionar ao card.
+3. Verificar a existência de link para o linkedin de cada nome e adicionar ao site.
+4. Verificar o nome do arquivo que contém a foto do integrante da equipe. Você deve utilizar uma ferramenta de geração de imagem como o gemini image flash, e alterar a imagem para que ela fique com o mesmo padrão de qualidade e razão de aspecto 3:4 das imagens atuais. Em seguida você deve normalizar o nome da imagem e ajusar o nome da imagem no card, para finalmente mover a imagem para a pasta adequada do site.
+
+## CONTEÚDO
+
+Carlos Eduardo Messinger Salomão
+* https://lattes.cnpq.br/9060697084950496
+* https://www.linkedin.com/in/carlos-eduardo-m-salom%C3%A3o-1b4867b/
+* Carlos Eduardo Salomão.png
+
+Diego Felipe da Silva
+* https://lattes.cnpq.br/5174480712195055
+* Diego Felipe da Silva.jpg
+
+Graciele Ferreira de Sousa
+* https://lattes.cnpq.br/3599244066099350
+* 

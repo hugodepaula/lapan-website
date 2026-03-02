@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gestão | LAPAN</title>
+    <style>
+      body {
+        margin: 0;
+        font-family:
+          system-ui,
+          -apple-system,
+          sans-serif;
+        background-color: #f9fafb;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .login-container {
+        background: white;
+        padding: 2.5rem;
+        border-radius: 1rem;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        max-width: 400px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      h2 {
+        color: #111827;
+        margin-top: 0;
+      }
+      p {
+        color: #4b5563;
+        margin-bottom: 1.5rem;
+        font-size: 0.875rem;
+        line-height: 1.5;
+      }
+      input {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #d1d5db;
+        border-radius: 0.5rem;
+        margin-bottom: 1.25rem;
+        box-sizing: border-box;
+        font-size: 1rem;
+        outline: none;
+      }
+      input:focus {
+        border-color: #0d9488;
+        box-shadow: 0 0 0 2px rgba(13, 148, 136, 0.2);
+      }
+      button {
+        width: 100%;
+        padding: 0.75rem;
+        background-color: #0d9488;
+        color: white;
+        border: none;
+        border-radius: 0.5rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        font-size: 1rem;
+      }
+      button:hover {
+        background-color: #0f766e;
+      }
+      #error-msg {
+        color: #dc2626;
+        font-size: 0.875rem;
+        margin-top: 1rem;
+        margin-bottom: 0;
+        display: none;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body id="body">
+    <div id="login-container" class="login-container">
+      <h2>Painel Restrito LAPAN</h2>
+      <p>
+        Este ambiente é reservado para a equipe de gestão do laboratório. Insira
+        a chave para prosseguir.
+      </p>
+
+      <input
+        type="password"
+        id="passkey"
+        placeholder="Chave de acesso"
+        autocomplete="off"
+      />
+      <button onclick="checkPass()">Desbloquear CMS</button>
+      <p id="error-msg">Acesso negado. Chave incorreta.</p>
+    </div>
+
+    <script>
+      // Hash SHA-256 para a chave 'lapan2026'
+      // Para trocar a senha no futuro, basta gerar um novo hash SHA-256 da palavra e colar aqui
+      const targetHash =
+        "fa32130dfd4380bce427845fefbbbcc415bded3b2bb09c9162db8035ed89eb86";
+
+      async function hashSHA256(message) {
+        const msgBuffer = new TextEncoder().encode(message);
+        const hashBuffer = await crypto.subtle.digest("SHA-256", msgBuffer);
+        const hashArray = Array.from(new Uint8Array(hashBuffer));
+        const hashHex = hashArray
+          .map((b) => b.toString(16).padStart(2, "0"))
+          .join("");
+        return hashHex;
+      }
+
+      async function checkPass() {
+        const input = document.getElementById("passkey").value;
+        const hash = await hashSHA256(input);
+
+        if (hash === targetHash) {
+          // Remover estilos de login
+          const body = document.getElementById("body");
+          document.getElementById("login-container").style.display = "none";
+
+          body.style.display = "block";
+          body.style.height = "auto";
+          body.style.backgroundColor = "transparent";
+
+          // Injetar o Decap CMS dinamicamente só após a senha ser validada
+          const script = document.createElement("script");
+          script.src = "https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js";
+          document.body.appendChild(script);
+        } else {
+          document.getElementById("error-msg").style.display = "block";
+        }
+      }
+
+      // Permitir apertar Enter no input
+      document
+        .getElementById("passkey")
+        .addEventListener("keypress", function (e) {
+          if (e.key === "Enter") {
+            checkPass();
+          }
+        });
+    </script>
+  </body>
+</html>

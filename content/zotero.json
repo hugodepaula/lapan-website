@@ -1,19 +1,85 @@
 [
   {
     "itemType": "journalArticle",
-    "title": "GUIMARÃES, RICARDO QUEIROZ; VILHENA, DOUGLAS DE ARAÚJO; NOGUEIRA, MARIANA REZENDE VIEIRA; GUIMARÃES, JOÃO RIBEIRO; GUIMARÃES, MÁRCIA REIS. Programa Bom Começo para saúde da criança: identificação e intervenção nas dificuldades de aprendizagem relacionadas à visão. Tempus Psicológico, v. 6, p. 138-161, 2023",
+    "title": "Programa Bom Começo para a saúde da criança: identificação populacional de perda da acuidade visual",
     "creators": [
       {
         "creatorType": "author",
-        "firstName": "",
-        "lastName": "Autor não identificado"
+        "firstName": "Ricardo Queiroz",
+        "lastName": "Guimarães"
+      },
+      {
+        "creatorType": "author",
+        "firstName": "Douglas de Araújo",
+        "lastName": "Vilhena"
+      },
+      {
+        "creatorType": "author",
+        "firstName": "Fabrício Carvalho",
+        "lastName": "Soares"
+      },
+      {
+        "creatorType": "author",
+        "firstName": "Jean Andrade",
+        "lastName": "Canestri"
+      },
+      {
+        "creatorType": "author",
+        "firstName": "Juliana Reis",
+        "lastName": "Guimarães"
+      },
+      {
+        "creatorType": "author",
+        "firstName": "Márcia Reis",
+        "lastName": "Guimarães"
       }
     ],
-    "date": "2023",
-    "publicationTitle": "Artigos completos publicados em periódicos (a partir de 2010)",
-    "DOI": "https://www.researchgate.net/publication/378296199_Programa_Bom_Comeco_para_a_saude_da_crianca_identificacao_populacional_de_perda_da_acuidade_visual",
-    "url": "https://www.researchgate.net/publication/378296199_Programa_Bom_Comeco_para_a_saude_da_crianca_identificacao_populacional_de_perda_da_acuidade_visual",
-    "key": "guimar-es-ricardo-queiroz-vilhena-do-2023-0e409b50"
+    "date": "2024-02-05",
+    "publicationTitle": "Revista Brasileira de Medicina de Família e Comunidade",
+    "volume": "18",
+    "issue": "45",
+    "pages": "3549",
+    "DOI": "10.5712/rbmfc18(45)3549",
+    "url": "/docs/publicacoes/guimaraes-2024-programa-bom-comeco-para-a-sau.pdf",
+    "key": "guimaraes-2024-programa-bom-comeco-acuidade-visual"
+  },
+  {
+    "itemType": "journalArticle",
+    "title": "Programa Bom Começo para saúde da criança: identificação e intervenção nas dificuldades de aprendizagem relacionadas à visão",
+    "creators": [
+      {
+        "creatorType": "author",
+        "firstName": "Ricardo",
+        "lastName": "Guimaraes"
+      },
+      {
+        "creatorType": "author",
+        "firstName": "Douglas",
+        "lastName": "Vilhena"
+      },
+      {
+        "creatorType": "author",
+        "firstName": "Marina",
+        "lastName": "Nogueira"
+      },
+      {
+        "creatorType": "author",
+        "firstName": "Juliana",
+        "lastName": "Guimarães"
+      },
+      {
+        "creatorType": "author",
+        "firstName": "Márcia",
+        "lastName": "Reis Guimarães"
+      }
+    ],
+    "date": "2022-11-25",
+    "publicationTitle": "Tempus Psicológico",
+    "volume": "6",
+    "pages": "138-161",
+    "DOI": "10.30554/tempuspsi.6.1.4733.2023",
+    "url": "/docs/publicacoes/guimaraes-2023-programa-bom-comeco-para-saude.pdf",
+    "key": "guimaraes-2023-programa-bom-comeco-aprendizagem-visao"
   },
   {
     "itemType": "journalArticle",
@@ -936,7 +1002,7 @@
   },
   {
     "itemType": "thesis",
-    "title": "Estudo Estereofotogramétrico da Cinemática da Cabeça de Indivíduos com Estresse visual",
+    "title": "Estudo estereofotogramétrico da cinemática da cabeça de indivíduos com estresse visual",
     "creators": [
       {
         "creatorType": "author",
@@ -944,9 +1010,12 @@
         "lastName": "Diniz"
       }
     ],
-    "date": "2010",
-    "publicationTitle": "Teses de Doutorados",
-    "key": "estudo-estereofotogram-trico-da-cine-2010-60f408bd"
+    "date": "2017-02-21",
+    "publicationTitle": "Tese (Doutorado em Engenharia Mecânica, UFMG)",
+    "publisher": "Universidade Federal de Minas Gerais",
+    "place": "Belo Horizonte",
+    "url": "/docs/projetos/diniz-2017-estudo-estereofotogrametrico-da-cinematica-da-cabeca.pdf",
+    "key": "diniz-2017-estudo-estereofotogrametrico-da-cinematica-da-cabeca"
   },
   {
     "itemType": "bookSection",

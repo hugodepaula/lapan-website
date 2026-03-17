@@ -4,7 +4,7 @@ Este guia permite instalar, configurar e publicar o site sem precisar conhecer a
 
 ## 1) Pré-requisitos
 
-- Node.js 20 ou superior
+- Node.js 22.12.0 ou superior
 - npm 10 ou superior
 - Git (opcional, mas recomendado)
 
@@ -190,7 +190,7 @@ npm run preview  # pré-visualizar build localmente
 ## 10) Solução de problemas
 
 ### Erro em `npm install`
-- Atualize Node.js para versão 20+
+- Atualize Node.js para versão 22.12.0+
 - Remova `node_modules` e `package-lock.json`, depois rode `npm install` novamente
 
 ### Build falha

@@ -2,6 +2,10 @@
 
 Site institucional do LAPAN, construído com Astro + Tailwind CSS + Decap CMS.
 
+Requisitos de runtime:
+- Node.js 22.12.0 ou superior
+- npm 10 ou superior
+
 ## Estado atual do conteúdo
 
 - Equipe: conteúdos em `src/content/team`, com imagens normalizadas em `public/images/team`.

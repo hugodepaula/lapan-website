@@ -3,59 +3,46 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 const projetos = await getCollection("projects");
-const ordemStatus = ["Em andamento", "Planejado", "Concluído"];
-
-const ordenados = [...projetos].sort((a, b) => {
-  const statusA = ordemStatus.indexOf(a.data.status);
-  const statusB = ordemStatus.indexOf(b.data.status);
-  if (statusA !== statusB) return statusA - statusB;
-  return a.data.titulo.localeCompare(b.data.titulo, "pt-BR");
-});
+const emAndamento = projetos.filter((projeto) => projeto.data.status === "Em andamento");
+const concluidos = projetos.filter((projeto) => projeto.data.status === "Concluído");
 ---
 
-<BaseLayout title="Projetos | LAPAN" description="Projetos institucionais do laboratório.">
+<BaseLayout
+  title="Projetos | Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)"
+  description="Visão geral dos projetos do Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)."
+>
   <section>
-    <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent-700">Pesquisa aplicada</p>
+    <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent-700">Projetos</p>
     <h1 class="mt-3 text-4xl text-brand-900 sm:text-5xl">Projetos</h1>
-    <p class="mt-4 max-w-3xl text-base leading-relaxed text-neutral-700">Projetos institucionais em andamento e concluídos.</p>
+    <p class="mt-5 max-w-3xl text-base leading-relaxed text-neutral-700">
+      Os projetos do Laboratório de Pesquisa Aplicação à Neurociências da
+      Visão (LAPAN) foram organizados para transformar perguntas de pesquisa em
+      respostas aplicáveis ao cuidado, à leitura e à aprendizagem. Nesta área,
+      você pode navegar entre os estudos em andamento e os já concluídos.
+    </p>
   </section>
 
-  {ordenados.length === 0 ? (
-    <section class="mt-8 rounded-2xl border border-brand-200 bg-surface p-6">
-      <p class="text-neutral-700">Nenhum projeto cadastrado no momento.</p>
-    </section>
-  ) : (
-    <section class="pt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-      {ordenados.map((projeto) => (
-        <article class="rounded-2xl border border-brand-200 bg-surface p-5 shadow-soft">
-          {projeto.data.imagem && (
-            <img
-              src={projeto.data.imagem}
-              alt={`Imagem do projeto ${projeto.data.titulo}`}
-              class="h-44 w-full rounded-xl object-cover"
-              loading="lazy"
-              decoding="async"
-            />
-          )}
+  <section class="pt-12 grid gap-4 md:grid-cols-2">
+    <article class="rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft">
+      <p class="text-sm font-semibold text-accent-700">{emAndamento.length} projeto(s)</p>
+      <h2 class="mt-2 text-2xl text-brand-900">Em andamento</h2>
+      <p class="mt-3 text-sm leading-relaxed text-neutral-700">
+        Pesquisas em curso que seguem gerando dados, instrumentos e aplicações com foco em avaliação, leitura e saúde visual.
+      </p>
+      <a href="/projetos/em-andamento" class="mt-4 inline-flex text-sm font-semibold text-accent-700 transition hover:text-accent-600">
+        Ver projetos em andamento
+      </a>
+    </article>
 
-          <div class={projeto.data.imagem ? "mt-4" : ""}>
-            <p class="text-xs font-semibold uppercase tracking-[0.08em] text-accent-700">{projeto.data.status}</p>
-            <h2 class="mt-2 text-xl text-brand-900">{projeto.data.titulo}</h2>
-            {projeto.data.area && <p class="mt-1 text-sm font-semibold text-neutral-700">{projeto.data.area}</p>}
-            <p class="mt-2 text-sm leading-relaxed text-neutral-700">{projeto.data.resumo}</p>
-            {projeto.data.link && (
-              <a
-                href={projeto.data.link}
-                target="_blank"
-                rel="noreferrer"
-                class="mt-4 inline-flex rounded-md border border-brand-200 px-3 py-2 text-sm font-semibold text-brand-700 transition hover:border-brand-400 hover:bg-brand-50"
-              >
-                Ver detalhes
-              </a>
-            )}
-          </div>
-        </article>
-      ))}
-    </section>
-  )}
+    <article class="rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft">
+      <p class="text-sm font-semibold text-accent-700">{concluidos.length} projeto(s)</p>
+      <h2 class="mt-2 text-2xl text-brand-900">Concluídos</h2>
+      <p class="mt-3 text-sm leading-relaxed text-neutral-700">
+        Projetos já finalizados, com resultados que ajudam a compreender o histórico de pesquisa e os entregáveis produzidos pelo laboratório.
+      </p>
+      <a href="/projetos/concluidos" class="mt-4 inline-flex text-sm font-semibold text-accent-700 transition hover:text-accent-600">
+        Ver projetos concluídos
+      </a>
+    </article>
+  </section>
 </BaseLayout>

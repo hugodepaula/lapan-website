@@ -1,0 +1,29 @@
+---
+import { getCollection } from "astro:content";
+import ProjectCards from "../../components/ProjectCards.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const projetos = (await getCollection("projects"))
+  .filter((projeto) => projeto.data.status === "Em andamento")
+  .sort((a, b) => a.data.titulo.localeCompare(b.data.titulo, "pt-BR"));
+---
+
+<BaseLayout
+  title="Projetos em andamento | Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)"
+  description="Projetos em andamento do Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)."
+>
+  <section>
+    <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent-700">Projetos</p>
+    <h1 class="mt-3 text-4xl text-brand-900 sm:text-5xl">Em andamento</h1>
+    <p class="mt-5 max-w-3xl text-base leading-relaxed text-neutral-700">
+      O Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)
+      manteve projetos em andamento voltados a leitura, triagem, conforto
+      visual e desenvolvimento de métodos objetivos de avaliação.
+    </p>
+  </section>
+
+  <ProjectCards
+    projetos={projetos}
+    vazio="Nenhum projeto em andamento cadastrado no momento."
+  />
+</BaseLayout>

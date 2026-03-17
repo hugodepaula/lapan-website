@@ -1,0 +1,87 @@
+---
+interface Projeto {
+  id: string;
+  data: {
+    titulo: string;
+    resumo: string;
+    area?: string;
+    status: string;
+    inicio?: string;
+    imagem?: string;
+    link?: string;
+  };
+}
+
+interface Props {
+  projetos: Projeto[];
+  vazio: string;
+}
+
+const { projetos, vazio } = Astro.props;
+---
+
+{
+  projetos.length === 0 ? (
+    <section class="mt-8 rounded-2xl border border-brand-200 bg-surface p-6">
+      <p class="text-neutral-700">{vazio}</p>
+    </section>
+  ) : (
+    <section class="pt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+      {projetos.map((projeto) => (
+        <article class="rounded-2xl border border-brand-200 bg-surface p-5 shadow-soft">
+          {projeto.data.imagem && (
+            <img
+              src={projeto.data.imagem}
+              alt={`Imagem do projeto ${projeto.data.titulo}`}
+              class={`h-44 w-full rounded-xl ${
+                projeto.data.imagem.includes("logo")
+                  ? "bg-brand-50 object-contain p-4"
+                  : "object-cover"
+              }`}
+              loading="lazy"
+              decoding="async"
+            />
+          )}
+
+          <div class={projeto.data.imagem ? "mt-4" : ""}>
+            <p class="text-xs font-semibold uppercase tracking-[0.08em] text-accent-700">
+              {projeto.data.status}
+            </p>
+            {projeto.data.inicio && (
+              <p class="mt-1 text-xs font-semibold uppercase tracking-[0.08em] text-brand-600">
+                Desde {projeto.data.inicio}
+              </p>
+            )}
+            <h2 class="mt-2 text-xl text-brand-900">{projeto.data.titulo}</h2>
+            {projeto.data.area && (
+              <p class="mt-1 text-sm font-semibold text-neutral-700">
+                {projeto.data.area}
+              </p>
+            )}
+            <p class="mt-2 text-sm leading-relaxed text-neutral-700">
+              {projeto.data.resumo}
+            </p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <a
+                href={`/projetos/${projeto.id}`}
+                class="inline-flex rounded-md bg-accent-500 px-3 py-2 text-sm font-semibold text-surface transition hover:bg-accent-600"
+              >
+                Ver detalhes
+              </a>
+              {projeto.data.link && (
+                <a
+                  href={projeto.data.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  class="inline-flex rounded-md border border-brand-200 px-3 py-2 text-sm font-semibold text-brand-700 transition hover:border-brand-400 hover:bg-brand-50"
+                >
+                  Fonte externa
+                </a>
+              )}
+            </div>
+          </div>
+        </article>
+      ))}
+    </section>
+  )
+}

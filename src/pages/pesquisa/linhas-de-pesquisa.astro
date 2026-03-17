@@ -1,0 +1,46 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const linhasPesquisa = [
+  {
+    titulo: "Leitura com conforto e menos fadiga",
+    descricao:
+      "Essa linha investigou como luz, contraste e estímulos visuais influenciam a leitura e testou ferramentas para reduzir desconforto visual em crianças e adultos.",
+  },
+  {
+    titulo: "Movimentos oculares e desempenho funcional",
+    descricao:
+      "Os estudos analisaram como os olhos acompanham textos, números e tarefas do dia a dia para reconhecer sinais que podem afetar leitura, atenção e coordenação visual.",
+  },
+  {
+    titulo: "Diagnóstico mais objetivo",
+    descricao:
+      "A equipe desenvolveu e validou equipamentos e métodos para tornar a avaliação visual mais precisa, comparável e útil na prática clínica e educacional.",
+  },
+];
+---
+
+<BaseLayout
+  title="Linhas de pesquisa | Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)"
+  description="Linhas de pesquisa do Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)."
+>
+  <section>
+    <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent-700">Pesquisa</p>
+    <h1 class="mt-3 text-4xl text-brand-900 sm:text-5xl">Linhas de pesquisa</h1>
+    <p class="mt-5 max-w-3xl text-base leading-relaxed text-neutral-700">
+      O Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)
+      estruturou sua agenda científica em frentes voltadas a problemas concretos
+      de leitura, percepção e avaliação visual. Em comum, todas buscaram gerar
+      evidências úteis para o cuidado e para a aprendizagem.
+    </p>
+  </section>
+
+  <section class="pt-12 grid gap-4 md:grid-cols-3">
+    {linhasPesquisa.map((linha) => (
+      <article class="rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft">
+        <h2 class="text-2xl text-brand-900">{linha.titulo}</h2>
+        <p class="mt-4 text-sm leading-relaxed text-neutral-700">{linha.descricao}</p>
+      </article>
+    ))}
+  </section>
+</BaseLayout>

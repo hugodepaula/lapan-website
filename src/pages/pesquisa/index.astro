@@ -1,0 +1,51 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const secoes = [
+  {
+    titulo: "Linhas de pesquisa",
+    descricao: "Áreas centrais de investigação sobre leitura, percepção visual, movimentos oculares e diagnóstico objetivo.",
+    href: "/pesquisa/linhas-de-pesquisa",
+  },
+  {
+    titulo: "Metodologias",
+    descricao: "Métodos usados para triagem, avaliação funcional, desenvolvimento instrumental e análise de dados.",
+    href: "/pesquisa/metodologias",
+  },
+  {
+    titulo: "Perguntas frequentes",
+    descricao: "Respostas curtas para dúvidas recorrentes sobre Neurociências da Visão, aplicação prática e escopo institucional.",
+    href: "/pesquisa/perguntas-frequentes",
+  },
+];
+---
+
+<BaseLayout
+  title="Pesquisa | Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)"
+  description="Visão geral da área de pesquisa do Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)."
+>
+  <section>
+    <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent-700">Pesquisa</p>
+    <h1 class="mt-3 text-4xl text-brand-900 sm:text-5xl">Pesquisa</h1>
+    <p class="mt-5 max-w-3xl text-base leading-relaxed text-neutral-700">
+      O Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)
+      organizou sua produção científica em frentes que dialogavam com saúde,
+      educação e desenvolvimento tecnológico. Esta seção reúne as linhas de
+      pesquisa, os métodos adotados e respostas para dúvidas recorrentes.
+    </p>
+  </section>
+
+  <section class="pt-14">
+    <div class="grid gap-4 md:grid-cols-3">
+      {secoes.map((item) => (
+        <article class="rounded-2xl border border-brand-200 bg-surface p-5 shadow-soft transition duration-200 hover:-translate-y-0.5 hover:shadow-soft">
+          <h2 class="text-xl text-brand-900">{item.titulo}</h2>
+          <p class="mt-3 text-sm leading-relaxed text-neutral-700">{item.descricao}</p>
+          <a href={item.href} class="mt-4 inline-flex text-sm font-semibold text-accent-700 transition hover:text-accent-600">
+            Acessar página
+          </a>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

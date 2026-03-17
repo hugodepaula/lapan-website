@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Gestão | LAPAN</title>
+    <title>
+      Gestão | Laboratório de Pesquisa Aplicação à Neurociências da Visão
+      (LAPAN)
+    </title>
     <style>
       body {
         margin: 0;
@@ -78,10 +81,13 @@
   </head>
   <body id="body">
     <div id="login-container" class="login-container">
-      <h2>Painel Restrito LAPAN</h2>
+      <h2>
+        Painel Restrito do Laboratório de Pesquisa Aplicação à Neurociências da
+        Visão (LAPAN)
+      </h2>
       <p>
-        Este ambiente é reservado para a equipe de gestão do laboratório. Insira
-        a chave para prosseguir.
+        Este ambiente é reservado para a equipe de gestão do LAPAN. Insira a
+        chave para prosseguir.
       </p>
 
       <input
@@ -95,10 +101,8 @@
     </div>
 
     <script>
-      // Hash SHA-256 para a chave 'lapan2026'
-      // Para trocar a senha no futuro, basta gerar um novo hash SHA-256 da palavra e colar aqui
       const targetHash =
-        "fa32130dfd4380bce427845fefbbbcc415bded3b2bb09c9162db8035ed89eb86";
+        "c3db1423c11eebd62642475629489010f3cbab7658dce3084874eba08d9dcd46";
 
       async function hashSHA256(message) {
         const msgBuffer = new TextEncoder().encode(message);

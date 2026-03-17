@@ -1,20 +1,36 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { valoresInstitucionais } from "../lib/identidade";
 
 const formEndpoint = import.meta.env.PUBLIC_CONTACT_FORM_ENDPOINT ?? "";
+const valoresParceria = valoresInstitucionais.filter((valor) =>
+  [
+    "Transparência e ciência aberta",
+    "Ética e respeito às pessoas",
+    "Colaboração e serviço público",
+  ].includes(valor.titulo),
+);
 ---
 
-<BaseLayout title="Contato | LAPAN" description="Página de contato institucional do laboratório.">
+<BaseLayout
+  title="Contato | Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)"
+  description="Página de contato institucional do Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)."
+>
   <section class="grid gap-8 xl:grid-cols-[0.9fr_1.1fr] xl:items-start">
     <div>
       <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent-700">Fale conosco</p>
       <h1 class="mt-3 text-4xl text-brand-900 sm:text-5xl">Contato</h1>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-neutral-700">
+        Entre em contato com o Laboratório de Pesquisa Aplicação à
+        Neurociências da Visão (LAPAN) para informações institucionais,
+        parcerias e demandas de imprensa.
+      </p>
 
       <div class="mt-8 rounded-2xl border border-brand-200 bg-surface p-5 shadow-soft">
         <h2 class="text-xl text-brand-900">Local</h2>
         <address class="mt-3 not-italic text-sm leading-relaxed text-neutral-700">
-          Rua da Paisagem, 220 - Vale do Sereno<br />
-          Nova Lima - MG, CEP 30720-600<br />
+          Rua da Paisagem, 220 - Vila da Serra<br />
+          Belo Horizonte - MG, CEP 30720-600<br />
           Brasil
         </address>
         <p class="mt-3 text-sm text-neutral-700">
@@ -31,6 +47,25 @@ const formEndpoint = import.meta.env.PUBLIC_CONTACT_FORM_ENDPOINT ?? "";
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
+      </div>
+
+      <div class="mt-8 rounded-2xl border border-brand-200 bg-brand-50/70 p-6 shadow-soft">
+        <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent-700">
+          Parcerias e imprensa
+        </p>
+        <h2 class="mt-3 text-2xl text-brand-900">Como trabalhamos</h2>
+        <p class="mt-3 text-sm leading-relaxed text-neutral-700">
+          Conduzimos parcerias institucionais, interlocução com imprensa e demandas externas com transparência,
+          responsabilidade ética e alinhamento de prazos desde o primeiro contato.
+        </p>
+        <div class="mt-5 grid gap-3">
+          {valoresParceria.map((valor) => (
+            <article class="rounded-2xl border border-brand-200 bg-surface p-4">
+              <h3 class="text-base text-brand-900">{valor.titulo}</h3>
+              <p class="mt-2 text-sm leading-relaxed text-neutral-700">{valor.descricao}</p>
+            </article>
+          ))}
+        </div>
       </div>
     </div>
 

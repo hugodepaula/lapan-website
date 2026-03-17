@@ -1,0 +1,130 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const marcos = [
+  {
+    ano: "2009",
+    titulo: "Criação do laboratório",
+    descricao:
+      "A UFMG e o Hospital de Olhos Dr. Ricardo Guimarães estruturaram o laboratório para aproximar oftalmologia, neurociência e desenvolvimento de soluções aplicadas.",
+  },
+  {
+    ano: "2010 em diante",
+    titulo: "Consolidação de uma agenda de pesquisa",
+    descricao:
+      "O trabalho institucional passou a reunir pesquisas sobre leitura, percepção visual, movimentos oculares, triagem e desenvolvimento de instrumentos de avaliação.",
+  },
+  {
+    ano: "2019",
+    titulo: "Reconhecimento público",
+    descricao:
+      "Uma notícia da UFMG destacou o laboratório como referência em pesquisas de Neurovisão e registrou seu papel no desenvolvimento de aparelhos e estudos voltados ao atendimento da população.",
+  },
+];
+---
+
+<BaseLayout
+  title="História e fundadores | Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)"
+  description="História, fundadores e trajetória institucional do Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)."
+>
+  <section>
+    <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent-700">Sobre o Laboratório</p>
+    <h1 class="mt-3 text-4xl text-brand-900 sm:text-5xl">História e fundadores</h1>
+    <p class="mt-5 max-w-3xl text-base leading-relaxed text-neutral-700">
+      O Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)
+      nasceu de uma parceria entre a Universidade Federal de Minas Gerais
+      (UFMG) e o Hospital de Olhos Dr. Ricardo Guimarães (HOlhos). Sua criação
+      esteve ligada ao esforço de compreender alterações visuais que afetavam a
+      aprendizagem de crianças mesmo quando a acuidade visual parecia adequada.
+    </p>
+    <p class="mt-4 max-w-3xl text-base leading-relaxed text-neutral-700">
+      Na época, a proposta institucional foi aproximar pesquisa básica, prática
+      clínica e desenvolvimento tecnológico. A notícia publicada pela UFMG em
+      11 de setembro de 2019 registrou que o laboratório havia se tornado uma
+      referência em pesquisas de Neurovisão e no desenvolvimento de aparelhos
+      para diagnóstico e tratamento. Esse histórico ajudou a consolidar uma
+      atuação voltada ao melhor atendimento da população.
+    </p>
+    <a
+      href="https://www3.ufmg.br/comunicacao/noticias/laboratorio-da-ufmg-e-referencia-em-pesquisas-de-neurovisao"
+      target="_blank"
+      rel="noreferrer"
+      class="mt-5 inline-flex rounded-md border border-brand-200 px-4 py-2 text-sm font-semibold text-brand-700 transition hover:border-brand-400 hover:bg-brand-50"
+    >
+      Ler notícia da UFMG
+    </a>
+  </section>
+
+  <section class="pt-12">
+    <h2 class="text-3xl text-brand-900">Marcos da trajetória</h2>
+    <div class="mt-6 grid gap-4 md:grid-cols-3">
+      {marcos.map((item) => (
+        <article class="rounded-2xl border border-brand-200 bg-surface p-5 shadow-soft">
+          <p class="text-sm font-semibold text-accent-700">{item.ano}</p>
+          <h3 class="mt-2 text-xl text-brand-900">{item.titulo}</h3>
+          <p class="mt-3 text-sm leading-relaxed text-neutral-700">{item.descricao}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="pt-12 grid gap-6 lg:grid-cols-2">
+    <article class="rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft">
+      <h2 class="text-2xl text-brand-900">Instituições fundadoras</h2>
+      <p class="mt-4 text-sm leading-relaxed text-neutral-700">
+        O HOlhos trouxe a experiência assistencial, clínica e cirúrgica. A UFMG
+        contribuiu com pesquisa, formação e articulação acadêmica. O Labbio,
+        da Escola de Engenharia, participou desse processo por meio de sua
+        tradição no desenvolvimento de instrumentos e dispositivos.
+      </p>
+      <p class="mt-4 text-sm leading-relaxed text-neutral-700">
+        Essa combinação tornou possível uma atuação interdisciplinar entre
+        oftalmologia, engenharia e neurociências da visão, com foco em problemas
+        reais de diagnóstico, leitura e desenvolvimento.
+      </p>
+    </article>
+
+    <article class="rounded-2xl border border-brand-200 bg-brand-50/70 p-6 shadow-soft">
+      <h2 class="text-2xl text-brand-900">Prof. Marcos Pinotti Barbosa</h2>
+      <p class="mt-4 text-sm leading-relaxed text-neutral-700">
+        O professor Marcos Pinotti Barbosa teve papel decisivo na criação e na
+        consolidação do laboratório. Como coordenador do Labbio e pesquisador
+        da UFMG, articulou a interface entre engenharia e saúde que sustentou o
+        desenvolvimento de métodos, equipamentos e soluções aplicadas.
+      </p>
+      <p class="mt-4 text-sm leading-relaxed text-neutral-700">
+        Hoje, sua contribuição permanece como parte da memória institucional do
+        LAPAN. Esta página registra sua importância histórica em tom de
+        homenagem e reconhecimento.
+      </p>
+    </article>
+  </section>
+
+  <section class="pt-12 grid gap-6 md:grid-cols-2">
+    <figure class="overflow-hidden rounded-2xl border border-brand-200 bg-surface shadow-soft">
+      <img
+        src="/images/quem-somos/entrada-lapan.jpg"
+        alt="Entrada do laboratório"
+        class="h-full w-full object-cover"
+        loading="lazy"
+        decoding="async"
+      />
+      <figcaption class="border-t border-brand-200 px-4 py-3 text-sm text-neutral-700">
+        Espaço físico do laboratório em sua fase de consolidação institucional.
+      </figcaption>
+    </figure>
+
+    <figure class="overflow-hidden rounded-2xl border border-brand-200 bg-surface shadow-soft">
+      <img
+        src="/images/quem-somos/ufmg1.jpg"
+        alt="Universidade Federal de Minas Gerais"
+        class="h-full w-full object-cover"
+        loading="lazy"
+        decoding="async"
+      />
+      <figcaption class="border-t border-brand-200 px-4 py-3 text-sm text-neutral-700">
+        UFMG, parceira fundadora na trajetória científica do laboratório.
+      </figcaption>
+    </figure>
+  </section>
+</BaseLayout>

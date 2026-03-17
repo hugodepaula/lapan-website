@@ -1,0 +1,85 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import {
+  missaoCompleta,
+  missaoCurta,
+  valoresInstitucionais,
+} from "../../lib/identidade";
+---
+
+<BaseLayout
+  title="Missão e valores | Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)"
+  description="Missão e valores do Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)."
+>
+  <section>
+    <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent-700">Sobre o Laboratório</p>
+    <h1 class="mt-3 text-4xl text-brand-900 sm:text-5xl">Missão e valores</h1>
+    <p class="mt-5 max-w-3xl text-base leading-relaxed text-neutral-700">
+      O Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)
+      organizou sua atuação para aproximar pesquisa, cuidado e impacto social.
+      Sua missão institucional foi traduzir conhecimento em decisões mais
+      seguras para a saúde, a educação e a qualidade de vida.
+    </p>
+  </section>
+
+  <section class="pt-12 grid gap-6 lg:grid-cols-[1fr_1.1fr]">
+    <article class="rounded-2xl border border-brand-200 bg-brand-50/70 p-6 shadow-soft">
+      <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent-700">
+        Síntese
+      </p>
+      <h2 class="mt-3 text-3xl text-brand-900">{missaoCurta}</h2>
+      <p class="mt-4 text-base leading-relaxed text-neutral-700">
+        {missaoCompleta}
+      </p>
+    </article>
+
+    <div class="rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft">
+      <h2 class="text-2xl text-brand-900">Como essa missão se traduzia na prática</h2>
+      <div class="mt-4 grid gap-3">
+        <article class="rounded-2xl border border-brand-200 bg-neutral-50 p-4">
+          <h3 class="text-base text-brand-900">Diagnóstico mais cedo</h3>
+          <p class="mt-2 text-sm leading-relaxed text-neutral-700">
+            O laboratório buscou antecipar sinais visuais que poderiam afetar
+            aprendizagem, leitura e desenvolvimento.
+          </p>
+        </article>
+        <article class="rounded-2xl border border-brand-200 bg-neutral-50 p-4">
+          <h3 class="text-base text-brand-900">Aplicação concreta</h3>
+          <p class="mt-2 text-sm leading-relaxed text-neutral-700">
+            As pesquisas foram organizadas para gerar instrumentos, protocolos,
+            orientações e decisões úteis para clínicas, escolas e políticas públicas.
+          </p>
+        </article>
+        <article class="rounded-2xl border border-brand-200 bg-neutral-50 p-4">
+          <h3 class="text-base text-brand-900">Compromisso público</h3>
+          <p class="mt-2 text-sm leading-relaxed text-neutral-700">
+            O trabalho institucional esteve voltado à ampliação do acesso ao
+            cuidado e à comunicação clara com diferentes públicos.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="pt-14">
+    <h2 class="text-3xl text-brand-900">Valores institucionais</h2>
+    <div class="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+      {valoresInstitucionais.map((valor, index) => (
+        <article
+          class={`animate-on-scroll rounded-2xl border border-brand-200 bg-surface p-5 shadow-soft transition duration-300 hover:-translate-y-1 hover:border-brand-300 ${
+            index % 4 === 1
+              ? "delay-100"
+              : index % 4 === 2
+                ? "delay-200"
+                : index % 4 === 3
+                  ? "delay-300"
+                  : ""
+          }`}
+        >
+          <h3 class="text-lg text-brand-900">{valor.titulo}</h3>
+          <p class="mt-3 text-sm leading-relaxed text-neutral-700">{valor.descricao}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

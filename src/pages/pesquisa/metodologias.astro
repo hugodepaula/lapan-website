@@ -1,0 +1,51 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const metodologias = [
+  {
+    titulo: "Triagem e estudos populacionais",
+    descricao:
+      "Aplicação de protocolos em escolas e grupos populacionais para identificar sinais de alteração visual e orientar encaminhamentos mais precoces.",
+  },
+  {
+    titulo: "Avaliação funcional da visão",
+    descricao:
+      "Uso de testes de acuidade, sensibilidade ao contraste, percepção visual e leitura para compreender como a visão influencia o desempenho cotidiano.",
+  },
+  {
+    titulo: "Rastreamento ocular e pupilometria",
+    descricao:
+      "Medições objetivas dos movimentos oculares e das respostas pupilares para apoiar diagnósticos mais precisos e desenvolvimento de instrumentos.",
+  },
+  {
+    titulo: "Validação de instrumentos",
+    descricao:
+      "Desenvolvimento e comparação de métodos, equipamentos e protocolos para tornar a avaliação visual mais confiável e reproduzível.",
+  },
+];
+---
+
+<BaseLayout
+  title="Metodologias | Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)"
+  description="Metodologias de pesquisa do Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)."
+>
+  <section>
+    <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent-700">Pesquisa</p>
+    <h1 class="mt-3 text-4xl text-brand-900 sm:text-5xl">Metodologias</h1>
+    <p class="mt-5 max-w-3xl text-base leading-relaxed text-neutral-700">
+      O Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)
+      combinou métodos clínicos, instrumentais e epidemiológicos para produzir
+      resultados mais sólidos. A metodologia sempre buscou unir rigor
+      científico, clareza diagnóstica e aplicabilidade.
+    </p>
+  </section>
+
+  <section class="pt-12 grid gap-4 md:grid-cols-2">
+    {metodologias.map((item) => (
+      <article class="rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft">
+        <h2 class="text-2xl text-brand-900">{item.titulo}</h2>
+        <p class="mt-4 text-sm leading-relaxed text-neutral-700">{item.descricao}</p>
+      </article>
+    ))}
+  </section>
+</BaseLayout>

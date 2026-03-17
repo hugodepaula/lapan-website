@@ -1,0 +1,55 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const faqs = [
+  {
+    pergunta: "O que o laboratório pesquisava?",
+    resposta:
+      "O Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN) pesquisava como alterações visuais e perceptuais podiam afetar leitura, aprendizagem, conforto visual e desenvolvimento.",
+  },
+  {
+    pergunta: "O que significa Neurovisão neste contexto?",
+    resposta:
+      "No site, Neurovisão é usada como forma contextual de se referir às Neurociências da Visão, ou seja, ao estudo de como o sistema visual funciona em interação com cérebro, percepção e comportamento.",
+  },
+  {
+    pergunta: "Quem podia se beneficiar desse tipo de pesquisa?",
+    resposta:
+      "Crianças em fase escolar, famílias, profissionais de saúde, profissionais da educação e gestores públicos podiam se beneficiar de métodos que ajudavam a reconhecer sinais mais cedo e orientar intervenções adequadas.",
+  },
+  {
+    pergunta: "Triagem substitui consulta oftalmológica?",
+    resposta:
+      "Não. Triagem ajuda a identificar sinais de alerta e a priorizar encaminhamentos, mas não substitui avaliação clínica completa.",
+  },
+  {
+    pergunta: "O laboratório atendia diretamente o público pelo site?",
+    resposta:
+      "O site apresenta a atuação institucional, as pesquisas e os projetos. Para contatos e encaminhamentos institucionais, o caminho indicado é a página de contato.",
+  },
+];
+---
+
+<BaseLayout
+  title="Perguntas frequentes | Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)"
+  description="Perguntas frequentes sobre o Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)."
+>
+  <section>
+    <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent-700">Pesquisa</p>
+    <h1 class="mt-3 text-4xl text-brand-900 sm:text-5xl">Perguntas frequentes</h1>
+    <p class="mt-5 max-w-3xl text-base leading-relaxed text-neutral-700">
+      Esta página reúne respostas curtas para dúvidas recorrentes sobre o
+      Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN), seu
+      foco científico e sua utilidade prática.
+    </p>
+  </section>
+
+  <section class="pt-12 space-y-4">
+    {faqs.map((item) => (
+      <article class="rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft">
+        <h2 class="text-xl text-brand-900">{item.pergunta}</h2>
+        <p class="mt-3 text-sm leading-relaxed text-neutral-700">{item.resposta}</p>
+      </article>
+    ))}
+  </section>
+</BaseLayout>

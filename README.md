@@ -1,5 +1,7 @@
 # LAPAN Website
 
+@author Prof. Hugo de Paula
+
 Site institucional do LAPAN, construído com Astro + Tailwind CSS + Decap CMS.
 
 Requisitos de runtime:

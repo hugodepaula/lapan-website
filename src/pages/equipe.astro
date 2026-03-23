@@ -2,7 +2,16 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
-const ordemTipos = ["Pesquisador", "Doutorado", "Mestrado", "Iniciação Científica", "Colaborador"];
+const ordemTipos = [
+  "Pesquisador",
+  "Doutorado em andamento",
+  "Doutorado concluído",
+  "Mestrado em andamento",
+  "Mestrado concluído",
+  "Iniciação Científica em andamento",
+  "Iniciação Científica concluída",
+  "Colaborador",
+];
 const membros = await getCollection("team");
 const prioridadePesquisadores: Record<string, number> = {
   "Prof. Dr. Marcos Pinotti Barbosa (In Memoriam)": 0,
@@ -32,6 +41,27 @@ const tipoParaFiltro = (tipo: string) =>
     .toLowerCase()
     .replace(/\s+/g, "-");
 
+const extrairAno = (valor?: string) => valor?.slice(0, 4);
+
+const formatarPeriodo = (dataInicio?: string, dataTermino?: string) => {
+  const anoInicio = extrairAno(dataInicio);
+  const anoTermino = extrairAno(dataTermino);
+
+  if (anoInicio && anoTermino) {
+    return `${anoInicio} - ${anoTermino}`;
+  }
+
+  if (anoInicio) {
+    return `${anoInicio} -`;
+  }
+
+  if (anoTermino) {
+    return `- ${anoTermino}`;
+  }
+
+  return null;
+};
+
 const fraseImpacto = (cargo: string, tipo: string) => {
   const cargoNormalizado = cargo.toLowerCase();
 
@@ -51,11 +81,11 @@ const fraseImpacto = (cargo: string, tipo: string) => {
     return "Contribui para que os resultados do laboratório avancem do estudo científico para aplicações em saúde, educação e cuidado.";
   }
 
-  if (tipo === "Doutorado" || tipo === "Mestrado") {
+  if (tipo.startsWith("Doutorado") || tipo.startsWith("Mestrado")) {
     return "Participa do desenvolvimento de evidências e métodos que apoiam avaliações mais precisas e intervenções mais adequadas.";
   }
 
-  if (tipo === "Iniciação Científica") {
+  if (tipo.startsWith("Iniciação Científica")) {
     return "Colabora na produção de conhecimento que ajuda a aproximar pesquisa, aprendizagem e atenção à saúde desde a formação acadêmica.";
   }
 
@@ -121,6 +151,11 @@ const fraseImpacto = (cargo: string, tipo: string) => {
               />
               <h3 class="mt-4 text-xl text-brand-900">{membro.data.nome}</h3>
               <p class="text-sm font-semibold text-accent-700">{membro.data.cargo}</p>
+              {formatarPeriodo(membro.data.dataInicio, membro.data.dataTermino) && (
+                <p class="mt-1 text-xs font-medium uppercase tracking-[0.08em] text-neutral-500">
+                  {formatarPeriodo(membro.data.dataInicio, membro.data.dataTermino)}
+                </p>
+              )}
               <p class="mt-2 text-sm font-medium leading-relaxed text-brand-800">
                 {fraseImpacto(membro.data.cargo, membro.data.tipo)}
               </p>

@@ -12,6 +12,10 @@ const resourceLinkSchema = z.object({
   url: z.string().min(1),
 });
 
+const anoOuDataSchema = z
+  .string()
+  .regex(/^\d{4}(-\d{2}-\d{2})?$/, "Use o formato AAAA ou AAAA-MM-DD");
+
 const team = defineCollection({
   loader: glob({ pattern: "**/[^_]*.md", base: "./src/content/team" }),
   schema: z.object({
@@ -19,7 +23,18 @@ const team = defineCollection({
     cargo: z.string().min(1),
     bio: z.string().min(1),
     foto: z.string().optional(),
-    tipo: z.enum(["Mestrado", "Doutorado", "Iniciação Científica", "Pesquisador", "Colaborador"]),
+    tipo: z.enum([
+      "Doutorado em andamento",
+      "Doutorado concluído",
+      "Mestrado em andamento",
+      "Mestrado concluído",
+      "Iniciação Científica em andamento",
+      "Iniciação Científica concluída",
+      "Pesquisador",
+      "Colaborador",
+    ]),
+    dataInicio: anoOuDataSchema.optional(),
+    dataTermino: anoOuDataSchema.optional(),
     links: z.array(linkSchema).default([]),
   }),
 });

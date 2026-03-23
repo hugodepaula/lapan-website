@@ -1,10 +1,12 @@
 ---
-nome: "Prof.ª Dr.ª Cláudia de Almeida Ferreira Diniz"
-cargo: "Pesquisadora do LAPAN"
-bio: "Fisioterapeuta e pesquisadora em neurointegração sensorial, postura e disfunções motoras associadas à leitura e escrita."
-foto: "/images/team/claudia-diniz.png"
-tipo: "Doutorado"
+nome: Prof.ª Dr.ª Cláudia de Almeida Ferreira Diniz
+cargo: Doutorado concluído
+bio: Fisioterapeuta e pesquisadora em neurointegração sensorial, atuou em pesquisas sobre processamento visual.
+foto: /images/team/claudia-diniz.png
+tipo: Doutorado concluído
 links:
-  - rotulo: "Lattes"
-    url: "http://lattes.cnpq.br/4276479299363568"
+- rotulo: Lattes
+  url: http://lattes.cnpq.br/4276479299363568
+dataInicio: '2012'
+dataTermino: '2017'
 ---

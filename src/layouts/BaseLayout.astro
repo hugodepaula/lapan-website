@@ -69,6 +69,9 @@ const socialLinks = [
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
     <link rel="icon" type="image/png" href="/favicon.png" />
+    <script is:inline>
+      document.documentElement.classList.add("js");
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       rel="preconnect"
@@ -107,7 +110,7 @@ const socialLinks = [
             />
           </a>
 
-          <nav class="hidden md:block" aria-label="Navegação principal">
+          <nav class="hidden lg:block" aria-label="Navegação principal">
             <ul class="flex items-center gap-1 lg:gap-2">
               {
                 navItems.map((item) => (
@@ -141,7 +144,7 @@ const socialLinks = [
             </ul>
           </nav>
 
-          <details class="group relative md:hidden">
+          <details class="group relative lg:hidden">
             <summary
               class="inline-flex cursor-pointer list-none items-center rounded-md border border-brand-200 px-3 py-2 text-sm font-semibold text-brand-800 transition hover:border-brand-400 hover:bg-brand-50"
               aria-label="Abrir menu"

@@ -1,10 +1,12 @@
 ---
-nome: "Prof.ª Dr.ª Camila Bim"
-cargo: "Pesquisadora do LAPAN"
-bio: "Pesquisadora em bioengenharia e física aplicada, com experiência em pupilometria dinâmica e sistemas de avaliação visual."
-foto: "/images/team/camila-bim.jpg"
-tipo: "Doutorado"
+nome: Prof.ª Dr.ª Camila Bim
+cargo: Doutorado concluído
+bio: 'Pesquisadora em bioengenharia e física aplicada, atuou em pesquisas sobre pupilometria dinâmica e avaliação da função visual.'
+foto: /images/team/camila-bim.jpg
+tipo: Doutorado concluído
 links:
-  - rotulo: "Lattes"
-    url: "http://lattes.cnpq.br/7756103337589888"
+- rotulo: Lattes
+  url: http://lattes.cnpq.br/7756103337589888
+dataInicio: '2012'
+dataTermino: '2016'
 ---

@@ -1,10 +1,11 @@
 ---
-nome: "Prof. Dr. Jerome Baron"
-cargo: "Pesquisador do LAPAN"
-bio: "Pesquisador em neurofisiologia da percepção visual e instrumentação biomédica aplicada às ciências da visão."
-foto: "/images/team/jerome-baron.jpg"
-tipo: "Pesquisador"
+nome: Prof. Dr. Jerome Baron
+cargo: Pesquisador do LAPAN
+bio: Pesquisador em neurofisiologia da percepção visual e instrumentação biomédica aplicada às ciências da visão, atua em pesquisas sobre processamento visual.
+foto: /images/team/jerome-baron.jpg
+tipo: Pesquisador
 links:
-  - rotulo: "Lattes"
-    url: "http://lattes.cnpq.br/7044465149117355"
+- rotulo: Lattes
+  url: http://lattes.cnpq.br/7044465149117355
+dataInicio: '2019'
 ---

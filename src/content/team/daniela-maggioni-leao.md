@@ -1,10 +1,12 @@
 ---
-nome: "Prof.ª MSc. Daniela Maggioni Leão"
-cargo: "Mestra em Biociências e Saúde"
-bio: "Oftalmologista com experiência em córnea, doenças externas e pesquisa em biociências aplicadas à saúde."
-foto: "/images/team/daniela-maggioni-leao.jpg"
-tipo: "Mestrado"
+nome: Prof.ª MSc. Daniela Maggioni Leão
+cargo: Mestrado concluído
+bio: Oftalmologista com experiência em córnea, atuou em pesquisas sobre filtros espectrais e desempenho de leitura.
+foto: /images/team/daniela-maggioni-leao.jpg
+tipo: Mestrado concluído
 links:
-  - rotulo: "Lattes"
-    url: "http://lattes.cnpq.br/1356241719629592"
+- rotulo: Lattes
+  url: http://lattes.cnpq.br/1356241719629592
+dataInicio: '2016'
+dataTermino: '2018'
 ---

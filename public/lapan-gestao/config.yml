@@ -27,7 +27,9 @@ collections:
     fields:
       - { label: "Nome", name: "nome", widget: "string" }
       - { label: "Cargo", name: "cargo", widget: "string" }
-      - { label: "Tipo", name: "tipo", widget: "select", options: ["Mestrado", "Doutorado", "Iniciação Científica", "Pesquisador", "Colaborador"] }
+      - { label: "Tipo", name: "tipo", widget: "select", options: ["Doutorado em andamento", "Doutorado concluído", "Mestrado em andamento", "Mestrado concluído", "Iniciação Científica em andamento", "Iniciação Científica concluída", "Pesquisador", "Colaborador"] }
+      - { label: "Data de início", name: "dataInicio", widget: "string", required: false, hint: "Use AAAA ou AAAA-MM-DD" }
+      - { label: "Data de término", name: "dataTermino", widget: "string", required: false, hint: "Use AAAA ou AAAA-MM-DD" }
       - { label: "Foto", name: "foto", widget: "image", required: false }
       - { label: "Biografia", name: "bio", widget: "text" }
       - label: "Links"

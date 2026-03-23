@@ -1,10 +1,12 @@
 ---
-nome: "Prof.ª Dr.ª Ana Isabel Arroyave Guzmán"
-cargo: "Pesquisadora do LAPAN"
-bio: "Bioengenheira com atuação em biomecânica, modelagem computacional e simulações do sistema visual humano."
-foto: "/images/team/ana-isabel-arroyave-guzman.jpg"
-tipo: "Doutorado"
+nome: Prof.ª Dr.ª Ana Isabel Arroyave Guzmán
+cargo: Doutorado concluído
+bio: Bioengenheira com atuação em biomecânica, atuou em pesquisas sobre processamento visual.
+foto: /images/team/ana-isabel-arroyave-guzman.jpg
+tipo: Doutorado concluído
 links:
-  - rotulo: "Lattes"
-    url: "http://lattes.cnpq.br/7486613813048319"
+- rotulo: Lattes
+  url: http://lattes.cnpq.br/7486613813048319
+dataInicio: '2015'
+dataTermino: '2019'
 ---

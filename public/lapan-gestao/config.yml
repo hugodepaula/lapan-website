@@ -70,7 +70,33 @@ collections:
     fields:
       - { label: "Título", name: "titulo", widget: "string" }
       - { label: "Resumo", name: "resumo", widget: "text" }
+      - { label: "Descrição", name: "descricao", widget: "text" }
+      - { label: "Impacto", name: "impacto", widget: "text" }
+      - { label: "Metodologia", name: "metodologia", widget: "text" }
+      - { label: "Início", name: "inicio", widget: "string", required: false, hint: "Use AAAA ou AAAA-MM-DD" }
       - { label: "Área", name: "area", widget: "string", required: false }
       - { label: "Status", name: "status", widget: "select", options: ["Em andamento", "Concluído", "Planejado"], default: "Em andamento" }
       - { label: "Imagem (opcional)", name: "imagem", widget: "image", required: false }
       - { label: "Link (opcional)", name: "link", widget: "string", required: false }
+      - label: "Equipe envolvida"
+        name: "equipe"
+        widget: "relation"
+        collection: "team"
+        search_fields: ["nome", "cargo", "tipo"]
+        value_field: "{{slug}}"
+        display_fields: ["nome", "cargo"]
+        multiple: true
+        required: false
+      - label: "Palavras-chave de publicações"
+        name: "publicationKeywords"
+        widget: "list"
+        required: false
+        field: { label: "Palavra-chave", name: "keyword", widget: "string" }
+      - label: "Fontes"
+        name: "fontes"
+        widget: "list"
+        required: false
+        summary: "{{fields.rotulo}}"
+        fields:
+          - { label: "Rótulo", name: "rotulo", widget: "string" }
+          - { label: "URL", name: "url", widget: "string" }

@@ -29,8 +29,21 @@ npm run dev
 ```bash
 npm run build
 ```
+4. Rode as validações de conteúdo e GEO:
+```bash
+npm run check
+```
 
 O site final é gerado em `dist/`.
+
+## GEO / SEG
+
+- Fundamentos e implementação: [docs/geo-foundations.md](/home/hugo/Documents/LAPAN/dev/lapan-website/docs/geo-foundations.md)
+- Arquivo `llms.txt` gerado em build para descoberta por ferramentas e modelos
+- Validações automatizadas:
+  - `npm run validate:content`
+  - `npm run validate:geo`
+  - `npm run check`
 
 ## CMS (edição de conteúdo)
 

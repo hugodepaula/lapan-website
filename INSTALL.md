@@ -147,7 +147,7 @@ rsync -avz dist/ usuario@servidor:/var/www/lapan/
 
 - Página inicial abre corretamente
 - Menu navega para:
-  - Quem Somos
+  - Sobre o Laboratório
   - Projetos
   - Publicações
   - Eventos
@@ -158,10 +158,10 @@ rsync -avz dist/ usuario@servidor:/var/www/lapan/
   - `/equipe`
   - `/eventos`
   - `/projetos`
-  - `/quem-somos`
-  - `/quem-somos/fundadores`
-  - `/quem-somos/infraestrutura`
-  - `/quem-somos/objetivo`
+  - `/sobre-o-laboratorio`
+  - `/sobre-o-laboratorio/historia-e-fundadores`
+  - `/sobre-o-laboratorio/infraestrutura-e-equipamentos`
+  - `/sobre-o-laboratorio/missao-e-valores`
   - `/parceiros`
   - `/contato`
 - Imagens aparecem corretamente

@@ -1,8 +1,11 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { buildAbsoluteUrl, getBaseUrl } from "../lib/geo";
 import { valoresInstitucionais } from "../lib/identidade";
+import { contactEmail, contactPhone, siteName } from "../lib/site";
 
 const formEndpoint = import.meta.env.PUBLIC_CONTACT_FORM_ENDPOINT ?? "";
+const email = contactEmail;
 const valoresParceria = valoresInstitucionais.filter((valor) =>
   [
     "Transparência e ciência aberta",
@@ -10,11 +13,32 @@ const valoresParceria = valoresInstitucionais.filter((valor) =>
     "Colaboração e serviço público",
   ].includes(valor.titulo),
 );
+const baseUrl = getBaseUrl(Astro.site);
+const canonicalUrl = buildAbsoluteUrl(Astro.url.pathname, baseUrl);
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "@id": `${canonicalUrl}#webpage`,
+    url: canonicalUrl,
+    name: `Contato | ${siteName}`,
+    description:
+      "Página de contato institucional do LAPAN com endereço, escopo de atendimento, telefone e e-mail.",
+    mainEntity: {
+      "@type": "Organization",
+      "@id": `${baseUrl.toString()}#organization`,
+      name: siteName,
+      email,
+      telephone: contactPhone,
+    },
+  },
+];
 ---
 
 <BaseLayout
   title="Contato | Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)"
   description="Página de contato institucional do Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)."
+  structuredData={structuredData}
 >
   <section class="grid gap-8 xl:grid-cols-[0.9fr_1.1fr] xl:items-start">
     <div>
@@ -34,8 +58,8 @@ const valoresParceria = valoresInstitucionais.filter((valor) =>
           Brasil
         </address>
         <p class="mt-3 text-sm text-neutral-700">
-          Tel.: +55 31 3289-2035<br />
-          E-mail institucional: <a href="mailto:lapan.hugodepaula@gmail.com" class="font-semibold text-accent-700">lapan.hugodepaula@gmail.com</a>
+          Tel.: {contactPhone}<br />
+          E-mail institucional: <a href={`mailto:${email}`} class="font-semibold text-accent-700">{email}</a>
         </p>
       </div>
 
@@ -82,6 +106,7 @@ const valoresParceria = valoresInstitucionais.filter((valor) =>
           method="post"
           action={formEndpoint || "#"}
           data-endpoint={formEndpoint}
+          data-fallback-email={email}
           novalidate
         >
           <input type="hidden" name="_subject" value="Contato pelo site do LAPAN" />
@@ -153,9 +178,10 @@ const valoresParceria = valoresInstitucionais.filter((valor) =>
     if (form && status) {
       form.addEventListener("submit", async (event) => {
         const endpoint = form.getAttribute("data-endpoint");
+        const fallbackEmail = form.getAttribute("data-fallback-email");
         if (!endpoint) {
           event.preventDefault();
-          status.textContent = "Envio online ainda não configurado. Utilize o e-mail lapan.hugodepaula@gmail.com.";
+          status.textContent = `Envio online ainda não configurado. Utilize o e-mail ${fallbackEmail}.`;
           status.className = "text-sm text-accent-700";
           return;
         }
@@ -194,7 +220,7 @@ const valoresParceria = valoresInstitucionais.filter((valor) =>
           status.textContent = "Mensagem enviada com sucesso.";
           status.className = "text-sm text-brand-800";
         } catch {
-          status.textContent = "Não foi possível enviar agora. Tente novamente ou use lapan.hugodepaula@gmail.com.";
+          status.textContent = `Não foi possível enviar agora. Tente novamente ou use ${fallbackEmail}.`;
           status.className = "text-sm text-accent-700";
         }
       });

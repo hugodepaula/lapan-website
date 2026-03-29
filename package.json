@@ -11,9 +11,13 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "zotero:normalizar": "node scripts/normalizar-zotero.mjs"
+    "zotero:normalizar": "node scripts/normalizar-zotero.mjs",
+    "validate:content": "node scripts/validate-content.mjs",
+    "validate:geo": "node scripts/validate-geo.mjs",
+    "check": "npm run validate:content && npm run build && npm run validate:geo"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.7.2",
     "@tailwindcss/vite": "^4.2.1",
     "astro": "^6.0.5",
     "citeproc": "^2.4.63",

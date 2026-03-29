@@ -1,16 +1,56 @@
 ---
 import "../styles/global.css";
+import {
+  buildAssetUrl,
+  buildBreadcrumbSchema,
+  buildDefaultBreadcrumbs,
+  buildOrganizationSchema,
+  buildWebSiteSchema,
+  getBaseUrl,
+  normalizeStructuredData,
+  summarizeText,
+} from "../lib/geo";
+import { contactEmail, defaultSocialImage, siteName, siteShortName, socialProfiles } from "../lib/site";
 import { valoresEmTresPalavras } from "../lib/identidade";
 
 interface Props {
   title?: string;
   description?: string;
+  image?: string;
+  pageType?: "website" | "article" | "profile";
+  noindex?: boolean;
+  breadcrumbs?: { name: string; item?: string }[];
+  structuredData?: Record<string, unknown> | Record<string, unknown>[];
 }
 
 const {
-  title = "Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)",
+  title = siteName,
   description = "Pesquisa e extensão acadêmica com foco em inovação, método e impacto social.",
+  image = defaultSocialImage,
+  pageType = "website",
+  noindex = false,
+  breadcrumbs,
+  structuredData,
 } = Astro.props;
+
+const pathname = Astro.url.pathname;
+const baseUrl = getBaseUrl(Astro.site);
+const canonicalUrl = new URL(
+  pathname === "/" ? "/" : `${pathname.replace(/\/?$/, "/")}`,
+  baseUrl,
+).toString();
+const socialImage = buildAssetUrl(image, baseUrl);
+const resolvedBreadcrumbs = breadcrumbs ?? buildDefaultBreadcrumbs(pathname);
+const breadcrumbSchema = buildBreadcrumbSchema(resolvedBreadcrumbs, baseUrl);
+const structuredDataItems = [
+  buildWebSiteSchema(baseUrl),
+  buildOrganizationSchema(baseUrl),
+  ...(breadcrumbSchema ? [breadcrumbSchema] : []),
+  ...normalizeStructuredData(structuredData),
+];
+const robotsContent = noindex
+  ? "noindex,nofollow"
+  : "index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1";
 
 const navItems = [
   {
@@ -20,6 +60,7 @@ const navItems = [
       { label: "Missão e valores", href: "/sobre-o-laboratorio/missao-e-valores" },
       { label: "História e fundadores", href: "/sobre-o-laboratorio/historia-e-fundadores" },
       { label: "Infraestrutura e equipamentos", href: "/sobre-o-laboratorio/infraestrutura-e-equipamentos" },
+      { label: "Metodologia e evidências", href: "/sobre-o-laboratorio/metodologia-e-evidencias" },
     ],
   },
   {
@@ -47,19 +88,25 @@ const navItems = [
 ];
 
 const footerLinks = [{ label: "Contato", href: "/contato", id: "mail" }];
+const trustLinks = [
+  { label: "Política editorial", href: "/politica-editorial" },
+  { label: "Metodologia e evidências", href: "/sobre-o-laboratorio/metodologia-e-evidencias" },
+  { label: "Atualização e correções", href: "/politica-de-atualizacao-e-correcoes" },
+  { label: "Privacidade e LGPD", href: "/politica-de-privacidade" },
+];
 
 const socialLinks = [
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/company/lapan-neurociencias-da-visao/",
+    href: socialProfiles.linkedin,
     id: "linkedin",
   },
   {
     label: "Instagram",
-    href: "https://www.instagram.com",
+    href: socialProfiles.instagram,
     id: "instagram",
   },
-];
+].filter((link) => Boolean(link.href));
 ---
 
 <html lang="pt-BR">
@@ -67,8 +114,23 @@ const socialLinks = [
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
+    <meta name="author" content={siteShortName} />
     <meta name="description" content={description} />
+    <meta name="robots" content={robotsContent} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={summarizeText(description, 200)} />
+    <meta name="twitter:image" content={socialImage} />
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content={pageType === "website" ? "website" : "article"} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={summarizeText(description, 200)} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={socialImage} />
+    <meta property="og:image:alt" content={title} />
     <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="canonical" href={canonicalUrl} />
     <script is:inline>
       document.documentElement.classList.add("js");
     </script>
@@ -83,6 +145,11 @@ const socialLinks = [
       rel="stylesheet"
     />
     <title>{title}</title>
+    {
+      structuredDataItems.map((item) => (
+        <script type="application/ld+json" set:html={JSON.stringify(item)} />
+      ))
+    }
   </head>
   <body class="selection:bg-accent-100 selection:text-brand-900">
     <a
@@ -207,12 +274,40 @@ const socialLinks = [
       id="conteudo-principal"
       class="mx-auto w-full max-w-content px-4 py-10 sm:px-6 lg:px-8 lg:py-12"
     >
+      {
+        pathname !== "/" && resolvedBreadcrumbs.length > 1 && (
+          <nav aria-label="Breadcrumb" class="mb-8 text-sm text-neutral-600">
+            <ol class="flex flex-wrap items-center gap-2">
+              {resolvedBreadcrumbs.map((crumb, index) => {
+                const isLast = index === resolvedBreadcrumbs.length - 1;
+                return (
+                  <li class="inline-flex items-center gap-2">
+                    {crumb.item && !isLast ? (
+                      <a
+                        href={crumb.item}
+                        class="transition hover:text-accent-700 hover:underline"
+                      >
+                        {crumb.name}
+                      </a>
+                    ) : (
+                      <span aria-current={isLast ? "page" : undefined}>
+                        {crumb.name}
+                      </span>
+                    )}
+                    {!isLast && <span aria-hidden="true">/</span>}
+                  </li>
+                );
+              })}
+            </ol>
+          </nav>
+        )
+      }
       <slot />
     </main>
 
     <footer class="mt-12 border-t border-brand-200 bg-brand-900 text-brand-100">
       <div
-        class="mx-auto grid w-full max-w-content gap-8 px-4 py-10 sm:px-6 md:grid-cols-2 lg:px-8"
+        class="mx-auto grid w-full max-w-content gap-8 px-4 py-10 sm:px-6 md:grid-cols-2 lg:grid-cols-[1.2fr_0.8fr_0.9fr] lg:px-8"
       >
         <div>
           <p class="text-xs uppercase tracking-[0.14em] text-brand-200">
@@ -241,8 +336,30 @@ const socialLinks = [
           </div>
         </div>
 
+        <div>
+          <p class="text-sm font-semibold text-surface">Transparência</p>
+          <ul class="mt-3 space-y-2 text-sm text-brand-100">
+            {trustLinks.map((link) => (
+              <li>
+                <a
+                  href={link.href}
+                  class="transition hover:text-accent-200 hover:underline"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
         <div class="md:justify-self-end">
           <p class="text-sm font-semibold text-surface">Contato e Redes</p>
+          <p class="mt-3 max-w-xs text-sm leading-relaxed text-brand-100">
+            Contato institucional e pedidos de informação:{" "}
+            <a href={`mailto:${contactEmail}`} class="font-semibold text-accent-200">
+              {contactEmail}
+            </a>
+          </p>
           <ul class="mt-3 flex flex-wrap items-center gap-4 text-sm">
             {
               footerLinks.map((link) => (

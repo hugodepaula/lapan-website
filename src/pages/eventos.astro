@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { buildEventSummary } from "../lib/content-helpers";
 
 const eventos = await getCollection("events");
 const hoje = new Date();
@@ -92,7 +93,14 @@ const semCropLandscape862x307 = new Set([
               </span>
             </div>
 
-            <h2 class="mt-2 text-2xl text-brand-900">{evento.data.titulo}</h2>
+            <h2 class="mt-2 text-2xl text-brand-900">
+              <a
+                href={`/eventos/${evento.id}/`}
+                class="transition hover:text-accent-700 hover:underline"
+              >
+                {evento.data.titulo}
+              </a>
+            </h2>
             <p class="mt-1 text-sm font-semibold text-neutral-700">{evento.data.local}</p>
 
             {evento.data.imagem && (
@@ -105,18 +113,25 @@ const semCropLandscape862x307 = new Set([
               />
             )}
 
-            <p class="mt-4 text-sm leading-relaxed text-neutral-700">{evento.data.descricao}</p>
-
-            {evento.data.link && (
+            <p class="mt-4 text-sm leading-relaxed text-neutral-700">{buildEventSummary(evento.data)}</p>
+            <div class="mt-4 flex flex-wrap gap-3">
               <a
-                href={evento.data.link}
-                target="_blank"
-                rel="noreferrer"
-                class="mt-4 inline-flex rounded-md bg-accent-500 px-4 py-2 text-sm font-semibold text-surface transition hover:bg-accent-600"
+                href={`/eventos/${evento.id}/`}
+                class="inline-flex rounded-md bg-accent-500 px-4 py-2 text-sm font-semibold text-surface transition hover:bg-accent-600"
               >
-                Acessar link do evento
+                Ver detalhes
               </a>
-            )}
+              {evento.data.link && (
+                <a
+                  href={evento.data.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  class="inline-flex rounded-md border border-brand-200 px-4 py-2 text-sm font-semibold text-brand-700 transition hover:border-brand-400 hover:bg-brand-50"
+                >
+                  Link do evento
+                </a>
+              )}
+            </div>
           </article>
         );
       })}

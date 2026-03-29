@@ -1,9 +1,12 @@
 ---
+import { buildProjectSummary } from "../lib/content-helpers";
+
 interface Projeto {
   id: string;
   data: {
     titulo: string;
     resumo: string;
+    resumoCurto?: string;
     area?: string;
     status: string;
     inicio?: string;
@@ -52,14 +55,21 @@ const { projetos, vazio } = Astro.props;
                 Desde {projeto.data.inicio}
               </p>
             )}
-            <h2 class="mt-2 text-xl text-brand-900">{projeto.data.titulo}</h2>
+            <h2 class="mt-2 text-xl text-brand-900">
+              <a
+                href={`/projetos/${projeto.id}/`}
+                class="transition hover:text-accent-700 hover:underline"
+              >
+                {projeto.data.titulo}
+              </a>
+            </h2>
             {projeto.data.area && (
               <p class="mt-1 text-sm font-semibold text-neutral-700">
                 {projeto.data.area}
               </p>
             )}
             <p class="mt-2 text-sm leading-relaxed text-neutral-700">
-              {projeto.data.resumo}
+              {buildProjectSummary(projeto.data)}
             </p>
             <div class="mt-4 flex flex-wrap gap-2">
               <a

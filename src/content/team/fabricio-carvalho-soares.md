@@ -7,6 +7,6 @@ tipo: Doutorado concluído
 links:
 - rotulo: Lattes
   url: http://lattes.cnpq.br/4737176760716569
-dataInicio: '9363'
+dataInicio: '2003'
 dataTermino: '2009'
 ---

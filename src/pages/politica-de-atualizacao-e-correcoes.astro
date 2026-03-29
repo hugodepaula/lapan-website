@@ -1,0 +1,46 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Política de atualização e correções | LAPAN"
+  description="Como o site do LAPAN atualiza conteúdo, corrige inconsistências e registra revisões em páginas canônicas."
+  breadcrumbs={[
+    { name: "Início", item: "/" },
+    { name: "Política de atualização e correções" },
+  ]}
+>
+  <section>
+    <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent-700">Transparência</p>
+    <h1 class="mt-3 text-4xl text-brand-900 sm:text-5xl">Política de atualização e correções</h1>
+    <p class="mt-5 max-w-3xl text-base leading-relaxed text-neutral-700">
+      O LAPAN mantém este site como fonte canônica de consulta institucional.
+      Quando uma informação precisa ser revista, a prioridade é corrigir a
+      página canônica, preservar o contexto e evitar duplicidade de versões.
+    </p>
+  </section>
+
+  <section class="pt-12 grid gap-6 lg:grid-cols-3">
+    <article class="rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft">
+      <h2 class="text-xl text-brand-900">Quando atualizamos</h2>
+      <p class="mt-3 text-sm leading-relaxed text-neutral-700">
+        Atualizamos o site quando há revisão de datas, títulos, vínculos,
+        links, metadados estruturados, fontes ou escopo institucional.
+      </p>
+    </article>
+    <article class="rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft">
+      <h2 class="text-xl text-brand-900">Como corrigimos</h2>
+      <p class="mt-3 text-sm leading-relaxed text-neutral-700">
+        Ajustamos a página canônica, revisamos as rotas relacionadas e
+        validamos novamente título, descrição, dados estruturados e links.
+      </p>
+    </article>
+    <article class="rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft">
+      <h2 class="text-xl text-brand-900">O que evitamos</h2>
+      <p class="mt-3 text-sm leading-relaxed text-neutral-700">
+        Não mantemos versões duplicadas da mesma informação em rotas concorrentes
+        quando uma consolidação ou redirecionamento resolve melhor o problema.
+      </p>
+    </article>
+  </section>
+</BaseLayout>

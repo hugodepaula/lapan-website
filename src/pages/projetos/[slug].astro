@@ -2,6 +2,15 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import publicacoesBrutas from "../../../content/zotero.json";
+import {
+  buildPersonSummary,
+  buildProjectSummary,
+} from "../../lib/content-helpers";
+import {
+  buildAbsoluteUrl,
+  buildAssetUrl,
+  getBaseUrl,
+} from "../../lib/geo";
 import { normalizarPublicacoes } from "../../lib/publicacoes";
 
 export async function getStaticPaths() {
@@ -28,14 +37,55 @@ const publicacoesRelacionadas = publicacoes.filter((publicacao) =>
   ),
 );
 
-const fontes = [
-  ...(projeto.data.fontes ?? []),
+const fontes = [...(projeto.data.fontes ?? [])];
+const resumo = buildProjectSummary(projeto.data);
+const baseUrl = getBaseUrl(Astro.site);
+const canonicalUrl = buildAbsoluteUrl(Astro.url.pathname, baseUrl);
+const image = projeto.data.imagem
+  ? buildAssetUrl(projeto.data.imagem, baseUrl)
+  : undefined;
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "ResearchProject",
+    "@id": `${canonicalUrl}#project`,
+    url: canonicalUrl,
+    name: projeto.data.titulo,
+    description: resumo,
+    image: image ? [image] : undefined,
+    status: projeto.data.status,
+    abstract: projeto.data.citationSummary ?? resumo,
+    knowsAbout: projeto.data.areasTematicas,
+    keywords: projeto.data.publicationKeywords,
+    member: equipe.map((membro) => ({
+      "@type": "Person",
+      name: membro.data.nome,
+      url: buildAbsoluteUrl(`/equipe/${membro.id}/`, baseUrl),
+    })),
+    funder: projeto.data.financiamento.map((item) => ({
+      "@type": "Organization",
+      name: item,
+    })),
+    sponsor: projeto.data.instituicoes.map((item) => ({
+      "@type": "Organization",
+      name: item,
+    })),
+    mainEntityOfPage: canonicalUrl,
+  },
 ];
 ---
 
 <BaseLayout
-  title={`${projeto.data.titulo} | Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)`}
-  description={projeto.data.resumo}
+  title={`${projeto.data.titulo} | Projetos LAPAN`}
+  description={resumo}
+  image={projeto.data.imagem}
+  pageType="article"
+  breadcrumbs={[
+    { name: "Início", item: "/" },
+    { name: "Projetos", item: "/projetos/" },
+    { name: projeto.data.titulo },
+  ]}
+  structuredData={structuredData}
 >
   <section class="grid gap-6 overflow-hidden rounded-3xl border border-brand-200 bg-surface shadow-soft lg:grid-cols-[1.1fr_0.9fr]">
     <div class="p-6 sm:p-8">
@@ -57,13 +107,18 @@ const fontes = [
             {projeto.data.area}
           </span>
         )}
+        {projeto.data.populacao && (
+          <span class="rounded-full bg-brand-100 px-3 py-1 text-xs font-semibold text-brand-700">
+            Público: {projeto.data.populacao}
+          </span>
+        )}
       </div>
       <p class="mt-5 max-w-3xl text-base leading-relaxed text-neutral-700">
-        {projeto.data.resumo}
+        {resumo}
       </p>
       <div class="mt-6 flex flex-wrap gap-3">
         <a
-          href="/projetos"
+          href="/projetos/"
           class="inline-flex rounded-md border border-brand-200 px-4 py-2 text-sm font-semibold text-brand-700 transition hover:border-brand-400 hover:bg-brand-50"
         >
           Voltar para projetos
@@ -75,7 +130,7 @@ const fontes = [
             rel="noreferrer"
             class="inline-flex rounded-md bg-accent-500 px-4 py-2 text-sm font-semibold text-surface transition hover:bg-accent-600"
           >
-            Acessar fonte principal
+            Fonte principal
           </a>
         )}
       </div>
@@ -105,17 +160,11 @@ const fontes = [
     </div>
   </section>
 
-  <section class="pt-12 grid gap-4 lg:grid-cols-3">
+  <section class="pt-12 grid gap-4 xl:grid-cols-3">
     <article class="rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft">
-      <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent-700">Descrição</p>
+      <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent-700">Pergunta central</p>
       <p class="mt-3 text-sm leading-relaxed text-neutral-700">
-        {projeto.data.descricao}
-      </p>
-    </article>
-    <article class="rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft">
-      <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent-700">Benefício prático</p>
-      <p class="mt-3 text-sm leading-relaxed text-neutral-700">
-        {projeto.data.impacto}
+        {projeto.data.perguntaCentral ?? projeto.data.descricao}
       </p>
     </article>
     <article class="rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft">
@@ -124,7 +173,90 @@ const fontes = [
         {projeto.data.metodologia}
       </p>
     </article>
+    <article class="rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft">
+      <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent-700">Impacto e aplicação</p>
+      <p class="mt-3 text-sm leading-relaxed text-neutral-700">
+        {projeto.data.impacto}
+      </p>
+    </article>
   </section>
+
+  {(projeto.data.metodos.length > 0 || projeto.data.achadosPrincipais.length > 0) && (
+    <section class="pt-12 grid gap-6 lg:grid-cols-2">
+      {projeto.data.metodos.length > 0 && (
+        <article class="rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft">
+          <h2 class="text-2xl text-brand-900">Métodos e abordagens</h2>
+          <ul class="mt-4 space-y-2 text-sm leading-relaxed text-neutral-700">
+            {projeto.data.metodos.map((metodo) => (
+              <li>{metodo}</li>
+            ))}
+          </ul>
+        </article>
+      )}
+
+      {projeto.data.achadosPrincipais.length > 0 && (
+        <article class="rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft">
+          <h2 class="text-2xl text-brand-900">Achados principais</h2>
+          <ul class="mt-4 space-y-2 text-sm leading-relaxed text-neutral-700">
+            {projeto.data.achadosPrincipais.map((achado) => (
+              <li>{achado}</li>
+            ))}
+          </ul>
+        </article>
+      )}
+    </section>
+  )}
+
+  {(projeto.data.instituicoes.length > 0 ||
+    projeto.data.financiamento.length > 0 ||
+    projeto.data.citationSummary ||
+    projeto.data.ultimaRevisao) && (
+    <section class="pt-12 grid gap-6 lg:grid-cols-[1fr_1fr_0.8fr]">
+      {projeto.data.instituicoes.length > 0 && (
+        <article class="rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft">
+          <h2 class="text-2xl text-brand-900">Instituições vinculadas</h2>
+          <ul class="mt-4 space-y-2 text-sm leading-relaxed text-neutral-700">
+            {projeto.data.instituicoes.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
+        </article>
+      )}
+
+      {projeto.data.financiamento.length > 0 && (
+        <article class="rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft">
+          <h2 class="text-2xl text-brand-900">Financiamento e apoio</h2>
+          <ul class="mt-4 space-y-2 text-sm leading-relaxed text-neutral-700">
+            {projeto.data.financiamento.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
+        </article>
+      )}
+
+      <article class="rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft">
+        <h2 class="text-2xl text-brand-900">Rastreabilidade</h2>
+        <dl class="mt-4 space-y-3 text-sm text-neutral-700">
+          {projeto.data.citationSummary && (
+            <div>
+              <dt class="font-semibold text-brand-900">Resumo citável</dt>
+              <dd>{projeto.data.citationSummary}</dd>
+            </div>
+          )}
+          {projeto.data.ultimaRevisao && (
+            <div>
+              <dt class="font-semibold text-brand-900">Última revisão</dt>
+              <dd>{projeto.data.ultimaRevisao}</dd>
+            </div>
+          )}
+          <div>
+            <dt class="font-semibold text-brand-900">Página canônica</dt>
+            <dd>{canonicalUrl}</dd>
+          </div>
+        </dl>
+      </article>
+    </section>
+  )}
 
   <section class="pt-14">
     <div class="flex items-end justify-between gap-4">
@@ -133,7 +265,9 @@ const fontes = [
     </div>
     {equipe.length === 0 ? (
       <div class="mt-6 rounded-2xl border border-brand-200 bg-surface p-6">
-        <p class="text-neutral-700">Nenhum membro vinculado a este projeto foi cadastrado na base da equipe.</p>
+        <p class="text-neutral-700">
+          Nenhum membro vinculado a este projeto foi cadastrado na base da equipe.
+        </p>
       </div>
     ) : (
       <div class="mt-6 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
@@ -146,9 +280,18 @@ const fontes = [
               loading="lazy"
               decoding="async"
             />
-            <h3 class="mt-4 text-xl text-brand-900">{membro.data.nome}</h3>
+            <h3 class="mt-4 text-xl text-brand-900">
+              <a
+                href={`/equipe/${membro.id}/`}
+                class="transition hover:text-accent-700 hover:underline"
+              >
+                {membro.data.nome}
+              </a>
+            </h3>
             <p class="text-sm font-semibold text-accent-700">{membro.data.cargo}</p>
-            <p class="mt-2 text-sm leading-relaxed text-neutral-700">{membro.data.bio}</p>
+            <p class="mt-2 text-sm leading-relaxed text-neutral-700">
+              {buildPersonSummary(membro.data)}
+            </p>
           </article>
         ))}
       </div>
@@ -168,10 +311,9 @@ const fontes = [
         <div class="mt-6 space-y-4">
           {publicacoesRelacionadas.map((publicacao) => (
             <article class="rounded-2xl border border-brand-200 bg-surface p-5 shadow-soft">
-              <div
-                class="text-sm leading-relaxed text-neutral-800"
-                set:html={publicacao.referenciaAbnt}
-              />
+              <p class="text-sm leading-relaxed text-neutral-800">
+                {publicacao.referenciaAbnt}
+              </p>
               {(publicacao.doiUrl || publicacao.urlExterna) && (
                 <p class="mt-3 text-sm text-neutral-700">
                   <span class="font-semibold text-brand-800">Acesso:</span>{" "}
@@ -208,12 +350,27 @@ const fontes = [
 
     <div>
       <h2 class="text-3xl text-brand-900">Fontes e materiais</h2>
-      {fontes.length === 0 ? (
+      {fontes.length === 0 && !projeto.data.link ? (
         <div class="mt-6 rounded-2xl border border-brand-200 bg-surface p-6">
-          <p class="text-neutral-700">Nenhuma fonte adicional cadastrada para este projeto.</p>
+          <p class="text-neutral-700">
+            Nenhuma fonte adicional cadastrada para este projeto. Para GEO, esta
+            página permanece elegível a revisão editorial com foco em
+            rastreabilidade.
+          </p>
         </div>
       ) : (
         <div class="mt-6 grid gap-3">
+          {projeto.data.link && (
+            <a
+              href={projeto.data.link}
+              target="_blank"
+              rel="noreferrer"
+              class="block rounded-2xl border border-brand-200 bg-surface p-5 shadow-soft transition hover:-translate-y-0.5 hover:border-brand-300"
+            >
+              <p class="text-sm font-semibold text-brand-900">Fonte principal</p>
+              <p class="mt-2 text-sm leading-relaxed text-neutral-700">{projeto.data.link}</p>
+            </a>
+          )}
           {fontes.map((fonte) => (
             <a
               href={fonte.url}

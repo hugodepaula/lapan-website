@@ -1,0 +1,49 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { contactEmail } from "../lib/site";
+---
+
+<BaseLayout
+  title="Política de privacidade | LAPAN"
+  description="Política de privacidade e LGPD do site do LAPAN, com foco em formulário de contato, dados mínimos e retenção."
+  breadcrumbs={[
+    { name: "Início", item: "/" },
+    { name: "Política de privacidade" },
+  ]}
+>
+  <section>
+    <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent-700">Privacidade</p>
+    <h1 class="mt-3 text-4xl text-brand-900 sm:text-5xl">Política de privacidade</h1>
+    <p class="mt-5 max-w-3xl text-base leading-relaxed text-neutral-700">
+      Este site coleta apenas os dados mínimos enviados voluntariamente pelo
+      formulário de contato institucional. O objetivo é responder demandas de
+      informação, parcerias, imprensa e comunicação institucional.
+    </p>
+  </section>
+
+  <section class="pt-12 grid gap-6 lg:grid-cols-3">
+    <article class="rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft">
+      <h2 class="text-xl text-brand-900">Dados coletados</h2>
+      <p class="mt-3 text-sm leading-relaxed text-neutral-700">
+        Nome, e-mail, assunto e mensagem. O site não solicita dados sensíveis
+        nem informações clínicas individuais pelo formulário público.
+      </p>
+    </article>
+    <article class="rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft">
+      <h2 class="text-xl text-brand-900">Uso dos dados</h2>
+      <p class="mt-3 text-sm leading-relaxed text-neutral-700">
+        As mensagens são usadas apenas para retorno institucional e triagem de
+        demandas. O conteúdo não é reutilizado para perfis comerciais.
+      </p>
+    </article>
+    <article class="rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft">
+      <h2 class="text-xl text-brand-900">Contato</h2>
+      <p class="mt-3 text-sm leading-relaxed text-neutral-700">
+        Para dúvidas sobre privacidade ou atualização de contato, use{" "}
+        <a href={`mailto:${contactEmail}`} class="font-semibold text-accent-700">
+          {contactEmail}
+        </a>.
+      </p>
+    </article>
+  </section>
+</BaseLayout>

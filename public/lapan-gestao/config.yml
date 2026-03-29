@@ -10,8 +10,8 @@ locale: "pt"
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 
-site_url: "/"
-display_url: "/"
+site_url: "https://lapan.com.br"
+display_url: "https://lapan.com.br"
 logo_url: "/images/logo_rect.png"
 
 collections:
@@ -31,7 +31,27 @@ collections:
       - { label: "Data de início", name: "dataInicio", widget: "string", required: false, hint: "Use AAAA ou AAAA-MM-DD" }
       - { label: "Data de término", name: "dataTermino", widget: "string", required: false, hint: "Use AAAA ou AAAA-MM-DD" }
       - { label: "Foto", name: "foto", widget: "image", required: false }
+      - { label: "Resumo curto", name: "resumoCurto", widget: "text", required: false, hint: "Síntese factual de 1 a 2 frases para uso em listagens e contexto de IA." }
       - { label: "Biografia", name: "bio", widget: "text" }
+      - { label: "Afiliação institucional", name: "afiliacao", widget: "string", required: false }
+      - label: "Credenciais"
+        name: "credenciais"
+        widget: "list"
+        required: false
+        field: { label: "Credencial", name: "credencial", widget: "string" }
+      - label: "Áreas de atuação"
+        name: "areasAtuacao"
+        widget: "list"
+        required: false
+        field: { label: "Área", name: "area", widget: "string" }
+      - label: "Destaques"
+        name: "destaques"
+        widget: "list"
+        required: false
+        field: { label: "Destaque", name: "destaque", widget: "text" }
+      - { label: "E-mail profissional", name: "email", widget: "string", required: false }
+      - { label: "ORCID", name: "orcid", widget: "string", required: false }
+      - { label: "Última revisão", name: "ultimaRevisao", widget: "string", required: false, hint: "Use AAAA ou AAAA-MM-DD" }
       - label: "Links"
         name: "links"
         widget: "list"
@@ -39,7 +59,7 @@ collections:
         summary: "{{fields.rotulo}}"
         fields:
           - { label: "Rótulo", name: "rotulo", widget: "string" }
-          - { label: "URL", name: "url", widget: "string" }
+          - { label: "URL", name: "url", widget: "string", pattern: ['^(https?://\\S+|/\\S+)$', "Use uma URL iniciada por http(s):// ou um caminho interno iniciado por /"] }
 
   - name: "events"
     label: "Eventos"
@@ -53,8 +73,29 @@ collections:
     fields:
       - { label: "Título", name: "titulo", widget: "string" }
       - { label: "Data", name: "data", widget: "datetime", format: "YYYY-MM-DD" }
+      - { label: "Data de término", name: "fim", widget: "datetime", format: "YYYY-MM-DD", required: false }
       - { label: "Local", name: "local", widget: "string" }
+      - { label: "Resumo curto", name: "resumoCurto", widget: "text", required: false }
       - { label: "Descrição", name: "descricao", widget: "text" }
+      - { label: "Tipo do evento", name: "tipo", widget: "string", required: false }
+      - label: "Organizadores"
+        name: "organizadores"
+        widget: "list"
+        required: false
+        field: { label: "Organizador", name: "organizador", widget: "string" }
+      - label: "Instituições"
+        name: "instituicoes"
+        widget: "list"
+        required: false
+        field: { label: "Instituição", name: "instituicao", widget: "string" }
+      - label: "Temas"
+        name: "temas"
+        widget: "list"
+        required: false
+        field: { label: "Tema", name: "tema", widget: "string" }
+      - { label: "Público", name: "publico", widget: "string", required: false }
+      - { label: "Modalidade", name: "modo", widget: "select", options: ["Presencial", "Online", "Híbrido"], required: false, default: "Presencial" }
+      - { label: "Última revisão", name: "ultimaRevisao", widget: "string", required: false, hint: "Use AAAA ou AAAA-MM-DD" }
       - { label: "Link (opcional)", name: "link", widget: "string", required: false }
       - { label: "Imagem (opcional)", name: "imagem", widget: "image", required: false }
 
@@ -70,11 +111,41 @@ collections:
     fields:
       - { label: "Título", name: "titulo", widget: "string" }
       - { label: "Resumo", name: "resumo", widget: "text" }
+      - { label: "Resumo curto", name: "resumoCurto", widget: "text", required: false, hint: "Resumo enxuto para listagens e contexto de IA." }
       - { label: "Descrição", name: "descricao", widget: "text" }
       - { label: "Impacto", name: "impacto", widget: "text" }
       - { label: "Metodologia", name: "metodologia", widget: "text" }
+      - { label: "Pergunta central", name: "perguntaCentral", widget: "text", required: false }
+      - label: "Métodos"
+        name: "metodos"
+        widget: "list"
+        required: false
+        field: { label: "Método", name: "metodo", widget: "string" }
+      - label: "Achados principais"
+        name: "achadosPrincipais"
+        widget: "list"
+        required: false
+        field: { label: "Achado", name: "achado", widget: "text" }
+      - label: "Instituições vinculadas"
+        name: "instituicoes"
+        widget: "list"
+        required: false
+        field: { label: "Instituição", name: "instituicao", widget: "string" }
+      - label: "Financiamento e apoio"
+        name: "financiamento"
+        widget: "list"
+        required: false
+        field: { label: "Fonte", name: "fonte", widget: "string" }
+      - { label: "Público ou população", name: "populacao", widget: "string", required: false }
+      - { label: "Resumo citável", name: "citationSummary", widget: "text", required: false }
+      - label: "Áreas temáticas"
+        name: "areasTematicas"
+        widget: "list"
+        required: false
+        field: { label: "Área", name: "area", widget: "string" }
       - { label: "Início", name: "inicio", widget: "string", required: false, hint: "Use AAAA ou AAAA-MM-DD" }
       - { label: "Área", name: "area", widget: "string", required: false }
+      - { label: "Última revisão", name: "ultimaRevisao", widget: "string", required: false, hint: "Use AAAA ou AAAA-MM-DD" }
       - { label: "Status", name: "status", widget: "select", options: ["Em andamento", "Concluído", "Planejado"], default: "Em andamento" }
       - { label: "Imagem (opcional)", name: "imagem", widget: "image", required: false }
       - { label: "Link (opcional)", name: "link", widget: "string", required: false }

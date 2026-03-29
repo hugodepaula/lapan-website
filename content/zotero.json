@@ -1,1889 +1,2697 @@
 [
   {
-    "itemType": "journalArticle",
-    "title": "Programa Bom Começo para a saúde da criança: identificação populacional de perda da acuidade visual",
-    "creators": [
+    "id": "alda2024_EstresseVisualAssociado",
+    "type": "article-journal",
+    "title": "Estresse visual associado à dificuldade de leitura: contribuições para a formação docente",
+    "author": [
       {
-        "creatorType": "author",
-        "firstName": "Ricardo Queiroz",
-        "lastName": "Guimarães"
+        "family": "Alda",
+        "given": "Erica Jamal da Silva"
       },
       {
-        "creatorType": "author",
-        "firstName": "Douglas de Araújo",
-        "lastName": "Vilhena"
+        "family": "Hummel",
+        "given": "Eromi Izabel"
       },
       {
-        "creatorType": "author",
-        "firstName": "Fabrício Carvalho",
-        "lastName": "Soares"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "Jean Andrade",
-        "lastName": "Canestri"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "Juliana Reis",
-        "lastName": "Guimarães"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "Márcia Reis",
-        "lastName": "Guimarães"
+        "family": "Silva",
+        "given": "Eliane Paganini"
       }
     ],
-    "date": "2024-02-05",
-    "publicationTitle": "Revista Brasileira de Medicina de Família e Comunidade",
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          3
+        ]
+      ]
+    },
+    "container-title": "Revista InCantare",
+    "volume": "20",
+    "issue": "1",
+    "page": "1-23",
+    "DOI": "10.33871/2317417X.2024.20.1.8761",
+    "URL": "/docs/publicacoes/alda2024_EstresseVisualAssociado.pdf"
+  },
+  {
+    "id": "guimaraes2024_ProgramaBomComecoa",
+    "type": "article-journal",
+    "title": "Programa bom começo para a saúde da criança: identificação populacional de perda da acuidade visual",
+    "author": [
+      {
+        "family": "Guimarães",
+        "given": "Ricardo Queiroz"
+      },
+      {
+        "family": "Vilhena",
+        "given": "Douglas De Araújo"
+      },
+      {
+        "family": "Soares",
+        "given": "Fabrício Carvalho"
+      },
+      {
+        "family": "Canestri",
+        "given": "Jean Andrade"
+      },
+      {
+        "family": "Guimarães",
+        "given": "Juliana Reis"
+      },
+      {
+        "family": "Guimarães",
+        "given": "Márcia Reis"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          2,
+          5
+        ]
+      ]
+    },
+    "container-title": "Revista Brasileira De Medicina De Família E Comunidade",
     "volume": "18",
     "issue": "45",
-    "pages": "3549",
+    "page": "3549",
     "DOI": "10.5712/rbmfc18(45)3549",
-    "url": "/docs/publicacoes/guimaraes-2024-programa-bom-comeco-para-a-sau.pdf",
-    "key": "guimaraes-2024-programa-bom-comeco-acuidade-visual"
+    "URL": "/docs/publicacoes/guimaraes2024_ProgramaBomComecoa.pdf"
   },
   {
-    "itemType": "journalArticle",
-    "title": "Programa Bom Começo para saúde da criança: identificação e intervenção nas dificuldades de aprendizagem relacionadas à visão",
-    "creators": [
+    "id": "lopes2023_InfluenciaVibracaoCorpo",
+    "type": "article-journal",
+    "title": "A influência da vibração de corpo inteiro, da mídia e da iluminação artificial no movimento dos olhos durante tarefas de leitura",
+    "author": [
       {
-        "creatorType": "author",
-        "firstName": "Ricardo",
-        "lastName": "Guimaraes"
+        "family": "Lopes",
+        "given": "Valéria Prata"
       },
       {
-        "creatorType": "author",
-        "firstName": "Douglas",
-        "lastName": "Vilhena"
+        "family": "Duarte",
+        "given": "Maria Lúcia Machado"
       },
       {
-        "creatorType": "author",
-        "firstName": "Marina",
-        "lastName": "Nogueira"
+        "family": "Donadon",
+        "given": "Lázaro Valentim"
       },
       {
-        "creatorType": "author",
-        "firstName": "Juliana",
-        "lastName": "Guimarães"
+        "family": "Araújo",
+        "given": "Flávio Sousa Braz"
       },
       {
-        "creatorType": "author",
-        "firstName": "Márcia",
-        "lastName": "Reis Guimarães"
+        "family": "Vilhena",
+        "given": "Douglas de Araújo"
+      },
+      {
+        "family": "Guimarães",
+        "given": "Ricardo Queiroz"
       }
     ],
-    "date": "2022-11-25",
-    "publicationTitle": "Tempus Psicológico",
-    "volume": "6",
-    "pages": "138-161",
-    "DOI": "10.30554/tempuspsi.6.1.4733.2023",
-    "url": "/docs/publicacoes/guimaraes-2023-programa-bom-comeco-para-saude.pdf",
-    "key": "guimaraes-2023-programa-bom-comeco-aprendizagem-visao"
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          4,
+          12
+        ]
+      ]
+    },
+    "container-title": "Rev. Bras.oftalmol.",
+    "publisher": "Rev. bras.oftalmol.",
+    "volume": "82",
+    "page": "-",
+    "DOI": "10.37039/1982.8551.20230015",
+    "URL": "/docs/publicacoes/lopes2023_InfluenciaVibracaoCorpo.pdf"
   },
   {
-    "itemType": "journalArticle",
-    "title": "LOPES, VALÉRIA PRATA; DUARTE, MARIA LÚCIA MACHADO; DONADON, LÁZARO VALENTIM; ARAUJO, FLÁVIO SOUSA BRAZ DE; VILHENA, DOUGLAS DE ARAÚJO; GUIMARAES, RICARDO QUEIROZ. The influence of whole-body vibration, media, and artificial lighting on eye-movement during reading. Revista Brasileira de Oftalmologia, v. 82, p. e0015, 2023",
-    "creators": [
+    "id": "vilhena2023_ValidadeConteudoFidedignidade",
+    "type": "article-journal",
+    "title": "Validade de conteúdo e fidedignidade do teste de taxa de leitura",
+    "author": [
       {
-        "creatorType": "author",
-        "firstName": "",
-        "lastName": "Autor não identificado"
+        "family": "Vilhena",
+        "given": "Douglas"
+      },
+      {
+        "family": "Reis Guimarães",
+        "given": "Márcia"
+      },
+      {
+        "family": "Guimaraes",
+        "given": "Ricardo"
+      },
+      {
+        "family": "Pinheiro",
+        "given": "Ângela"
       }
     ],
-    "date": "2023",
-    "publicationTitle": "Artigos completos publicados em periódicos (a partir de 2010)",
-    "DOI": "https://www.rbojournal.org/en/article/the-influence-of-whole-body-vibration-media-and-artificial-lighting-on-eye-movement-during-reading/",
-    "url": "https://www.rbojournal.org/en/article/the-influence-of-whole-body-vibration-media-and-artificial-lighting-on-eye-movement-during-reading/",
-    "key": "lopes-val-ria-prata-duarte-maria-l-c-2023-2fbdcc3c"
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          1,
+          1
+        ]
+      ]
+    },
+    "container-title": "Revista Avaliação Psicológica",
+    "volume": "22",
+    "page": "206-215",
+    "DOI": "10.15689/ap.2023.2202.22980.10",
+    "URL": "/docs/publicacoes/vilhena2023_ValidadeConteudoFidedignidade.pdf"
   },
   {
-    "itemType": "journalArticle",
-    "title": "Análise dos movimentos oculares de adultos com estresse visual na leitura. RESEARCH, SOCIETY AND DEVELOPMENT, v. 11, p. e50511427658, 2022",
-    "creators": [
+    "id": "vilhena2022_Anais10oCongresso",
+    "type": "book",
+    "title": "Anais do 10º congresso brasileiro de neurociências da visão - proceedings of the 4th international congress of vision neurosciences",
+    "author": [
       {
-        "creatorType": "author",
-        "firstName": "V. P",
-        "lastName": "LOPES"
+        "family": "Vilhena",
+        "given": "Douglas"
       },
       {
-        "creatorType": "author",
-        "firstName": "DOUGLAS DE ARAÚJO",
-        "lastName": "VILHENA"
+        "family": "Guimaraes",
+        "given": "Ricardo"
       },
       {
-        "creatorType": "author",
-        "firstName": "RICARDO QUEIROZ",
-        "lastName": "GUIMARÃES"
+        "family": "Reis Guimarães",
+        "given": "Márcia"
       },
       {
-        "creatorType": "author",
-        "firstName": "MÁRCIA REIS",
-        "lastName": "GUIMARÃES"
+        "family": "Duarte",
+        "given": "Maria Lucia"
       }
     ],
-    "date": "2022",
-    "publicationTitle": "Artigos completos publicados em periódicos (a partir de 2010)",
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          11,
+          23
+        ]
+      ]
+    },
+    "URL": "/docs/publicacoes/vilhena2022_Anais10oCongresso.pdf"
+  },
+  {
+    "id": "lopes2022_AnaliseDosMovimentosa",
+    "type": "article-journal",
+    "title": "Análise dos movimentos oculares de adultos com estresse visual na leitura",
+    "author": [
+      {
+        "family": "Lopes",
+        "given": "Valéria Prata"
+      },
+      {
+        "family": "Vilhena",
+        "given": "Douglas De Araújo"
+      },
+      {
+        "family": "Guimarães",
+        "given": "Ricardo Queiroz"
+      },
+      {
+        "family": "Guimarães",
+        "given": "Márcia Reis"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          3,
+          25
+        ]
+      ]
+    },
+    "container-title": "Research, Society and Development",
+    "volume": "11",
+    "issue": "4",
+    "page": "e50511427658",
     "DOI": "10.33448/rsd-v11i4.27658",
-    "url": "http://dx.doi.org/10.33448/rsd-v11i4.27658",
-    "key": "an-lise-dos-movimentos-oculares-de-a-2022-79c648d8"
+    "URL": "/docs/publicacoes/lopes2022_AnaliseDosMovimentosa.pdf"
   },
   {
-    "itemType": "journalArticle",
-    "title": "Fidedignidade, validade interna e normatização dos testes de reconhecimento de palavras e de pseudopalavras. NEUROPSICOLOGIA LATINOAMERICANA, v. 14, p. 1-10, 2022",
-    "creators": [
+    "id": "sousa2022_DificuldadesAprendizagemRelacionadas",
+    "type": "thesis",
+    "title": "Dificuldades de aprendizagem relacionadas à visão: avaliação no contexto escolar com a escala de avaliação do estresse visual na leitura pelo professor (EEV)",
+    "author": [
       {
-        "creatorType": "author",
-        "firstName": "DOUGLAS DE ARAÚJO",
-        "lastName": "VILHENA"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "ÂNGELA MARIA VIEIRA",
-        "lastName": "PINHEIRO"
+        "family": "Sousa",
+        "given": "Graciele Ferreira"
       }
     ],
-    "date": "2022",
-    "publicationTitle": "Artigos completos publicados em periódicos (a partir de 2010)",
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          3,
+          17
+        ]
+      ]
+    },
+    "publisher": "Universidade Católica de Brasília",
+    "publisher-place": "Brasília, DF",
+    "URL": "/docs/publicacoes/sousa2022_DificuldadesAprendizagemRelacionadas.pdf"
+  },
+  {
+    "id": "vilhena2022_FiabilidadValidezInterna",
+    "type": "article-journal",
+    "title": "Fiabilidad, validez interna y estandarización de los tests de reconocimiento de palabras y pseudopalabras: test de palabras y pseudopalabras",
+    "author": [
+      {
+        "family": "Vilhena",
+        "given": "Douglas de Araújo"
+      },
+      {
+        "family": "Pinheiro",
+        "given": "Ângela Maria Vieira"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          8,
+          30
+        ]
+      ]
+    },
+    "container-title": "Neuropsicología Latinoamericana",
+    "volume": "14",
+    "issue": "2",
+    "page": "1-10",
     "DOI": "https://www.neuropsicolatina.org/index.php/Neuropsicologia_Latinoamericana/article/view/742",
-    "url": "https://www.neuropsicolatina.org/index.php/Neuropsicologia_Latinoamericana/article/view/742",
-    "key": "fidedignidade-validade-interna-e-nor-2022-4b03010e"
+    "URL": "/docs/publicacoes/vilhena2022_FiabilidadValidezInterna.pdf"
   },
   {
-    "itemType": "journalArticle",
-    "title": "Teste de reconhecimento de palavras e pseudopalavras: validades de conteúdo e externa. Signo, v. 47, p. 147-164, 2022",
-    "creators": [
+    "id": "queirozguimaraes2022_ProgramaBuenComienzo",
+    "type": "article-journal",
+    "title": "Programa buen comienzo para la salud infantil: identificación e intervención en dificultades de aprendizaje relacionadas con la visión",
+    "author": [
       {
-        "creatorType": "author",
-        "firstName": "ÂNGELA MARIA VIEIRA",
-        "lastName": "PINHEIRO"
+        "family": "Queiroz Guimarães",
+        "given": "Ricardo"
       },
       {
-        "creatorType": "author",
-        "firstName": "DOUGLAS DE ARAÚJO",
-        "lastName": "VILHENA"
+        "family": "De Araújo Vilhena",
+        "given": "Douglas"
+      },
+      {
+        "family": "Vieira Nogueira",
+        "given": "Marina Roberta"
+      },
+      {
+        "family": "Reis Guimarães",
+        "given": "Juliana"
+      },
+      {
+        "family": "Reis Guimarães",
+        "given": "Márcia"
       }
     ],
-    "date": "2022",
-    "publicationTitle": "Artigos completos publicados em periódicos (a partir de 2010)",
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          11,
+          25
+        ]
+      ]
+    },
+    "container-title": "Tempus Psicológico",
+    "volume": "6",
+    "issue": "1",
+    "page": "138-161",
+    "DOI": "10.30554/tempuspsi.6.1.4733.2023",
+    "URL": "/docs/publicacoes/queirozguimaraes2022_ProgramaBuenComienzo.pdf"
+  },
+  {
+    "id": "vilhena2022_TesteLeituraCompreensaoa",
+    "type": "book",
+    "title": "Teste de leitura: compreensão de sentenças (TELCS): bloco de folha de aplicação e respostas",
+    "author": [
+      {
+        "family": "Vilhena",
+        "given": "Douglas De Araújo"
+      },
+      {
+        "family": "Pinheiro",
+        "given": "Ângela Maria Vieira"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "publisher": "NilaPress",
+    "publisher-place": "São Paulo, SP"
+  },
+  {
+    "id": "vilhena2022_TesteLeituraCompreensao",
+    "type": "book",
+    "title": "Teste de leitura: compreensão de sentenças (TELCS): manual técnico",
+    "author": [
+      {
+        "family": "Vilhena",
+        "given": "Douglas De Araújo"
+      },
+      {
+        "family": "Pinheiro",
+        "given": "Ângela Maria Vieira"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "publisher": "NilaPress",
+    "publisher-place": "São Paulo, SP"
+  },
+  {
+    "id": "pinheiro2022_TesteReconhecimentoPalavras",
+    "type": "article-journal",
+    "title": "Teste de reconhecimento de palavras e pseudopalavras: validades de conteúdo e externa",
+    "author": [
+      {
+        "family": "Pinheiro",
+        "given": "Ângela Maria Vieira"
+      },
+      {
+        "family": "Vilhena",
+        "given": "Douglas De Araújo"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          1,
+          3
+        ]
+      ]
+    },
+    "container-title": "Signo",
+    "volume": "47",
+    "issue": "88",
+    "page": "147-164",
     "DOI": "10.17058/signo.v47i88.17396",
-    "url": "http://dx.doi.org/10.17058/signo.v47i88.17396",
-    "key": "teste-de-reconhecimento-de-palavras--2022-4d96e692"
+    "URL": "/docs/publicacoes/pinheiro2022_TesteReconhecimentoPalavras.pdf"
   },
   {
-    "itemType": "journalArticle",
-    "title": "[GUIMARÃES, M. R.; VILHENA, D. A.; GUIMARÃES, R. Q.; PINHEIRO, Ângela M. V. Efeito das lâminas espectrais (overlays) em parâmetros visuais e na habilidade de leitura: revisão integrativa de 1980 a 2008 \\[Effect of spectral overlays on visual parameters and reading ability: Integrative review from 1980 to 2008\\]. Research, Society and Development, \\[S. l.\\], v. 10, n. 12, p. e251101220366, 2021. http://dx.doi.org/10.33448/rsd-v10i12.20366](http://dx.doi.org/10.33448/rsd-v10i12.20366)",
-    "creators": [
+    "id": "garcia2021_AgeismoConsideracoesPartir",
+    "type": "article-journal",
+    "title": "Ageísmo: considerações a partir do conhecimento entre estudantes de graduação e fonoaudiólogos",
+    "author": [
       {
-        "creatorType": "author",
-        "firstName": "",
-        "lastName": "Autor não identificado"
+        "family": "Garcia",
+        "given": "Ana Carla Oliveira"
+      },
+      {
+        "family": "Santos",
+        "given": "Teresa Maria Momensohn Dos"
       }
     ],
-    "date": "2021",
-    "publicationTitle": "Artigos completos publicados em periódicos (a partir de 2010)",
-    "DOI": "10.33448/rsd-v10i12.20366",
-    "key": "guimar-es-m-r-vilhena-d-a-guimar-es--2021-51cc3b3e"
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          7,
+          14
+        ]
+      ]
+    },
+    "container-title": "Research, Society and Development",
+    "volume": "10",
+    "issue": "8",
+    "page": "e38410816793",
+    "DOI": "10.33448/rsd-v10i8.16793",
+    "URL": "https://rsdjournal.org/index.php/rsd/article/view/16793"
   },
   {
-    "itemType": "journalArticle",
-    "title": "Estresse visual associado à dificuldade de leitura: prevalência e intervenção em alunos do ensino fundamental \\[Visual stress associated with reading difficulties: prevalence and intervention in elementary school students\\]. Research, Society and Development, 10(11), e430101119914, 1-13, 2021. https://dx.doi.org/10.33448/rsd-v10i11.19914 ](https://rsdjournal.org/index.php/rsd/article/view/19914)",
-    "creators": [
+    "id": "vilhena2021_Anais9oCongresso",
+    "type": "book",
+    "title": "Anais do 9º congresso brasileiro de neurociências da visão - proceedings of the 3rd international congress of vision neurosciences",
+    "author": [
       {
-        "creatorType": "author",
-        "firstName": "D. M. P. Vilhena D. A. Ottoni P. C. Batista M. R. Leão J. P. P. Guimarães M. R.",
-        "lastName": "[Leão"
+        "family": "Vilhena",
+        "given": "Douglas"
       },
       {
-        "creatorType": "author",
-        "firstName": "S. G",
-        "lastName": "Ruginsk"
+        "family": "Guimaraes",
+        "given": "Ricardo"
+      },
+      {
+        "family": "Reis Guimarães",
+        "given": "Márcia"
+      },
+      {
+        "family": "Duarte",
+        "given": "Maria Lucia"
       }
     ],
-    "date": "2021",
-    "publicationTitle": "Artigos completos publicados em periódicos (a partir de 2010)",
-    "DOI": "10.33448/rsd-v10i11.19914",
-    "key": "estresse-visual-associado-dificuldad-2021-e2f22741"
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          10,
+          27
+        ]
+      ]
+    },
+    "URL": "/docs/publicacoes/vilhena2021_Anais9oCongresso.pdf"
   },
   {
-    "itemType": "journalArticle",
-    "title": "Função visual magnocelular na dislexia do desenvolvimento: déficit na perimetria de frequência duplicada e nas habilidades motoras oculares \\[Magnocellular visual function in developmental dyslexia: deficit in frequency-doubling perimetry and ocular motor skills\\]. Arquivos Brasileiros De Oftalmologia, 84(5), 442-448, 2021. https://dx.doi.org/10.5935/0004-2749.20210069](http://aboonline.org.br/details/6117/en-US/magnocellular-visual-function-in-developmental-dyslexia--deficit-in-frequency-doubling-perimetry-and-ocular-motor-skills)",
-    "creators": [
+    "id": "vilhena2021_Capitulo17Indices",
+    "type": "chapter",
+    "title": "Capítulo 17 – índices psicométricos do teste de taxa de leitura (RRT)",
+    "author": [
       {
-        "creatorType": "author",
-        "firstName": "D. A. Guimarães M. R. Guimarães R. Q.",
-        "lastName": "[Vilhena"
+        "family": "Vilhena",
+        "given": "Douglas"
       },
       {
-        "creatorType": "author",
-        "firstName": "A. M. V",
-        "lastName": "Pinheiro"
+        "family": "Reis Guimarães",
+        "given": "Márcia"
+      },
+      {
+        "family": "Guimaraes",
+        "given": "Ricardo"
+      },
+      {
+        "family": "Pinheiro",
+        "given": "Ângela"
       }
     ],
-    "date": "2021",
-    "publicationTitle": "Artigos completos publicados em periódicos (a partir de 2010)",
-    "DOI": "10.5935/0004-2749.20210069",
-    "key": "fun-o-visual-magnocelular-na-dislexi-2021-9e273df6"
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          12,
+          25
+        ]
+      ]
+    },
+    "page": "161-166",
+    "URL": "/docs/publicacoes/vilhena2021_Capitulo17Indices.pdf"
   },
   {
-    "itemType": "journalArticle",
-    "title": "Effect of spectral overlays on visual parameters and reading ability: an integrative review \\[Efeito das lâminas espectrais (overlays) em parâmetros visuais e na habilidade de leitura: revisão integrativa\\]. REVISTA CEFAC (ONLINE), v. 22, p. e17519, 2020. http://dx.doi.org/10.1590/1982-0216/202022317519](http://dx.doi.org/)",
-    "creators": [
+    "id": "vilhena2021_DeficitMagnocelularEstresse",
+    "type": "article-journal",
+    "title": "Déficit magnocelular e estresse visual associados à dificuldade de leitura: conceituação, avaliação e intervenção",
+    "author": [
       {
-        "creatorType": "author",
-        "firstName": "D. A",
-        "lastName": "[VILHENA"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "M. R",
-        "lastName": "GUIMARÃES"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "R. Q",
-        "lastName": "GUIMARÃES"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "A. M. V",
-        "lastName": "PINHEIRO"
+        "family": "Vilhena",
+        "given": "Douglas de Araújo"
       }
     ],
-    "date": "2020",
-    "publicationTitle": "Artigos completos publicados em periódicos (a partir de 2010)",
-    "DOI": "10.1590/1982-0216/202022317519",
-    "key": "effect-of-spectral-overlays-on-visua-2020-f8a13b82"
-  },
-  {
-    "itemType": "journalArticle",
-    "title": "Fidedignidade, Validade e Normatização do Teste de Leitura: Compreensão de Sentenças \\[Reliability, Validity and Standardization of the Reading Test: Sentence Comprehension\\]. Psicologia: Teoria e Pesquisa (UNB. IMPRESSO), v. 36, p. 1-12, 2020. http://dx.doi.org/10.1590/0102.3772e36325](http://dx.doi.org/10.1590/0102.3772e36325)",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "D. A",
-        "lastName": "[VILHENA"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "A. M. V",
-        "lastName": "PINHEIRO"
-      }
-    ],
-    "date": "2020",
-    "publicationTitle": "Artigos completos publicados em periódicos (a partir de 2010)",
-    "DOI": "10.1590/0102.3772e36325",
-    "key": "fidedignidade-validade-e-normatiza-o-2020-2a3e113b"
-  },
-  {
-    "itemType": "journalArticle",
-    "title": "Reading strategies for the profoundly deaf Libras users: Benefits of speech and lip reading for strengthening linguistic skills. ESTUDOS DE PSICOLOGIA, v. 37, p. 1-12, 2020. http://dx.doi.org/10.1590/1982-0275202037e190003",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "A. M. V",
-        "lastName": "PINHEIRO"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "A. C",
-        "lastName": "ROCHA_TOFFOLO"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "DOUGLAS DE ARAÚJO",
-        "lastName": "VILHENA"
-      }
-    ],
-    "date": "2020",
-    "publicationTitle": "Artigos completos publicados em periódicos (a partir de 2010)",
-    "DOI": "10.1590/1982-0275202037e190003",
-    "url": "https://www.researchgate.net/publication/338065512_Reading_strategies_for_the_profoundly_deaf_Libras_users_Benefits_of_speech_and_lip_reading_for_strengthening_linguistic_skills_Estrategias_de_leitura_em_surdos_profundos_usuarios_da_Libras_beneficios_",
-    "key": "reading-strategies-for-the-profoundl-2020-0b4fa920"
-  },
-  {
-    "itemType": "journalArticle",
-    "title": "AMORIM, L.S.; FERREIRA, F.M.F.; GUIMARÃES, J.R.; PEIXOTO, Z.M.A. Automatic segmentation of blood vessels in retinal images using 2D Gabor wavelet and sub-image thresholding resulting from image partition. Res. Biomed. Eng., v. 35, p. 241, 2019",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "",
-        "lastName": "Autor não identificado"
-      }
-    ],
-    "date": "2019",
-    "publicationTitle": "Artigos completos publicados em periódicos (a partir de 2010)",
-    "DOI": "10.1007/s42600-019-00028-9",
-    "url": "https://doi.org/10.1007/s42600-019-00028-9",
-    "key": "amorim-l-s-ferreira-f-m-f-guimar-es--2019-47be25fa"
-  },
-  {
-    "itemType": "journalArticle",
-    "title": "Association between auditory temporal and visual processing in reading skill. REVISTA CEFAC (ONLINE), v. 21, p. 1-10, 2019. http://dx.doi.org/10.1590/1982-0216/20192156119",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "A. C. O",
-        "lastName": "GARCIA"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "DOUGLAS DE ARAÚJO",
-        "lastName": "VILHENA"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "M. R",
-        "lastName": "GUIMARAES"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "A. M. V",
-        "lastName": "PINHEIRO"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "T. M. M",
-        "lastName": "SANTOS"
-      }
-    ],
-    "date": "2019",
-    "publicationTitle": "Artigos completos publicados em periódicos (a partir de 2010)",
-    "DOI": "10.1590/1982-0216/20192156119",
-    "url": "https://www.researchgate.net/publication/336882186_Association_between_auditory_temporal_and_visual_processing_in_reading_skill_Associacao_entre_processamento_temporal_auditivo_e_visual_na_habilidade_de_leitura",
-    "key": "association-between-auditory-tempora-2019-53fd5bd6"
-  },
-  {
-    "itemType": "journalArticle",
-    "title": "Melhora do desempenho de leitura com o uso de lâminas espectrais: revisão sistemática e meta-análise. PSICOLOGIA ARGUMENTO (PUCPR. IMPRESSO), v. 36, p. 343-361, 2019",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "D. A",
-        "lastName": "VILHENA"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "M. R",
-        "lastName": "GUIMARAES"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "R. Q",
-        "lastName": "GUIMARAES"
-      }
-    ],
-    "date": "2019",
-    "publicationTitle": "Artigos completos publicados em periódicos (a partir de 2010)",
-    "DOI": "https://www.researchgate.net/publication/337547496_Melhora_do_desempenho_de_leitura_com_o_uso_de_laminas_espectrais_revisao_sistematica_e_meta-analise_Improvement_in_reading_performance_using_spectral_overlays_systematic_review_and_meta-analyses",
-    "url": "https://www.researchgate.net/publication/337547496_Melhora_do_desempenho_de_leitura_com_o_uso_de_laminas_espectrais_revisao_sistematica_e_meta-analise_Improvement_in_reading_performance_using_spectral_overlays_systematic_review_and_meta-analyses",
-    "key": "melhora-do-desempenho-de-leitura-com-2019-f835b4e9"
-  },
-  {
-    "itemType": "journalArticle",
-    "title": "Spectral Overlays for Reading Difficulties: Oculomotor Function and Reading Efficiency Among Children and Adolescents With Visual Stress. PERCEPTUAL AND MOTOR SKILLS, v. X, p. 003151251988977-0, 2019. http://dx.doi.org/10.1177/0031512519889772",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "M. R",
-        "lastName": "GUIMARAES"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "DOUGLAS DE ARAÚJO",
-        "lastName": "VILHENA"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "S. J",
-        "lastName": "LOEW"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "R. Q",
-        "lastName": "GUIMARAES"
-      }
-    ],
-    "date": "2019",
-    "publicationTitle": "Artigos completos publicados em periódicos (a partir de 2010)",
-    "DOI": "10.1177/0031512519889772",
-    "url": "https://www.researchgate.net/publication/337533024_Spectral_Overlays_for_Reading_Difficulties_Oculomotor_Function_and_Reading_Efficiency_Among_Children_and_Adolescents_With_Visual_Stress",
-    "key": "spectral-overlays-for-reading-diffic-2019-e882e409"
-  },
-  {
-    "itemType": "journalArticle",
-    "title": "DINIZ, C. A. F.; ANDRADE, M. V. F.; SILVA, B. P. A.; DUARTE, M. L. M.; DONADON, L. V.; GUIMARÃES, R. G.; GUIMARÃES. M. A low cost stereophotogrammetric system for the evaluation of tridimensional head translations during visual tasks, Journal of Medical Engineering & Technology, 42(6), 411-419, 2018. DOI: 10.1080/03091902.2018.1529203",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "",
-        "lastName": "Autor não identificado"
-      }
-    ],
-    "date": "2018",
-    "publicationTitle": "Artigos completos publicados em periódicos (a partir de 2010)",
-    "DOI": "10.1080/03091902.2018.1529203",
-    "url": "https://doi.org/10.1080/03091902.2018.1529203",
-    "key": "diniz-c-a-f-andrade-m-v-f-silva-b-p--2018-57339091"
-  },
-  {
-    "itemType": "journalArticle",
-    "title": "O papel do psicopedagogo na identificação e intervenção nos distúrbios de aprendizagem relacionados à visão: caso de uma intervenção tardia. PAIDÉIA (BELO HORIZONTE), v. 13, p. 1, 2018",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "D. A",
-        "lastName": "VILHENA"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "S. D",
-        "lastName": "FREITAS"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "M. R",
-        "lastName": "GUIMARAES"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "A. M. V",
-        "lastName": "PINHEIRO"
-      }
-    ],
-    "date": "2018",
-    "publicationTitle": "Artigos completos publicados em periódicos (a partir de 2010)",
-    "DOI": "https://www.researchgate.net/publication/327022825_O_papel_do_psicopedagogo_na_identificacao_e_intervencao_nos_disturbios_de_aprendizagem_relacionados_a_visao_caso_de_uma_intervencao_tardia",
-    "url": "https://www.researchgate.net/publication/327022825_O_papel_do_psicopedagogo_na_identificacao_e_intervencao_nos_disturbios_de_aprendizagem_relacionados_a_visao_caso_de_uma_intervencao_tardia",
-    "key": "o-papel-do-psicopedagogo-na-identifi-2018-ea057b63"
-  },
-  {
-    "itemType": "journalArticle",
-    "title": "SOARES, F. C.; PINOTTI, M. Metodologia utilizada para calcular o bloco óptico de um sistema de triagem da acuidade visual utilizando tela LCD. FORSCIENCE, v. 6, p. 148, 2018",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "",
-        "lastName": "Autor não identificado"
-      }
-    ],
-    "date": "2018",
-    "publicationTitle": "Artigos completos publicados em periódicos (a partir de 2010)",
-    "DOI": "10.29069/forscience.2018v6n1.e148",
-    "url": "http://dx.doi.org/10.29069/forscience.2018v6n1.e148",
-    "key": "soares-f-c-pinotti-m-metodologia-uti-2018-266fac61"
-  },
-  {
-    "itemType": "journalArticle",
-    "title": "Tratamento do Estresse Visual na leitura: características físicas e mecanismos neurais de ação das lâminas espectrais (overlays). PAIDÉIA (BELO HORIZONTE), v. 13, p. 1, 2018",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "D. A",
-        "lastName": "VILHENA"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "M. R",
-        "lastName": "GUIMARAES"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "R. Q",
-        "lastName": "GUIMARAES"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "A. M. V",
-        "lastName": "PINHEIRO"
-      }
-    ],
-    "date": "2018",
-    "publicationTitle": "Artigos completos publicados em periódicos (a partir de 2010)",
-    "DOI": "https://www.researchgate.net/publication/327023318_Tratamento_do_Estresse_Visual_na_leitura_caracteristicas_fisicas_e_mecanismos_neurais_de_acao_das_laminas_espectrais_overlays",
-    "url": "https://www.researchgate.net/publication/327023318_Tratamento_do_Estresse_Visual_na_leitura_caracteristicas_fisicas_e_mecanismos_neurais_de_acao_das_laminas_espectrais_overlays",
-    "key": "tratamento-do-estresse-visual-na-lei-2018-0cc0c36f"
-  },
-  {
-    "itemType": "journalArticle",
-    "title": "Desenvolvimento de um sistema de triagem da acuidade visual e do limiar auditivo acoplados em um banco de dados. Revista Brasileira de Inovação Tecnologica em Saúde, v. 6, p. 32-44, 2017",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "F. C",
-        "lastName": "SOARES"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "M. P",
-        "lastName": "BARBOSA"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "R. Q",
-        "lastName": "GUIMARAES"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "M. F. C. R",
-        "lastName": "GUIMARAES"
-      }
-    ],
-    "date": "2017",
-    "publicationTitle": "Artigos completos publicados em periódicos (a partir de 2010)",
-    "DOI": "https://www.researchgate.net/publication/313598725_DESENVOLVIMENTO_DE_UM_SISTEMA_DE_TRIAGEM_DA_ACUIDADE_VISUAL_E_DO_LIMIAR_AUDITIVO_ACOPLADOS_EM_UM_BANCO_DE_DADOS",
-    "url": "https://www.researchgate.net/publication/313598725_DESENVOLVIMENTO_DE_UM_SISTEMA_DE_TRIAGEM_DA_ACUIDADE_VISUAL_E_DO_LIMIAR_AUDITIVO_ACOPLADOS_EM_UM_BANCO_DE_DADOS",
-    "key": "desenvolvimento-de-um-sistema-de-tri-2017-f6602dca"
-  },
-  {
-    "itemType": "journalArticle",
-    "title": "Effects of Spectral Overlays on Reading Performance of Brazilian Elementary School Children. FOLIA PHONIATRICA ET LOGOPAEDICA, v. 69, p. 219-225, 2017",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "ANA CARLA OLIVEIRA",
-        "lastName": "GARCIA"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "TERESA MARIA",
-        "lastName": "MOMENSOHN-SANTOS"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "DOUGLAS DE ARAÚJO",
-        "lastName": "VILHENA"
-      }
-    ],
-    "date": "2017",
-    "publicationTitle": "Artigos completos publicados em periódicos (a partir de 2010)",
-    "DOI": "10.1159/000484139",
-    "url": "https://doi.org/10.1159/000484139",
-    "key": "effects-of-spectral-overlays-on-read-2017-a354730f"
-  },
-  {
-    "itemType": "journalArticle",
-    "title": "Os benefícios da oralização e da leitura labial no desempenho de leitura de surdos profundos usuários da Libras. Revista Brasileira de Educação, v. 22, p. 1, 2017",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "A. C",
-        "lastName": "ROCHA_TOFFOLO"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "D. A",
-        "lastName": "VILHENA"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "E. L. A",
-        "lastName": "BERNARDINO"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "A. M. V",
-        "lastName": "PINHEIRO"
-      }
-    ],
-    "date": "2017",
-    "publicationTitle": "Artigos completos publicados em periódicos (a partir de 2010)",
-    "DOI": "https://www.researchgate.net/publication/321637497_Os_beneficios_da_oralizacao_e_da_leitura_labial_no_desempenho_de_leitura_de_surdos_profundos_usuarios_da_Libras?_sg=HKsqubl2HJBzIykBZkxwgHsklEQuZPg9phJQgso7GraEzzvRckHd_fhfYJbPjEgb5d0YW_FZCEASET8A7-oJJ2RxtbqBkhmpVJtcehD8.bG0F4cSg-e__3GCZowPow4PzZ8Kx-EK9jqEZd0ufImAtGAS2Br7PR4NZSewMFe0qqO2qEiMSHTHppNIx_2MrWw",
-    "url": "https://www.researchgate.net/publication/321637497_Os_beneficios_da_oralizacao_e_da_leitura_labial_no_desempenho_de_leitura_de_surdos_profundos_usuarios_da_Libras?_sg=HKsqubl2HJBzIykBZkxwgHsklEQuZPg9phJQgso7GraEzzvRckHd_fhfYJbPjEgb5d0YW_FZCEASET8A7-oJJ2RxtbqBkhmpVJtcehD8.bG0F4cSg-e__3GCZowPow4PzZ8Kx-EK9jqEZd0ufImAtGAS2Br7PR4NZSewMFe0qqO2qEiMSHTHppNIx_2MrWw",
-    "key": "os-benef-cios-da-oraliza-o-e-da-leit-2017-858614b5"
-  },
-  {
-    "itemType": "journalArticle",
-    "title": "PROLEC-T - prova de compreensão de texto: análise de suas características psicométricas. Temas em Psicologia, v. 25, p. 1067-1080, 2017",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "A. M. V",
-        "lastName": "PINHEIRO"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "D. A",
-        "lastName": "VILHENA"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "M. A. C",
-        "lastName": "SANTOS"
-      }
-    ],
-    "date": "2017",
-    "publicationTitle": "Artigos completos publicados em periódicos (a partir de 2010)",
-    "DOI": "https://www.researchgate.net/publication/320026506_PROLEC-T_-_prova_de_compreensao_de_texto_analise_de_suas_caracteristicas_psicometricas",
-    "url": "https://www.researchgate.net/publication/320026506_PROLEC-T_-_prova_de_compreensao_de_texto_analise_de_suas_caracteristicas_psicometricas",
-    "key": "prolec-t-prova-de-compreens-o-de-tex-2017-43b693aa"
-  },
-  {
-    "itemType": "journalArticle",
-    "title": "Relação do Processamento Óptico, Neurovisual e Cognitivo nas Dificuldades de Leitura. ACTA CIENTÍFICA (PATOS DE MINAS), v. 8, p. 193-212, 2017",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "M. R",
-        "lastName": "GUIMARAES"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "D. A",
-        "lastName": "VILHENA"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "R. Q",
-        "lastName": "GUIMARAES"
-      }
-    ],
-    "date": "2017",
-    "publicationTitle": "Artigos completos publicados em periódicos (a partir de 2010)",
-    "DOI": "https://www.researchgate.net/publication/317293148_Relacao_do_processamento_optico_neurovisual_e_cognitivo_nas_dificuldades_de_leitura",
-    "url": "https://www.researchgate.net/publication/317293148_Relacao_do_processamento_optico_neurovisual_e_cognitivo_nas_dificuldades_de_leitura",
-    "key": "rela-o-do-processamento-ptico-neurov-2017-a606d5be"
-  },
-  {
-    "itemType": "journalArticle",
-    "title": "Reading Test - Sentence Comprehension: An Adapted Version of Lobrot's Lecture 3 Test for Brazilian Portuguese. Dyslexia (Chichester, England. Print), v. 22, p. 47-63, 2016",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "D. A",
-        "lastName": "VILHENA"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "A",
-        "lastName": "SUCENA"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "S. L",
-        "lastName": "CASTRO"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "A. M. V",
-        "lastName": "PINHEIRO"
-      }
-    ],
-    "date": "2016",
-    "publicationTitle": "Artigos completos publicados em periódicos (a partir de 2010)",
-    "DOI": "https://www.researchgate.net/publication/290598387_Reading_Test-Sentence_Comprehension_An_Adapted_Version_of_Lobrot's_Lecture_3_Test_for_Brazilian_Portuguese",
-    "url": "https://www.researchgate.net/publication/290598387_Reading_Test-Sentence_Comprehension_An_Adapted_Version_of_Lobrot's_Lecture_3_Test_for_Brazilian_Portuguese",
-    "key": "reading-test-sentence-comprehension--2016-7c679602"
-  },
-  {
-    "itemType": "journalArticle",
-    "title": "VILHENA, D. A.; PINHEIRO, A. M. V.. Revised version of the Scale of Evaluation of Reading Competence by the Teacher: final validation and standardization. Universitas Psychologica, v. 15(4), p. 1-13, 2016",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "",
-        "lastName": "Autor não identificado"
-      }
-    ],
-    "date": "2016",
-    "publicationTitle": "Artigos completos publicados em periódicos (a partir de 2010)",
-    "DOI": "https://www.researchgate.net/publication/315343001_Revised_version_of_the_Scale_of_Evaluation_of_Reading_Competence_by_the_Teacher_final_validation_and_standardization_Version_revisada_de_la_Escala_de_Evaluacion_de_la_Competencia_de_Lectura_por_el_Pro",
-    "url": "https://www.researchgate.net/publication/315343001_Revised_version_of_the_Scale_of_Evaluation_of_Reading_Competence_by_the_Teacher_final_validation_and_standardization_Version_revisada_de_la_Escala_de_Evaluacion_de_la_Competencia_de_Lectura_por_el_Pro",
-    "key": "vilhena-d-a-pinheiro-a-m-v-revised-v-2016-a1402d32"
-  },
-  {
-    "itemType": "journalArticle",
-    "title": "Avaliação interdisciplinar do Transtorno do Espectro do Autismo e comorbidades: caso de um diagnóstico tardio. CADERNOS DE PÓS GRADUAÇÃO EM DISTÚRBIOS DO DESENVOLVIMENTO (ONLINE), v. 15, p. 78-88, 2015",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "D. A",
-        "lastName": "VILHENA"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "R. C",
-        "lastName": "LEITE"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "I. A",
-        "lastName": "TEIXEIRA"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "A. M. V",
-        "lastName": "PINHEIRO"
-      }
-    ],
-    "date": "2015",
-    "publicationTitle": "Artigos completos publicados em periódicos (a partir de 2010)",
-    "DOI": "https://www.researchgate.net/publication/298808489_Avaliacao_interdisciplinar_do_transtorno_do_espectro_do_autismo_e_comorbidades_caso_de_um_diagnostico_tardio_Interdisciplinary_assessment_of_Autism_Spectrum_Disorder_and_comorbidities_case_of_a_late_d",
-    "url": "https://www.researchgate.net/publication/298808489_Avaliacao_interdisciplinar_do_transtorno_do_espectro_do_autismo_e_comorbidades_caso_de_um_diagnostico_tardio_Interdisciplinary_assessment_of_Autism_Spectrum_Disorder_and_comorbidities_case_of_a_late_d",
-    "key": "avalia-o-interdisciplinar-do-transto-2015-33533ba4"
-  },
-  {
-    "itemType": "journalArticle",
-    "title": "Síndrome de Irlen: um olhar atento sobre o funcionamento cerebral durante a leitura. Acta Biomedica Brasiliensia, v. 6, p. 35-44, 2015",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "L. F",
-        "lastName": "BICALHO"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "M. Z. T",
-        "lastName": "ALMEIDA"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "Márcia Reis",
-        "lastName": "GUIMARÃES"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "J. R. G",
-        "lastName": "SILVA"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "F",
-        "lastName": "FULLY"
-      }
-    ],
-    "date": "2015",
-    "publicationTitle": "Artigos completos publicados em periódicos (a partir de 2010)",
-    "DOI": "https://www.researchgate.net/publication/301530481_Sindrome_de_Irlen_um_olhar_atendo_sobre_o_funcionamento_cerebral_durante_a_leitura",
-    "url": "https://www.researchgate.net/publication/301530481_Sindrome_de_Irlen_um_olhar_atendo_sobre_o_funcionamento_cerebral_durante_a_leitura",
-    "key": "s-ndrome-de-irlen-um-olhar-atento-so-2015-19b21c9b"
-  },
-  {
-    "itemType": "journalArticle",
-    "title": "Implementação do site Dislexia Brasil na formação de professores. Síndromes - revista multidisciplinar do desenvolvimento humano, v. 17, p. 64-66, 2014",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "A. M. V",
-        "lastName": "PINHEIRO"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "A",
-        "lastName": "FAWCETT"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "D. A",
-        "lastName": "VILHENA"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "J. L",
-        "lastName": "LUQUE"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "V",
-        "lastName": "GOETRY"
-      }
-    ],
-    "date": "2014",
-    "publicationTitle": "Artigos completos publicados em periódicos (a partir de 2010)",
-    "DOI": "https://www.researchgate.net/publication/299098999_Implementacao_do_site_Dislexia_Brasil_na_formacao_de_professores",
-    "url": "https://www.researchgate.net/publication/299098999_Implementacao_do_site_Dislexia_Brasil_na_formacao_de_professores",
-    "key": "implementa-o-do-site-dislexia-brasil-2014-26004834"
-  },
-  {
-    "itemType": "journalArticle",
-    "title": "GUIMARÃES, Márcia Reis. Síndrome de Irlen. Síndromes - revista multidisciplinar do desenvolvimento humano, v. 1, p. 41-47, 2011",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "",
-        "lastName": "Autor não identificado"
-      }
-    ],
-    "date": "2011",
-    "publicationTitle": "Artigos completos publicados em periódicos (a partir de 2010)",
-    "DOI": "https://www.researchgate.net/publication/319338320_Sindrome_de_Irlen",
-    "url": "https://www.researchgate.net/publication/319338320_Sindrome_de_Irlen",
-    "key": "guimar-es-m-rcia-reis-s-ndrome-de-ir-2011-95c92df3"
-  },
-  {
-    "itemType": "book",
-    "title": "Anais do IV Congresso Brasileiro de Neurovisão = Proceedings of the IV Brazilian Congress of Neurovision. 1. ed. Belo Horizonte: Faculdade de Filosofia e Ciências Humanas da Universidade Federal de Minas Gerais, 2016. v. 1. 50p. ISBN: 978-85-62707-78-0",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "D. A",
-        "lastName": "VILHENA"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "A. M. V",
-        "lastName": "PINHEIRO"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "R. Q",
-        "lastName": "GUIMARAES"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "M. R",
-        "lastName": "GUIMARAES"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Livros publicados/organizados",
-    "DOI": "https://www.researchgate.net/publication/304215144_Anais_do_IV_Congresso_Brasileiro_de_Neurovisao_Proceedings_of_the_IV_Brazilian_Congress_of_Neurovision",
-    "url": "https://www.researchgate.net/publication/304215144_Anais_do_IV_Congresso_Brasileiro_de_Neurovisao_Proceedings_of_the_IV_Brazilian_Congress_of_Neurovision",
-    "key": "anais-do-iv-congresso-brasileiro-de--2010-167b1194"
-  },
-  {
-    "itemType": "thesis",
-    "title": "Aspectos genéticos e moleculares da síndrome de Irlen",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "Renata",
-        "lastName": "Kozlowski"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Dissertações de Mestrado",
-    "key": "aspectos-gen-ticos-e-moleculares-da--2010-35555349"
-  },
-  {
-    "itemType": "thesis",
-    "title": "Avaliação da habilidade de leitura de crianças do Ensino Fundamental: medidas diretas e indiretas",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "Douglas de Araújo",
-        "lastName": "Vilhena"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Dissertações de Mestrado",
-    "key": "avalia-o-da-habilidade-de-leitura-de-2010-d52a2d11"
-  },
-  {
-    "itemType": "book",
-    "title": "Book of Abstracts of the 12th International Congress of the International Society of Applied Psycholinguistics (ISAPL). 1. ed. , 2021. 247p",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "L",
-        "lastName": "SCLIAR-CABRAL"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "A. M. V",
-        "lastName": "PINHEIRO"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "DOUGLAS DE ARAÚJO",
-        "lastName": "VILHENA"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Livros publicados/organizados",
-    "DOI": "https://www.researchgate.net/publication/352167275_Book_of_Abstracts_ISAPL_12th_Congress?_sg%5B0%5D=kuxralcUbOTIJ20mV04qhu5m1XjXy6BapTTin22dQ51SzpsaMscdqzsdrN6pbWQdSf0cq9vJ4DVIIBx_tdtprQhZN7ypiUQFAu3DXiM7.qJC7FqFtips3C4ptfFjmSoz6_LVd3hJeEUa0_ZXvNB-tghfhEn7VJoOjA9rtVTh_81XNWiwDkoBWMOWJfsVRNg",
-    "url": "https://www.researchgate.net/publication/352167275_Book_of_Abstracts_ISAPL_12th_Congress?_sg%5B0%5D=kuxralcUbOTIJ20mV04qhu5m1XjXy6BapTTin22dQ51SzpsaMscdqzsdrN6pbWQdSf0cq9vJ4DVIIBx_tdtprQhZN7ypiUQFAu3DXiM7.qJC7FqFtips3C4ptfFjmSoz6_LVd3hJeEUa0_ZXvNB-tghfhEn7VJoOjA9rtVTh_81XNWiwDkoBWMOWJfsVRNg",
-    "key": "book-of-abstracts-of-the-12th-intern-2010-35c4e2d3"
-  },
-  {
-    "itemType": "bookSection",
-    "title": "Curso online para professores: dislexia - como identificar e o que fazer?. In: L. M. Alves; R. Mousinho; S. Capellini. (Org.). Dislexia: novos temas, novas perspectivas. 1ed.Rio de Janeiro: WAK Editora, 2013, v. 2, p. 107-117",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "A. M. V",
-        "lastName": "PINHEIRO"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "D. A",
-        "lastName": "VILHENA"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Capítulos de livros",
-    "DOI": "https://www.researchgate.net/publication/298808584_Curso_online_para_professores_dislexia_-_como_identificar_e_o_que_fazer",
-    "url": "https://www.researchgate.net/publication/298808584_Curso_online_para_professores_dislexia_-_como_identificar_e_o_que_fazer",
-    "key": "curso-online-para-professores-dislex-2010-9c4328aa"
-  },
-  {
-    "itemType": "thesis",
-    "title": "Desenvolvimento de um Dispositivo LED RGB Microcontrolado para Reprodução das Cromaticidades dos Overlays Irlen e suas Combinações",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "Thiago",
-        "lastName": "Santiago"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Dissertações de Mestrado",
-    "key": "desenvolvimento-de-um-dispositivo-le-2010-58530b1b"
-  },
-  {
-    "itemType": "thesis",
-    "title": "Desenvolvimento de uma Plataforma de Reabilitação para Membro Superior Aplicada A Pacientes Pós Acidente Vascular Encefálico",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "Fábio Lúcio Corrêa",
-        "lastName": "Junior"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Teses de Doutorados",
-    "key": "desenvolvimento-de-uma-plataforma-de-2010-0ac2879e"
-  },
-  {
-    "itemType": "thesis",
-    "title": "Dificuldades de aprendizagem relacionadas à visão: Avaliação no contexto escolar com a Escala de Avaliação do Estresse Visual na Leitura pelo Professor (EEV)",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "Graciele Ferreira de",
-        "lastName": "Sousa"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Dissertações de Mestrado",
-    "key": "dificuldades-de-aprendizagem-relacio-2010-bd0a3835"
-  },
-  {
-    "itemType": "thesis",
-    "title": "Distúrbio do processamento visual na dislexia: causa ou efeito? Orientador: Prof",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "Laura Nequini de",
-        "lastName": "Faria"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Teses de Doutorados",
-    "key": "dist-rbio-do-processamento-visual-na-2010-247cbcb3"
-  },
-  {
-    "itemType": "thesis",
-    "title": "Efeito das Lâminas Espectrais sobre Desempenho da Leitura em Escolares do Ensino Fundamental",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "Ana Carla",
-        "lastName": "Garcia"
-      }
-    ],
-    "date": "2016",
-    "publicationTitle": "Dissertações de Mestrado",
-    "key": "efeito-das-l-minas-espectrais-sobre--2010-c2d2cca6"
-  },
-  {
-    "itemType": "thesis",
-    "title": "Estratégias do professor do Ensino Fundamental 1: ensino de aluno diagnosticado com Síndrome de Irlen",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "Edison Jacinto",
-        "lastName": "Seabra"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Especializações e Monografias de Graduação",
-    "key": "estrat-gias-do-professor-do-ensino-f-2010-28c1ce42"
-  },
-  {
-    "itemType": "thesis",
-    "title": "Estudo estereofotogramétrico da cinemática da cabeça de indivíduos com estresse visual",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "Cláudia de Almeida Ferreira",
-        "lastName": "Diniz"
-      }
-    ],
-    "date": "2017-02-21",
-    "publicationTitle": "Tese (Doutorado em Engenharia Mecânica, UFMG)",
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          5,
+          19
+        ]
+      ]
+    },
     "publisher": "Universidade Federal de Minas Gerais",
-    "place": "Belo Horizonte",
-    "url": "/docs/projetos/diniz-2017-estudo-estereofotogrametrico-da-cinematica-da-cabeca.pdf",
-    "key": "diniz-2017-estudo-estereofotogrametrico-da-cinematica-da-cabeca"
+    "page": "1-127",
+    "URL": "/docs/publicacoes/vilhena2021_DeficitMagnocelularEstresse.pdf"
   },
   {
-    "itemType": "bookSection",
-    "title": "Filtros espectrais melhoram a eﬁciência da leitura e dos movimentos oculares: estudo longitudinal de 177 adultos. In: Ângela Mathylde Soares; Jalmiris Regina Oliveira Reis Simão; Luís Miguel Neves. (Org.). Caminhos da Aprendizagem e Inclusão: Entretecendo Múltiplos Saberes. 1ed.Belo Horizonte: Artesã Editora, 2019, v. 2, p. 263-275",
-    "creators": [
+    "id": "guimaraes2021_EfeitoLaminasEspectrais",
+    "type": "article-journal",
+    "title": "Efeito das lâminas espectrais (overlays) em parâmetros visuais e na habilidade de leitura: revisão integrativa de 1980 a 2008",
+    "author": [
       {
-        "creatorType": "author",
-        "firstName": "M. R",
-        "lastName": "GUIMARAES"
+        "family": "Guimarães",
+        "given": "Márcia Reis"
       },
       {
-        "creatorType": "author",
-        "firstName": "DOUGLAS DE ARAÚJO",
-        "lastName": "VILHENA"
+        "family": "Vilhena",
+        "given": "Douglas De Araújo"
       },
       {
-        "creatorType": "author",
-        "firstName": "A. M. V",
-        "lastName": "PINHEIRO"
+        "family": "Guimarães",
+        "given": "Ricardo Queiroz"
       },
       {
-        "creatorType": "author",
-        "firstName": "R. Q",
-        "lastName": "GUIMARAES"
+        "family": "Pinheiro",
+        "given": "Ângela Maria Vieira"
       }
     ],
-    "date": "2010",
-    "publicationTitle": "Capítulos de livros",
-    "DOI": "https://www.researchgate.net/publication/337566713_Filtros_espectrais_melhoram_a_eficiencia_da_leitura_e_dos_movimentos_oculares_estudo_longitudinal_de_177_adultos",
-    "url": "https://www.researchgate.net/publication/337566713_Filtros_espectrais_melhoram_a_eficiencia_da_leitura_e_dos_movimentos_oculares_estudo_longitudinal_de_177_adultos",
-    "key": "filtros-espectrais-melhoram-a-e-ci-n-2010-16551615"
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          9,
+          19
+        ]
+      ]
+    },
+    "container-title": "Research, Society and Development",
+    "volume": "10",
+    "issue": "12",
+    "page": "e251101220366",
+    "DOI": "10.33448/rsd-v10i12.20366",
+    "URL": "/docs/publicacoes/guimaraes2021_EfeitoLaminasEspectrais.pdf"
   },
   {
-    "itemType": "thesis",
-    "title": "Frequência da Síndrome de Meares-Irlen entre alunos com dificuldades de leitura observadas no contexto escolar",
-    "creators": [
+    "id": "leao2021_EstresseVisualAssociado",
+    "type": "article-journal",
+    "title": "Estresse visual associado à dificuldade de leitura: prevalência e intervenção em alunos do ensino fundamental",
+    "author": [
       {
-        "creatorType": "author",
-        "firstName": "Laura Nequini de",
-        "lastName": "Faria"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Dissertações de Mestrado",
-    "key": "frequ-ncia-da-s-ndrome-de-meares-irl-2010-2fabc969"
-  },
-  {
-    "itemType": "bookSection",
-    "title": "GUIMARÃES, Márcia Reis; ALENCAR, C. D. C.; GUIMARÃES, R. Q.. Os limites da visão humana. In: Renato Ambrósio Jr; Armando Crema. (Org.). Tratado Brasileiro de Catarata & Cirurgia Refrativa. 1ed.Rio de Janeiro: Cultura Médica: Guanabara Koogan, 2014, v. 1, p. 59-64",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "",
-        "lastName": "Autor não identificado"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Capítulos de livros",
-    "DOI": "https://www.researchgate.net/publication/316487256_Os_limites_da_visao_humana",
-    "url": "https://www.researchgate.net/publication/316487256_Os_limites_da_visao_humana",
-    "key": "guimar-es-m-rcia-reis-alencar-c-d-c--2010-42c28748"
-  },
-  {
-    "itemType": "bookSection",
-    "title": "GUIMARÃES, Márcia Reis; GUIMARAES, I. R.. Aprendizagem e Leitura - Síndrome de Irlen. In: Orly Zucatto Mantovani de Assis. (Org.). Neurociências e Educação. 1ed.Campinas: Book Editora, 2013, v. 1, p. 175-186",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "",
-        "lastName": "Autor não identificado"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Capítulos de livros",
-    "DOI": "https://www.researchgate.net/publication/301543532_Aprendizagem_e_Leitura_-_Sindrome_de_Irlen",
-    "url": "https://www.researchgate.net/publication/301543532_Aprendizagem_e_Leitura_-_Sindrome_de_Irlen",
-    "key": "guimar-es-m-rcia-reis-guimaraes-i-r--2010-9fc06703"
-  },
-  {
-    "itemType": "bookSection",
-    "title": "GUIMARÃES, Márcia Reis; GUIMARÃES, R. Q.. Avaliação da Visão Funcional em Distúrbios de Aprendizagem - O Papel do Oftalmologista nos Déficits de Visão e Aprendizagem. In: Liana O. Ventura, Simone B. Travassos, Orlando Alves da Silva, Margarida Dolan. (Org.). Dislexia e Distúrbios de Aprendizagem. 1ed.Rio de Janeiro: Cultura Médica, 2012, v. , p. 159-174",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "",
-        "lastName": "Autor não identificado"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Capítulos de livros",
-    "DOI": "10.13140/rg.2.1.2087.9768",
-    "url": "http://dx.doi.org/10.13140/RG.2.1.2087.9768",
-    "key": "guimar-es-m-rcia-reis-guimar-es-r-q--2010-011ea5b3"
-  },
-  {
-    "itemType": "bookSection",
-    "title": "GUIMARÃES, R. Q.; GUIMARÃES, Márcia Reis. História da cirurgia refrativa: córnea e catarata. In: Renato Ambrósio Jr; Armando Crema. (Org.). Tratado Brasileiro de Catarata & Cirurgia Refrativa. 1ed.Rio de Janeiro: Cultura Médica: Guanabara Koogan, 2014, v. 1, p. 444-451",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "",
-        "lastName": "Autor não identificado"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Capítulos de livros",
-    "DOI": "https://www.researchgate.net/publication/264772369_Historia_da_cirurgia_refrativa_cornea_e_catarata",
-    "url": "https://www.researchgate.net/publication/264772369_Historia_da_cirurgia_refrativa_cornea_e_catarata",
-    "key": "guimar-es-r-q-guimar-es-m-rcia-reis--2010-bd573e1f"
-  },
-  {
-    "itemType": "thesis",
-    "title": "http://hdl.handle.net/1843/BUOS-8GJMAP",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "",
-        "lastName": "Autor não identificado"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Teses de Doutorados",
-    "DOI": "http://hdl.handle.net/1843/BUOS-8GJMAP",
-    "url": "http://hdl.handle.net/1843/BUOS-8GJMAP",
-    "key": "http-hdl-handle-net-1843-buos-8gjmap-2010-a4ab04bc"
-  },
-  {
-    "itemType": "thesis",
-    "title": "http://hdl.handle.net/1843/MDAD-7W5PC6",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "",
-        "lastName": "Autor não identificado"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Teses de Doutorados",
-    "DOI": "http://hdl.handle.net/1843/MDAD-7W5PC6",
-    "url": "http://hdl.handle.net/1843/MDAD-7W5PC6",
-    "key": "http-hdl-handle-net-1843-mdad-7w5pc6-2010-e1905116"
-  },
-  {
-    "itemType": "thesis",
-    "title": "http://www.biblioteca.pucminas.br/teses/",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "",
-        "lastName": "Autor não identificado"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Dissertações de Mestrado",
-    "DOI": "http://www.biblioteca.pucminas.br/teses/EngenhariaEletrica_PolianyFerreiraSantos_4662.pdf",
-    "url": "http://www.biblioteca.pucminas.br/teses/EngenhariaEletrica_PolianyFerreiraSantos_4662.pdf",
-    "key": "http-www-biblioteca-pucminas-br-tese-2010-1d6f1377"
-  },
-  {
-    "itemType": "thesis",
-    "title": "https://pedroejoaoeditores.com.br/",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "",
-        "lastName": "Autor não identificado"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Dissertações de Mestrado",
-    "DOI": "https://pedroejoaoeditores.com.br/site/wp-content/uploads/2021/03/Ebook_JoaoWagner1.pdf",
-    "url": "https://pedroejoaoeditores.com.br/site/wp-content/uploads/2021/03/Ebook_JoaoWagner1.pdf",
-    "key": "https-pedroejoaoeditores-com-br-2010-47ac2855"
-  },
-  {
-    "itemType": "thesis",
-    "title": "https://periodicos.unespar.edu.br/incantare/article/view/8761",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "",
-        "lastName": "Autor não identificado"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Dissertações de Mestrado",
-    "DOI": "https://periodicos.unespar.edu.br/incantare/article/view/8761",
-    "url": "https://periodicos.unespar.edu.br/incantare/article/view/8761",
-    "key": "https-periodicos-unespar-edu-br-inca-2010-7714c627"
-  },
-  {
-    "itemType": "thesis",
-    "title": "https://repositorio.ufmg.br/handle/1843/45427",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "",
-        "lastName": "Autor não identificado"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Teses de Doutorados",
-    "DOI": "https://repositorio.ufmg.br/handle/1843/45427",
-    "url": "https://repositorio.ufmg.br/handle/1843/45427",
-    "key": "https-repositorio-ufmg-br-handle-184-2010-3fc275d9"
-  },
-  {
-    "itemType": "thesis",
-    "title": "https://sucupira-legado.capes.gov.br/trabalho-concluao",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "",
-        "lastName": "Autor não identificado"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Teses de Doutorados",
-    "DOI": "https://sucupira-legado.capes.gov.br/sucupira/public/consultas/coleta/trabalhoConclusao/viewTrabalhoConclusao.jsf?popup=true&id_trabalho=6410364.",
-    "url": "https://sucupira-legado.capes.gov.br/sucupira/public/consultas/coleta/trabalhoConclusao/viewTrabalhoConclusao.jsf?popup=true&id_trabalho=6410364.",
-    "key": "https-sucupira-legado-capes-gov-br-t-2010-c435bbd7"
-  },
-  {
-    "itemType": "thesis",
-    "title": "https://www.oasisbr.ibict.br/vufind/",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "",
-        "lastName": "Autor não identificado"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Teses de Doutorados",
-    "DOI": "https://www.oasisbr.ibict.br/vufind/Record/BRCRIS_821ba14925ed402d17b9009fc1ddef1b",
-    "url": "https://www.oasisbr.ibict.br/vufind/Record/BRCRIS_821ba14925ed402d17b9009fc1ddef1b",
-    "key": "https-www-oasisbr-ibict-br-vufind-2010-11339b41"
-  },
-  {
-    "itemType": "thesis",
-    "title": "https://www.rbojournal.org/article/a-influencia-da-vibracao-de-corpo-inteiro-da-midia-e-da-iluminacao-artificial-no-movimento-dos-olhos-durante-tarefas-de-leitura/",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "",
-        "lastName": "Autor não identificado"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Teses de Doutorados",
-    "DOI": "https://www.rbojournal.org/article/a-influencia-da-vibracao-de-corpo-inteiro-da-midia-e-da-iluminacao-artificial-no-movimento-dos-olhos-durante-tarefas-de-leitura/",
-    "url": "https://www.rbojournal.org/article/a-influencia-da-vibracao-de-corpo-inteiro-da-midia-e-da-iluminacao-artificial-no-movimento-dos-olhos-durante-tarefas-de-leitura/",
-    "key": "https-www-rbojournal-org-article-a-i-2010-44a2982a"
-  },
-  {
-    "itemType": "conferencePaper",
-    "title": "https://www.researchgate.net/6_congresso_neurovisao",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "",
-        "lastName": "Autor não identificado"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Resumos publicados em anais de congressos",
-    "DOI": "https://www.researchgate.net/publication/327944145_Livro_de_publicacoes_do_6_Congresso_Brasileiro_de_Neurovisao",
-    "url": "https://www.researchgate.net/publication/327944145_Livro_de_publicacoes_do_6_Congresso_Brasileiro_de_Neurovisao",
-    "key": "https-www-researchgate-net-6-congres-2010-89ca620d"
-  },
-  {
-    "itemType": "thesis",
-    "title": "https://www.researchgate.net/Ageismo",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "",
-        "lastName": "Autor não identificado"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Teses de Doutorados",
-    "DOI": "https://www.researchgate.net/publication/353328950_Ageismo_consideracoes_a_partir_do_conhecimento_entre_estudantes_de_graduacao_e_fonoaudiologos",
-    "url": "https://www.researchgate.net/publication/353328950_Ageismo_consideracoes_a_partir_do_conhecimento_entre_estudantes_de_graduacao_e_fonoaudiologos",
-    "key": "https-www-researchgate-net-ageismo-2010-e3b8fb03"
-  },
-  {
-    "itemType": "conferencePaper",
-    "title": "https://www.researchgate.net/Coulored_Overlays",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "",
-        "lastName": "Autor não identificado"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Resumos publicados em anais de congressos",
-    "DOI": "https://www.researchgate.net/publication/270703068_COLOURED_OVERLAYS_IMPROVE_READING_PERFORMANCE_IN_PEOPLE_SUFFERING_FROM_VISUAL_STRESS",
-    "url": "https://www.researchgate.net/publication/270703068_COLOURED_OVERLAYS_IMPROVE_READING_PERFORMANCE_IN_PEOPLE_SUFFERING_FROM_VISUAL_STRESS",
-    "key": "https-www-researchgate-net-coulored--2010-2a292746"
-  },
-  {
-    "itemType": "conferencePaper",
-    "title": "https://www.researchgate.net/publication/",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "",
-        "lastName": "Autor não identificado"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Resumos publicados em anais de congressos",
-    "DOI": "https://www.researchgate.net/publication/336510060_Central_and_peripheral_visual_function_in_Developmental_Dyslexia",
-    "url": "https://www.researchgate.net/publication/336510060_Central_and_peripheral_visual_function_in_Developmental_Dyslexia",
-    "key": "https-www-researchgate-net-publicati-2010-24f7451a"
-  },
-  {
-    "itemType": "bookSection",
-    "title": "Índices psicométricos da Escala de Avaliação da Competência em Leitura em Crianças pelo Professor (EACOL). In: Jerusa Fumagalli de Salles; Ana Luiza Navas. (Org.). Avaliação da linguagem oral, escrita e de habilidades relacionadas. 1ed.São Paulo: Vetor Editora, 2021, v. 1, p. 217-222",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "A. M. V",
-        "lastName": "PINHEIRO"
+        "family": "Leão",
+        "given": "Daniela Maggioni Pereira"
       },
       {
-        "creatorType": "author",
-        "firstName": "DOUGLAS DE ARAÚJO",
-        "lastName": "VILHENA"
+        "family": "Vilhena",
+        "given": "Douglas De Araújo"
+      },
+      {
+        "family": "Ottoni",
+        "given": "Priscila Cardoso"
+      },
+      {
+        "family": "Batista",
+        "given": "Mariana Raposo"
+      },
+      {
+        "family": "Leão",
+        "given": "João Paulo Pereira"
+      },
+      {
+        "family": "Guimarães",
+        "given": "Márcia Reis"
+      },
+      {
+        "family": "Ruginsk",
+        "given": "Silvia Graciela"
       }
     ],
-    "date": "2010",
-    "publicationTitle": "Capítulos de livros",
-    "key": "ndices-psicom-tricos-da-escala-de-av-2010-8ca5ffe0"
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          9,
+          5
+        ]
+      ]
+    },
+    "container-title": "Research, Society and Development",
+    "volume": "10",
+    "issue": "11",
+    "page": "e430101119914",
+    "DOI": "10.33448/rsd-v10i11.19914",
+    "URL": "/docs/publicacoes/leao2021_EstresseVisualAssociado.pdf"
   },
   {
-    "itemType": "bookSection",
-    "title": "Índices psicométricos do Teste de Leitura: Compreensão de Sentenças (TELCS). In: Jerusa Fumagalli de Salles; Ana Luiza Navas. (Org.). Avaliação da linguagem oral, escrita e de habilidades relacionadas. 1ed.São Paulo: Vetor Editora, 2021, v. 1, p. 167-174",
-    "creators": [
+    "id": "pinheiro2021_IndicesPsicometricosEscala",
+    "type": "chapter",
+    "title": "Índices psicométricos da escala de avaliação da competência em leitura em crianças pelo professor (EACOL)",
+    "author": [
       {
-        "creatorType": "author",
-        "firstName": "DOUGLAS DE ARAÚJO",
-        "lastName": "VILHENA"
+        "family": "Pinheiro",
+        "given": "Ângela Maria Vieira"
       },
       {
-        "creatorType": "author",
-        "firstName": "A. M. V",
-        "lastName": "PINHEIRO"
+        "family": "Vilhena",
+        "given": "Douglas De Araújo"
       }
     ],
-    "date": "2010",
-    "publicationTitle": "Capítulos de livros",
-    "key": "ndices-psicom-tricos-do-teste-de-lei-2010-e88e0c5f"
-  },
-  {
-    "itemType": "bookSection",
-    "title": "Índices psicométricos do Teste de Reconhecimento de Palavras (TRP). In: Jerusa Fumagalli de Salles; Ana Luiza Navas. (Org.). Avaliação da linguagem oral, escrita e de habilidades relacionadas. 1ed.São Paulo: Vetor Editora, 2021, v. 1, p. 155-160",
-    "creators": [
+    "editor": [
       {
-        "creatorType": "author",
-        "firstName": "A. M. V",
-        "lastName": "PINHEIRO"
+        "family": "Salles",
+        "given": "Jerusa Fumagalli"
       },
       {
-        "creatorType": "author",
-        "firstName": "DOUGLAS DE ARAÚJO",
-        "lastName": "VILHENA"
+        "family": "Navas",
+        "given": "Ana Luiza"
       }
     ],
-    "date": "2010",
-    "publicationTitle": "Capítulos de livros",
-    "key": "ndices-psicom-tricos-do-teste-de-rec-2010-018b31f5"
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "container-title": "Avaliação da linguagem oral, escrita e de habilidades relacionadas",
+    "publisher": "Vetor Editora",
+    "publisher-place": "São Paulo, SP",
+    "volume": "1",
+    "page": "217-222"
   },
   {
-    "itemType": "bookSection",
-    "title": "Índices psicométricos do Teste de Reconhecimento de Pseudopalavras (TRPp). In: Jerusa Fumagalli de Salles; Ana Luiza Navas. (Org.). Avaliação da linguagem oral, escrita e de habilidades relacionadas. 1ed.São Paulo: Vetor Editora, 2021, v. 1, p. 175-180",
-    "creators": [
+    "id": "vilhena2021_IndicesPsicometricosTestea",
+    "type": "chapter",
+    "title": "Índices psicométricos do teste de leitura: compreensão de sentenças (TELCS)",
+    "author": [
       {
-        "creatorType": "author",
-        "firstName": "A. M. V",
-        "lastName": "PINHEIRO"
+        "family": "Vilhena",
+        "given": "Douglas De Araújo"
       },
       {
-        "creatorType": "author",
-        "firstName": "DOUGLAS DE ARAÚJO",
-        "lastName": "VILHENA"
+        "family": "Pinheiro",
+        "given": "Ângela Maria Vieira"
       }
     ],
-    "date": "2010",
-    "publicationTitle": "Capítulos de livros",
-    "key": "ndices-psicom-tricos-do-teste-de-rec-2010-2d196b20"
-  },
-  {
-    "itemType": "bookSection",
-    "title": "Índices psicométricos do Teste de Taxa de Leitura (RRT). In: Jerusa Fumagalli de Salles; Ana Luiza Navas. (Org.). Avaliação da linguagem oral, escrita e de habilidades relacionadas. 1ed.São Paulo: Vetor Editora, 2021, v. 1, p. 161-166",
-    "creators": [
+    "editor": [
       {
-        "creatorType": "author",
-        "firstName": "DOUGLAS DE ARAÚJO",
-        "lastName": "VILHENA"
+        "family": "Salles",
+        "given": "Jerusa Fumagalli"
       },
       {
-        "creatorType": "author",
-        "firstName": "MÁRCIA REIS",
-        "lastName": "GUIMARÃES"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "RICARDO QUEIROZ",
-        "lastName": "GUIMARÃES"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "A. M. V",
-        "lastName": "PINHEIRO"
+        "family": "Navas",
+        "given": "Ana Luiza"
       }
     ],
-    "date": "2010",
-    "publicationTitle": "Capítulos de livros",
-    "key": "ndices-psicom-tricos-do-teste-de-tax-2010-e9357326"
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "container-title": "Avaliação da linguagem oral, escrita e de habilidades relacionadas",
+    "publisher": "Vetor Editora",
+    "publisher-place": "São Paulo, SP",
+    "volume": "1",
+    "page": "167-174"
   },
   {
-    "itemType": "book",
-    "title": "Livro de publicações do 10º Congresso Brasileiro de Neurociências da Visão - 4th International Congress of Vision Neurosciences - ISBN: 978-65-86989-13-7. 1. ed. Belo Horizonte: Faculdade de Filosofia e Ciências Humanas da Universidade Federal de Minas Gerais, 2022. v. 1. 48p",
-    "creators": [
+    "id": "pinheiro2021_IndicesPsicometricosTestea",
+    "type": "chapter",
+    "title": "Índices psicométricos do teste de reconhecimento de palavras (TRP",
+    "author": [
       {
-        "creatorType": "author",
-        "firstName": "DOUGLAS DE ARAÚJO",
-        "lastName": "VILHENA"
+        "family": "Pinheiro",
+        "given": "Ângela Maria Vieira"
       },
       {
-        "creatorType": "author",
-        "firstName": "RICARDO QUEIROZ",
-        "lastName": "GUIMARÃES"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "M. F. C. R",
-        "lastName": "GUIMARAES"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "M. L. M",
-        "lastName": "DUARTE"
+        "family": "Vilhena",
+        "given": "Douglas De Araújo"
       }
     ],
-    "date": "2010",
-    "publicationTitle": "Livros publicados/organizados",
-    "key": "livro-de-publica-es-do-10-congresso--2010-f0712579"
-  },
-  {
-    "itemType": "book",
-    "title": "Livro de publicações do 4º Congresso Brasileiro de Neurociências da Visão. 1. ed. Belo Horizonte: Faculdade de Filosofia e Ciências Humanas da Universidade Federal de Minas Gerais, 2016. 50p",
-    "creators": [
+    "editor": [
       {
-        "creatorType": "author",
-        "firstName": "DOUGLAS DE ARAÚJO",
-        "lastName": "VILHENA"
+        "family": "Salles",
+        "given": "Jerusa Fumagalli"
       },
       {
-        "creatorType": "author",
-        "firstName": "A. M. V",
-        "lastName": "PINHEIRO"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "MÁRCIA REIS",
-        "lastName": "GUIMARÃES"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "RICARDO QUEIROZ",
-        "lastName": "GUIMARÃES"
+        "family": "Navas",
+        "given": "Ana Luiza"
       }
     ],
-    "date": "2010",
-    "publicationTitle": "Livros publicados/organizados",
-    "key": "livro-de-publica-es-do-4-congresso-b-2010-4319eadb"
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "container-title": "Avaliação da linguagem oral, escrita e de habilidades relacionadas",
+    "publisher": "Vetor Editora",
+    "publisher-place": "São Paulo, SP",
+    "volume": "1",
+    "page": "155-160"
   },
   {
-    "itemType": "bookSection",
-    "title": "Neuroadaptação e plástica cortical na cirurgia refrativa: presente e futuro. In: José Ricardo Carvalho Lima Rehder; Marco Antônio Rey de Faria; Edmundo José Velasco Martinelli. (Org.). Estudos Clínicos: Cirurgia Refrativa. 1ed.: Navio MSC Ópera, 2009, v. 1, p. 21-56",
-    "creators": [
+    "id": "pinheiro2021_IndicesPsicometricosTeste",
+    "type": "chapter",
+    "title": "Índices psicométricos do teste de reconhecimento de pseudopalavras (TRPp)",
+    "author": [
       {
-        "creatorType": "author",
-        "firstName": "Márcia Reis",
-        "lastName": "GUIMARÃES"
+        "family": "Pinheiro",
+        "given": "Ângela Maria Vieira"
       },
       {
-        "creatorType": "author",
-        "firstName": "J",
-        "lastName": "BARON"
+        "family": "Vilhena",
+        "given": "Douglas De Araújo"
       },
       {
-        "creatorType": "author",
-        "firstName": "M. V",
-        "lastName": "BALDO"
+        "family": "Salles",
+        "given": "Jerusa Fumagalli"
       },
       {
-        "creatorType": "author",
-        "firstName": "R. Q",
-        "lastName": "GUIMARÃES"
+        "family": "Navas",
+        "given": "Ana Luiza"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "container-title": "Avaliação da linguagem oral, escrita e de habilidades relacionadas",
+    "publisher": "Vetor Editora",
+    "publisher-place": "São Paulo, SP",
+    "volume": "1",
+    "page": "175-180"
+  },
+  {
+    "id": "vilhena2021_IndicesPsicometricosTeste",
+    "type": "chapter",
+    "title": "Índices psicométricos do teste de taxa de leitura (RRT)",
+    "author": [
+      {
+        "family": "Vilhena",
+        "given": "Douglas De Araújo"
       },
       {
-        "creatorType": "author",
-        "firstName": "S",
-        "lastName": "BECHARA"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Capítulos de livros",
-    "DOI": "https://www.researchgate.net/publication/316487450_Neuroadaptacao_e_plastica_cortical_na_cirurgia_refrativa_presente_e_futuro",
-    "url": "https://www.researchgate.net/publication/316487450_Neuroadaptacao_e_plastica_cortical_na_cirurgia_refrativa_presente_e_futuro",
-    "key": "neuroadapta-o-e-pl-stica-cortical-na-2010-14113ceb"
-  },
-  {
-    "itemType": "thesis",
-    "title": "O texto treme? Investigação sobre as possíveis causas do Estresse Visual ou Síndrome de Irlen",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "Ana Isabel Arroyave",
-        "lastName": "Guzmán"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Teses de Doutorados",
-    "DOI": "10.11606/t.3.2019.tde-14012021-100323",
-    "key": "o-texto-treme-investiga-o-sobre-as-p-2010-7717880d"
-  },
-  {
-    "itemType": "thesis",
-    "title": "Orientadora: Silvia Graciela Ruginsk Leitão",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "Efeitos do uso de lâminas espectrais para tratamento da Síndrome de Meares Irlen em alunos do ensino fundamental do município de",
-        "lastName": "Alfenas-MG"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Dissertações de Mestrado",
-    "key": "orientadora-silvia-graciela-ruginsk--2010-1fab9bcc"
-  },
-  {
-    "itemType": "book",
-    "title": "PINHEIRO, A. M. V.; SCILAR C. L. Dislexia: Causas e consequências. 1ed. Belo Horizonte. Editora UFMG, 2018",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "",
-        "lastName": "Autor não identificado"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Livros publicados/organizados",
-    "DOI": "https://lapan.com.br/wp-content/uploads/2018/08/Ebook-Lapan.zip",
-    "url": "https://lapan.com.br/wp-content/uploads/2018/08/Ebook-Lapan.zip",
-    "key": "pinheiro-a-m-v-scilar-c-l-dislexia-c-2010-1ad8fb5c"
-  },
-  {
-    "itemType": "book",
-    "title": "PINHEIRO, Ângela Maria Viera; SCILAR-Cabral Leonor. Dislexia: Causas e consequências. 1ed. Belo Horizonte. Editora UFMG, 2018",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "",
-        "lastName": "Autor não identificado"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Livros publicados/organizados",
-    "DOI": "https://lapan.com.br/wp-content/uploads/2018/08/Ebook-Lapan.zip",
-    "url": "https://lapan.com.br/wp-content/uploads/2018/08/Ebook-Lapan.zip",
-    "key": "pinheiro-ngela-maria-viera-scilar-ca-2010-bd38ed08"
-  },
-  {
-    "itemType": "book",
-    "title": "Políticas Públicas: abrindo caminhos para a identificação precoce da dislexia e para as melhores práticas de alfabetização. 1. ed. Belo Horizonte: Faculdade de Filosofia e Ciências Humanas, 2014. v. 1. 88p. ISBN: 978-85-62707-56-8",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "A. M. V",
-        "lastName": "PINHEIRO"
+        "family": "Guimarães",
+        "given": "Márcia Reis"
       },
       {
-        "creatorType": "author",
-        "firstName": "D. A",
-        "lastName": "VILHENA"
+        "family": "Guimarães",
+        "given": "Ricardo Queiroz"
+      },
+      {
+        "family": "Pinheiro",
+        "given": "Ângela Maria Vieira"
       }
     ],
-    "date": "2010",
-    "publicationTitle": "Livros publicados/organizados",
-    "DOI": "https://www.researchgate.net/publication/298808736_Politicas_Publicas_abrindo_caminhos_para_a_identificacao_precoce_da_dislexia_e_para_as_melhores_praticas_de_alfabetizacao_Public_Policies_opening_channels_to_early_identification_of_dyslexia_and_best_",
-    "url": "https://www.researchgate.net/publication/298808736_Politicas_Publicas_abrindo_caminhos_para_a_identificacao_precoce_da_dislexia_e_para_as_melhores_praticas_de_alfabetizacao_Public_Policies_opening_channels_to_early_identification_of_dyslexia_and_best_",
-    "key": "pol-ticas-p-blicas-abrindo-caminhos--2010-4a33823a"
+    "editor": [
+      {
+        "family": "Salles",
+        "given": "Jerusa Fumagalli"
+      },
+      {
+        "family": "Navas",
+        "given": "Ana Luiza"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "container-title": "Avaliação da linguagem oral, escrita e de habilidades relacionadas",
+    "publisher": "Vetor Editora",
+    "publisher-place": "São Paulo, SP",
+    "volume": "1",
+    "page": "161-166"
   },
   {
-    "itemType": "thesis",
+    "id": "vilhena2021_MagnocellularVisualFunctiona",
+    "type": "article-journal",
+    "title": "Magnocellular visual function in developmental dyslexia: deficit in frequency-doubling perimetry and ocular motor skills",
+    "author": [
+      {
+        "family": "Vilhena",
+        "given": "Douglas De Araújo"
+      },
+      {
+        "family": "Guimarães",
+        "given": "Márcia Reis"
+      },
+      {
+        "family": "Guimarães",
+        "given": "Ricardo Queiroz"
+      },
+      {
+        "family": "Pinheiro",
+        "given": "Ângela Maria Vieira"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "container-title": "Arquivos Brasileiros de Oftalmologia",
+    "volume": "84",
+    "issue": "5",
+    "page": "442-448",
+    "DOI": "10.5935/0004-2749.20210069",
+    "URL": "/docs/publicacoes/vilhena2021_MagnocellularVisualFunctiona.pdf"
+  },
+  {
+    "id": "scliar-cabral2021_Proceedings12thISAPL",
+    "type": "book",
+    "title": "Proceedings of the 12th ISAPL international congress NEW PERSPECTIVES IN PSYCHOLINGUISTIC RESEARCH: LANGUAGE, CULTURE, TECHNOLOGIES",
+    "author": [
+      {
+        "family": "Scliar-Cabral",
+        "given": "Leonor"
+      },
+      {
+        "family": "Vilhena",
+        "given": "Douglas De Araújo"
+      },
+      {
+        "family": "Pinheiro",
+        "given": "Ângela Maria Vieira"
+      },
+      {
+        "family": "Coulardeau",
+        "given": "Jacques"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "publisher": "International Society of Applied Psycholinguistics",
+    "URL": "https://www.researchgate.net/publication/352167275_Book_of_Abstracts_ISAPL_12th_Congress?_sg%5B0%5D=kuxralcUbOTIJ20mV04qhu5m1XjXy6BapTTin22dQ51SzpsaMscdqzsdrN6pbWQdSf0cq9vJ4DVIIBx_tdtprQhZN7ypiUQFAu3DXiM7.qJC7FqFtips3C4ptfFjmSoz6_LVd3hJeEUa0_ZXvNB-tghfhEn7VJoOjA9rtVTh_81XNWiwDkoBWMOWJfsVRNg"
+  },
+  {
+    "id": "soares2021_QualidadeVidaRelacionada",
+    "type": "thesis",
     "title": "Qualidade de vida relacionada à saúde visual e fadiga de pessoas com distúrbios no processamento visual usando filtros espectrais",
-    "creators": [
+    "author": [
       {
-        "creatorType": "author",
-        "firstName": "Izabel Cristina Soares",
-        "lastName": "Araujo"
+        "family": "Soares",
+        "given": "Izabel Cristina"
       }
     ],
-    "date": "2010",
-    "publicationTitle": "Teses de Doutorados",
-    "key": "qualidade-de-vida-relacionada-sa-de--2010-43b918ba"
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "publisher": "UNIVERSIDADE FEDERAL DO TRIÂNGULO MINEIRO",
+    "publisher-place": "Uberaba, MG"
   },
   {
-    "itemType": "journalArticle",
-    "title": "Selective spectral filters in the treatment of visually induced headaches and migraines - A clinical study of 93 patients. HEADACHE MEDICINE, v. 1, p. 72, 2010",
-    "creators": [
+    "id": "vilhena2020_EffectSpectralOverlaysa",
+    "type": "article-journal",
+    "title": "Effect of spectral overlays on visual parameters and reading ability: an integrative review",
+    "author": [
       {
-        "creatorType": "author",
-        "firstName": "Márcia Reis",
-        "lastName": "GUIMARÃES"
+        "family": "Vilhena",
+        "given": "Douglas De Araújo"
       },
       {
-        "creatorType": "author",
-        "firstName": "J. R",
-        "lastName": "GUIMARAES"
+        "family": "Guimarães",
+        "given": "Márcia Reis"
       },
       {
-        "creatorType": "author",
-        "firstName": "R. Q",
-        "lastName": "GUIMARÃES"
+        "family": "Guimarães",
+        "given": "Ricardo Queiroz"
       },
       {
-        "creatorType": "author",
-        "firstName": "M. R. V",
-        "lastName": "NOGUEIRA"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "M. R",
-        "lastName": "BOTELHO"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "M. E. A",
-        "lastName": "GUIMARAES"
+        "family": "Pinheiro",
+        "given": "Ângela Maria Vieira"
       }
     ],
-    "date": "2010",
-    "publicationTitle": "Artigos completos publicados em periódicos (a partir de 2010)",
-    "DOI": "https://www.researchgate.net/publication/333093027_Selective_spectral_filters_in_the_treatment_of_visually_induced_headaches_and_migraines_-_A_clinical_study_of_93_patients",
-    "url": "https://www.researchgate.net/publication/333093027_Selective_spectral_filters_in_the_treatment_of_visually_induced_headaches_and_migraines_-_A_clinical_study_of_93_patients",
-    "key": "selective-spectral-filters-in-the-tr-2010-a2e82c96"
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "container-title": "Revista CEFAC",
+    "volume": "22",
+    "issue": "3",
+    "page": "e17519",
+    "DOI": "10.1590/1982-0216/202022317519",
+    "URL": "/docs/publicacoes/vilhena2020_EffectSpectralOverlaysa.pdf"
   },
   {
-    "itemType": "thesis",
-    "title": "Síndrome de Irlen – uma nova abordagem para dificuldades de aprendizagem",
-    "creators": [
+    "id": "pinheiro2020_ReadingStrategiesProfoundly",
+    "type": "article-journal",
+    "title": "Reading strategies for the profoundly deaf libras users: benefits of speech and lip reading for strengthening linguistic skills",
+    "author": [
       {
-        "creatorType": "author",
-        "firstName": "Adriana Brandão de Paula",
-        "lastName": "Almada"
+        "family": "Pinheiro",
+        "given": "Ângela Maria Vieira"
+      },
+      {
+        "family": "Rocha-Toffolo",
+        "given": "Andreia Chagas"
+      },
+      {
+        "family": "Vilhena",
+        "given": "Douglas De Araújo"
       }
     ],
-    "date": "2010",
-    "publicationTitle": "Especializações e Monografias de Graduação",
-    "key": "s-ndrome-de-irlen-uma-nova-abordagem-2010-b902adde"
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "container-title": "Estudos De Psicologia (Campinas)",
+    "volume": "37",
+    "page": "e190003",
+    "DOI": "10.1590/1982-0275202037e190003",
+    "URL": "/docs/publicacoes/pinheiro2020_ReadingStrategiesProfoundly.pdf"
   },
   {
-    "itemType": "thesis",
+    "id": "vilhena2020_ReliabilityValidityStandardization",
+    "type": "article-journal",
+    "title": "Reliability, validity and standardization of the reading test: sentence comprehension",
+    "author": [
+      {
+        "family": "Vilhena",
+        "given": "Douglas De Araújo"
+      },
+      {
+        "family": "Pinheiro",
+        "given": "Ângela Maria Vieira"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "container-title": "Psicologia: Teoria E Pesquisa",
+    "volume": "36",
+    "page": "e36325",
+    "DOI": "10.1590/0102.3772e36325",
+    "URL": "/docs/publicacoes/vilhena2020_ReliabilityValidityStandardization.pdf"
+  },
+  {
+    "id": "guimaraes2020_SpectralOverlaysReadinga",
+    "type": "article-journal",
+    "title": "Spectral overlays for reading difficulties: oculomotor function and reading efficiency among children and adolescents with visual stress",
+    "author": [
+      {
+        "family": "Guimarães",
+        "given": "Márcia Reis"
+      },
+      {
+        "family": "Vilhena",
+        "given": "Douglas De Araújo"
+      },
+      {
+        "family": "Loew",
+        "given": "Stephen J."
+      },
+      {
+        "family": "Guimarães",
+        "given": "Ricardo Queiroz"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          4
+        ]
+      ]
+    },
+    "container-title": "Perceptual and Motor Skills",
+    "volume": "127",
+    "issue": "2",
+    "page": "490-509",
+    "DOI": "10.1177/0031512519889772",
+    "URL": "/docs/publicacoes/guimaraes2020_SpectralOverlaysReadinga.pdf"
+  },
+  {
+    "id": "vilhena2019_Anais7oCongresso",
+    "type": "book",
+    "title": "Anais do 7º congresso brasileiro de neurovisão - proceedings of the 7th brazilian congress of neurovision",
+    "author": [
+      {
+        "family": "Vilhena",
+        "given": "Douglas De Araújo"
+      },
+      {
+        "family": "Guimarães",
+        "given": "Ricardo Queiroz"
+      },
+      {
+        "family": "Guimarães",
+        "given": "Márcia Reis"
+      },
+      {
+        "family": "Duarte",
+        "given": "Maria Lúcia Machado"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "publisher": "Universidade Federal de Minas Gerais",
+    "publisher-place": "Belo Horizonte, MG",
+    "URL": "https://www.researchgate.net/publication/335787521_Livro_de_publicacoes_do_7_Congresso_Brasileiro_de_Neurovisao"
+  },
+  {
+    "id": "garcia2019_AssociationAuditoryTemporal",
+    "type": "article-journal",
+    "title": "Association between auditory temporal and visual processing in reading skill",
+    "author": [
+      {
+        "family": "Garcia",
+        "given": "Ana Carla Oliveira"
+      },
+      {
+        "family": "Vilhena",
+        "given": "Douglas De Araújo"
+      },
+      {
+        "family": "Guimarães",
+        "given": "Márcia Reis"
+      },
+      {
+        "family": "Pinheiro",
+        "given": "Ângela Maria Vieira"
+      },
+      {
+        "family": "Momensohn-Santos",
+        "given": "Teresa Maria"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "container-title": "Revista CEFAC",
+    "volume": "21",
+    "issue": "5",
+    "page": "e6119",
+    "DOI": "10.1590/1982-0216/20192156119",
+    "URL": "/docs/publicacoes/garcia2019_AssociationAuditoryTemporal.pdf"
+  },
+  {
+    "id": "dasilvaamorim2019_AutomaticSegmentationBlood",
+    "type": "article-journal",
+    "title": "Automatic segmentation of blood vessels in retinal images using 2D gabor wavelet and sub-image thresholding resulting from image partition",
+    "author": [
+      {
+        "family": "Da Silva Amorim",
+        "given": "Luciana"
+      },
+      {
+        "family": "Ferreira",
+        "given": "Flávia Magalhães Freitas"
+      },
+      {
+        "family": "Guimarães",
+        "given": "Juliana Reis"
+      },
+      {
+        "family": "Peixoto",
+        "given": "Zélia Myriam Assis"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          12
+        ]
+      ]
+    },
+    "container-title": "Research on Biomedical Engineering",
+    "volume": "35",
+    "issue": "3-4",
+    "page": "241-249",
+    "DOI": "10.1007/s42600-019-00028-9",
+    "URL": "/docs/publicacoes/dasilvaamorim2019_AutomaticSegmentationBlood.pdf"
+  },
+  {
+    "id": "vilhena2019_CentralPeripheralVisual",
+    "type": "book",
+    "title": "Central and peripheral visual function in developmental dyslexia",
+    "author": [
+      {
+        "family": "Vilhena",
+        "given": "Douglas"
+      },
+      {
+        "family": "Reis Guimarães",
+        "given": "Márcia"
+      },
+      {
+        "family": "Guimaraes",
+        "given": "Ricardo"
+      },
+      {
+        "family": "Pinheiro",
+        "given": "Ângela"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          10,
+          2
+        ]
+      ]
+    },
+    "DOI": "10.13140/RG.2.2.19151.02728/1",
+    "URL": "/docs/publicacoes/vilhena2019_CentralPeripheralVisual.pdf"
+  },
+  {
+    "id": "guimaraes2019_FiltrosEspectraisMelhoram",
+    "type": "chapter",
+    "title": "Filtros espectrais melhoram a eﬁciência da leitura e dos movimentos oculares: estudo longitudinal de 177 adultos",
+    "author": [
+      {
+        "family": "Guimarães",
+        "given": "Márcia Reis"
+      },
+      {
+        "family": "Vilhena",
+        "given": "Douglas De Araújo"
+      },
+      {
+        "family": "Pinheiro",
+        "given": "Ângela Maria Vieira"
+      },
+      {
+        "family": "Guimarães",
+        "given": "Ricardo Queiroz"
+      }
+    ],
+    "editor": [
+      {
+        "family": "Soares",
+        "given": "Ângela Mathylde"
+      },
+      {
+        "family": "Simão",
+        "given": "Jalmiris Regina Oliveira Reis"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "container-title": "Caminhos da aprendizagem e inclusão: entretecendo múltiplos saberes",
+    "publisher": "Artesã Editora",
+    "publisher-place": "Belo Horizonte",
+    "volume": "2",
+    "page": "263-275",
+    "URL": "https://www.researchgate.net/publication/337566713_Filtros_espectrais_melhoram_a_eficiencia_da_leitura_e_dos_movimentos_oculares_estudo_longitudinal_de_177_adultos"
+  },
+  {
+    "id": "vilhena2019_MelhoraDesempenhoLeitura",
+    "type": "article-journal",
+    "title": "Melhora do desempenho de leitura com o uso de lâminas espectrais: revisão sistemática e meta-análise. PSICOLOGIA ARGUMENTO (PUCPR. IMPRESSO), v. 36, p. 343-361, 2019",
+    "author": [
+      {
+        "family": "Vilhena",
+        "given": "D. A"
+      },
+      {
+        "family": "Guimaraes",
+        "given": "M. R"
+      },
+      {
+        "family": "Guimaraes",
+        "given": "R. Q"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "container-title": "Artigos Completos Publicados Em Periódicos (a Partir De 2010)",
+    "DOI": "https://www.researchgate.net/publication/337547496_Melhora_do_desempenho_de_leitura_com_o_uso_de_laminas_espectrais_revisao_sistematica_e_meta-analise_Improvement_in_reading_performance_using_spectral_overlays_systematic_review_and_meta-analyses",
+    "URL": "/docs/publicacoes/vilhena2019_MelhoraDesempenhoLeitura.pdf"
+  },
+  {
+    "id": "diniz2018_LowCostStereophotogrammetrica",
+    "type": "article-journal",
+    "title": "A low cost stereophotogrammetric system for the evaluation of tridimensional head translations during visual tasks",
+    "author": [
+      {
+        "family": "Diniz",
+        "given": "Cláudia De Almeida Ferreira"
+      },
+      {
+        "family": "Andrade",
+        "given": "Marcus Vinícius Faleiro De"
+      },
+      {
+        "family": "Silva",
+        "given": "Bruno Philip Alves Da"
+      },
+      {
+        "family": "Duarte",
+        "given": "Maria Lúcia Machado"
+      },
+      {
+        "family": "Donadon",
+        "given": "Lázaro Valentin"
+      },
+      {
+        "family": "Guimarães",
+        "given": "Ricardo"
+      },
+      {
+        "family": "Guimarães",
+        "given": "Márcia"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          8,
+          18
+        ]
+      ]
+    },
+    "container-title": "Journal of Medical Engineering & Technology",
+    "volume": "42",
+    "issue": "6",
+    "page": "411-419",
+    "DOI": "10.1080/03091902.2018.1529203",
+    "URL": "/docs/publicacoes/diniz2018_LowCostStereophotogrammetrica.pdf"
+  },
+  {
+    "id": "vilhena2018_Anais6oCongresso",
+    "type": "book",
+    "title": "Anais do 6º congresso brasileiro de neurovisão - proceedings of the 6th brazilian congress of neurovision",
+    "author": [
+      {
+        "family": "Vilhena",
+        "given": "Douglas De Araújo"
+      },
+      {
+        "family": "Guimarães",
+        "given": "Ricardo Queiroz"
+      },
+      {
+        "family": "Guimarães",
+        "given": "Márcia Reis"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "publisher": "Universidade Federal de Minas Gerais",
+    "publisher-place": "Belo Horizonte, MG",
+    "URL": "https://www.researchgate.net/publication/327944145_Livro_de_publicacoes_do_6_Congresso_Brasileiro_de_Neurovisao"
+  },
+  {
+    "id": "santiago2018_DesenvolvimentoUmDispositivo",
+    "type": "thesis",
+    "title": "Desenvolvimento de um dispositivo LED RGB microcontrolado para reprodução das cromaticidades dos overlays irlen e suas combinações",
+    "author": [
+      {
+        "family": "Santiago",
+        "given": "Thiago"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          3,
+          23
+        ]
+      ]
+    },
+    "publisher": "Universidade Federal de Minas Gerais",
+    "publisher-place": "Belo Horizonte, MG"
+  },
+  {
+    "id": "jeanandradecanestri2018_DesenvolvimentoUmSistema",
+    "type": "thesis",
+    "title": "Desenvolvimento de um sistema de identificação de pupila e rastreamento ocular",
+    "author": [
+      {
+        "family": "Jean Andrade Canestri"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "publisher": "Universidade Federal de Minas Gerais",
+    "publisher-place": "Belo Horizonte, MG",
+    "URL": "https://sucupira-legado.capes.gov.br/sucupira/public/consultas/coleta/trabalhoConclusao/viewTrabalhoConclusao.jsf?popup=true&id_trabalho=6410364."
+  },
+  {
+    "id": "pinheiro2018_DislexiaCausasConsequencias",
+    "type": "book",
+    "title": "Dislexia: causas e consequências",
+    "author": [
+      {
+        "family": "Pinheiro",
+        "given": "Ângela Maria Vieira"
+      },
+      {
+        "family": "Scliar-Cabral",
+        "given": "Leonor"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "publisher": "Editora UFMG",
+    "publisher-place": "Belo Horizonte, MG",
+    "DOI": "https://lapan.com.br/wp-content/uploads/2018/08/Ebook-Lapan.zip",
+    "URL": "https://lapan.com.br/wp-content/uploads/2018/08/Ebook-Lapan.zip"
+  },
+  {
+    "id": "leaodanielamaggionipereira2018_EfeitosUsoLaminas",
+    "type": "thesis",
+    "title": "Efeitos do uso de lâminas espectrais para tratamento da síndro",
+    "author": [
+      {
+        "literal": "Leão, Daniela Maggioni Pereira"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          4,
+          27
+        ]
+      ]
+    },
+    "publisher": "Universidade Federal de Alfenas",
+    "publisher-place": "Alfenas, MG",
+    "URL": "/docs/publicacoes/leaodanielamaggionipereira2018_EfeitosUsoLaminas.pdf"
+  },
+  {
+    "id": "vilhena2018_MelhoraDesempenhoLeitura",
+    "type": "article-journal",
+    "title": "Melhora do desempenho de leitura com o uso de lâminas espectrais: revisão sistemática e meta-análise [improvement in reading performance using spectral overlays: systematic review and meta-analyses]",
+    "author": [
+      {
+        "family": "Vilhena",
+        "given": "Douglas"
+      },
+      {
+        "family": "Reis Guimarães",
+        "given": "Márcia"
+      },
+      {
+        "family": "Guimaraes",
+        "given": "Ricardo"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          7,
+          1
+        ]
+      ]
+    },
+    "volume": "36",
+    "page": "343-361",
+    "DOI": "10.7213/psicolargum.36.93.AO05"
+  },
+  {
+    "id": "soares2018_MetodologiaUtilizadaPara",
+    "type": "article-journal",
+    "title": "Metodologia utilizada para calcular o bloco óptico de um sistema de triagem da acuidade visual utilizando tela LCD",
+    "author": [
+      {
+        "family": "Soares",
+        "given": "Fabrício Carvalho"
+      },
+      {
+        "family": "Barbosa",
+        "given": "Marcos Pinotti"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          5,
+          16
+        ]
+      ]
+    },
+    "container-title": "ForScience",
+    "volume": "6",
+    "issue": "1",
+    "DOI": "10.29069/forscience.2018v6n1.e148",
+    "URL": "http://www.forscience.ifmg.edu.br/forscience/index.php/forscience/article/view/148"
+  },
+  {
+    "id": "reisguimaraes2018_PapelPsicopedagogoNa",
+    "type": "article-journal",
+    "title": "O papel do psicopedagogo na identificação e intervenção nos distúrbios de aprendizagem relacionados à visão: caso de uma intervenção tardia",
+    "author": [
+      {
+        "family": "Reis Guimarães",
+        "given": "Márcia"
+      },
+      {
+        "family": "Vilhena",
+        "given": "Douglas"
+      },
+      {
+        "family": "Freitas",
+        "given": "Silmara"
+      },
+      {
+        "family": "Pinheiro",
+        "given": "Ângela"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          8,
+          14
+        ]
+      ]
+    },
+    "volume": "23",
+    "page": "29-49",
+    "URL": "/docs/publicacoes/reisguimaraes2018_PapelPsicopedagogoNa.pdf"
+  },
+  {
+    "id": "vilhena2018_PapelPsicopedagogoNa",
+    "type": "article-journal",
+    "title": "O papel do psicopedagogo na identificação e intervenção nos distúrbios de aprendizagem relacionados à visão: caso de uma intervenção tardia. PAIDÉIA (BELO HORIZONTE), v. 13, p. 1, 2018",
+    "author": [
+      {
+        "family": "Vilhena",
+        "given": "D. A"
+      },
+      {
+        "family": "Freitas",
+        "given": "S. D"
+      },
+      {
+        "family": "Guimaraes",
+        "given": "M. R"
+      },
+      {
+        "family": "Pinheiro",
+        "given": "A. M. V"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "container-title": "Artigos Completos Publicados Em Periódicos (a Partir De 2010)",
+    "DOI": "https://www.researchgate.net/publication/327022825_O_papel_do_psicopedagogo_na_identificacao_e_intervencao_nos_disturbios_de_aprendizagem_relacionados_a_visao_caso_de_uma_intervencao_tardia",
+    "URL": "https://www.researchgate.net/publication/327022825_O_papel_do_psicopedagogo_na_identificacao_e_intervencao_nos_disturbios_de_aprendizagem_relacionados_a_visao_caso_de_uma_intervencao_tardia"
+  },
+  {
+    "id": "vilhena2018_TratamentoEstresseVisual",
+    "type": "article-journal",
+    "title": "Tratamento do estresse visual na leitura: características físicas e mecanismos neurais de ação das lâminas espectrais (overlays)",
+    "author": [
+      {
+        "family": "Vilhena",
+        "given": "D. A"
+      },
+      {
+        "family": "Guimaraes",
+        "given": "M. R"
+      },
+      {
+        "family": "Guimaraes",
+        "given": "R. Q"
+      },
+      {
+        "family": "Pinheiro",
+        "given": "A. M. V"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "container-title": "Paidéia : Revista Do Curso De Pedagogia Da Faculdade De Ciências Humanas, Sociais E Da Saúde",
+    "publisher": "Universidade Fumec",
+    "publisher-place": "Belo Horizonte, MG",
+    "volume": "13",
+    "issue": "19",
+    "page": "83-97",
+    "URL": "https://www.researchgate.net/publication/327023318_Tratamento_do_Estresse_Visual_na_leitura_caracteristicas_fisicas_e_mecanismos_neurais_de_acao_das_laminas_espectrais_overlays"
+  },
+  {
+    "id": "vilhena2018_UsoEyetrackerPara",
+    "type": "paper-conference",
+    "title": "Uso de eye-tracker para análise dos movimentos oculares durante a leitura [use of eye-tracker to analyze eye movements during reading]",
+    "author": [
+      {
+        "family": "Vilhena",
+        "given": "Douglas"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          6,
+          23
+        ]
+      ]
+    },
+    "publisher-place": "São Paulo",
+    "DOI": "10.13140/RG.2.2.36661.58083"
+  },
+  {
+    "id": "vilhena2017_Anais5oCongresso",
+    "type": "book",
+    "title": "Anais do 5º congresso brasileiro de neurovisão",
+    "author": [
+      {
+        "family": "Vilhena",
+        "given": "Douglas De Araújo"
+      },
+      {
+        "family": "Pinheiro",
+        "given": "Ângela Maria Vieira"
+      },
+      {
+        "family": "Guimarães",
+        "given": "Márcia Reis"
+      },
+      {
+        "family": "Guimarães",
+        "given": "Ricardo Queiroz"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "publisher-place": "Belo Horizonte",
+    "URL": "https://www.researchgate.net/publication/319944508_Livro_de_publicacoes_do_5_Congresso_Brasileiro_de_Neurovisao"
+  },
+  {
+    "id": "soares2017_DesenvolvimentoUmSistemaa",
+    "type": "article-journal",
+    "title": "Desenvolvimento de um sistema de triagem da acuidade visual e do limiar auditivo acoplados em um banco de dados",
+    "author": [
+      {
+        "family": "Soares",
+        "given": "F. C"
+      },
+      {
+        "family": "Barbosa",
+        "given": "M. P"
+      },
+      {
+        "family": "Guimaraes",
+        "given": "R. Q"
+      },
+      {
+        "family": "Guimaraes",
+        "given": "M. F. C. R"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "container-title": "Revista Brasileira De Inovação Tecnologica Em Saúde",
+    "volume": "6",
+    "issue": "3",
+    "page": "32-44",
+    "DOI": "10.18816/r-bits.v6i3.7627",
+    "URL": "/docs/publicacoes/soares2017_DesenvolvimentoUmSistemaa.pdf"
+  },
+  {
+    "id": "garcia2017_EffectsSpectralOverlays",
+    "type": "article-journal",
+    "title": "Effects of spectral overlays on reading performance of brazilian elementary school children",
+    "author": [
+      {
+        "family": "Garcia",
+        "given": "Ana Carla Oliveira"
+      },
+      {
+        "family": "Momensohn-Santos",
+        "given": "Teresa Maria"
+      },
+      {
+        "family": "Vilhena",
+        "given": "Douglas de Araújo"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "container-title": "Folia Phoniatrica Et Logopaedica",
+    "volume": "69",
+    "issue": "5-6",
+    "page": "219-225",
+    "DOI": "10.1159/000484139",
+    "URL": "/docs/publicacoes/garcia2017_EffectsSpectralOverlays.pdf"
+  },
+  {
+    "id": "diniz2017_EstudoEstereofotogrametricoCinematica",
+    "type": "thesis",
+    "title": "Estudo estereofotogramétrico da cinemática da cabeça de indivíduos com estresse visual",
+    "author": [
+      {
+        "family": "Diniz",
+        "given": "Cláudia de Almeida Ferreira"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          2,
+          21
+        ]
+      ]
+    },
+    "publisher": "Universidade Federal de Minas Gerais",
+    "publisher-place": "Belo Horizonte",
+    "URL": "/docs/publicacoes/diniz2017_EstudoEstereofotogrametricoCinematica.pdf"
+  },
+  {
+    "id": "castellobrancodesa2017_HistoricoDesenvolvimentoRastreadores",
+    "type": "book",
+    "title": "Histórico de desenvolvimento de rastreadores dos movimentos oculares",
+    "author": [
+      {
+        "family": "Castello Branco de Sá",
+        "given": "Luísa"
+      },
+      {
+        "family": "Canestri",
+        "given": "Jean"
+      },
+      {
+        "family": "Vilhena",
+        "given": "Douglas"
+      },
+      {
+        "family": "Guimaraes",
+        "given": "Ricardo"
+      },
+      {
+        "family": "Ferreira",
+        "given": "Ricardo"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          9,
+          21
+        ]
+      ]
+    },
+    "DOI": "10.13140/RG.2.2.11107.30247",
+    "URL": "/docs/publicacoes/castellobrancodesa2017_HistoricoDesenvolvimentoRastreadores.pdf"
+  },
+  {
+    "id": "rocha_toffolo2017_OsBeneficiosOralizacao",
+    "type": "article-journal",
+    "title": "Os benefícios da oralização e da leitura labial no desempenho de leitura de surdos profundos usuários da libras. Revista brasileira de educação, v. 22, p. 1, 2017",
+    "author": [
+      {
+        "family": "Rocha_Toffolo",
+        "given": "A. C"
+      },
+      {
+        "family": "Vilhena",
+        "given": "D. A"
+      },
+      {
+        "family": "Bernardino",
+        "given": "E. L. A"
+      },
+      {
+        "family": "Pinheiro",
+        "given": "A. M. V"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "container-title": "Artigos Completos Publicados Em Periódicos (a Partir De 2010)",
+    "DOI": "https://www.researchgate.net/publication/321637497_Os_beneficios_da_oralizacao_e_da_leitura_labial_no_desempenho_de_leitura_de_surdos_profundos_usuarios_da_Libras?_sg=HKsqubl2HJBzIykBZkxwgHsklEQuZPg9phJQgso7GraEzzvRckHd_fhfYJbPjEgb5d0YW_FZCEASET8A7-oJJ2RxtbqBkhmpVJtcehD8.bG0F4cSg-e__3GCZowPow4PzZ8Kx-EK9jqEZd0ufImAtGAS2Br7PR4NZSewMFe0qqO2qEiMSHTHppNIx_2MrWw",
+    "URL": "https://www.researchgate.net/publication/321637497_Os_beneficios_da_oralizacao_e_da_leitura_labial_no_desempenho_de_leitura_de_surdos_profundos_usuarios_da_Libras?_sg=HKsqubl2HJBzIykBZkxwgHsklEQuZPg9phJQgso7GraEzzvRckHd_fhfYJbPjEgb5d0YW_FZCEASET8A7-oJJ2RxtbqBkhmpVJtcehD8.bG0F4cSg-e__3GCZowPow4PzZ8Kx-EK9jqEZd0ufImAtGAS2Br7PR4NZSewMFe0qqO2qEiMSHTHppNIx_2MrWw"
+  },
+  {
+    "id": "cardoso2017_OsOlhosLu",
+    "type": "patent",
+    "title": "Os olhos da Lu - ensinar visão para crianças",
+    "author": [
+      {
+        "family": "Cardoso",
+        "given": "Luciana"
+      },
+      {
+        "family": "Vilhena",
+        "given": "Douglas"
+      },
+      {
+        "family": "Andrade",
+        "given": "Geysiane"
+      },
+      {
+        "family": "Bonanno",
+        "given": "Rafael"
+      },
+      {
+        "family": "Afonso",
+        "given": "Fabricio"
+      },
+      {
+        "family": "Fonseca",
+        "given": "Rafaela"
+      },
+      {
+        "family": "Reis Guimarães",
+        "given": "Márcia"
+      },
+      {
+        "family": "Guimaraes",
+        "given": "Ricardo"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          29
+        ]
+      ]
+    }
+  },
+  {
+    "id": "santos2017_ProjetoImplementacaoValidacao",
+    "type": "thesis",
+    "title": "Projeto, implementação e validação de uma superfície inteligente para monitoramento de estabilidade humana estática e dinâmica",
+    "author": [
+      {
+        "family": "Santos",
+        "given": "Poliany Ferreira"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "publisher": "PONTIFÍCIA UNIVERSIDADE CATÓLICA DE MINAS GERAIS",
+    "publisher-place": "Belo Horizonte, MG",
+    "URL": "/docs/publicacoes/santos2017_ProjetoImplementacaoValidacao.pdf"
+  },
+  {
+    "id": "pinheiro2017_PROLECTProvaCompreensao",
+    "type": "article-journal",
+    "title": "PROLEC-T - prova de compreensão de texto: análise de suas características psicométricas. Temas em psicologia, v. 25, p. 1067-1080, 2017",
+    "author": [
+      {
+        "family": "Pinheiro",
+        "given": "A. M. V"
+      },
+      {
+        "family": "Vilhena",
+        "given": "D. A"
+      },
+      {
+        "family": "Santos",
+        "given": "M. A. C"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "container-title": "Artigos Completos Publicados Em Periódicos (a Partir De 2010)",
+    "DOI": "https://www.researchgate.net/publication/320026506_PROLEC-T_-_prova_de_compreensao_de_texto_analise_de_suas_caracteristicas_psicometricas",
+    "URL": "https://www.researchgate.net/publication/320026506_PROLEC-T_-_prova_de_compreensao_de_texto_analise_de_suas_caracteristicas_psicometricas"
+  },
+  {
+    "id": "reisguimaraes2017_RelacaoProcessamentoOptico",
+    "type": "article-journal",
+    "title": "Relação do processamento óptico, neurovisual e cognitivo nas dificuldades de leitura",
+    "author": [
+      {
+        "family": "Reis Guimarães",
+        "given": "Márcia"
+      },
+      {
+        "family": "Vilhena",
+        "given": "Douglas"
+      },
+      {
+        "family": "Guimaraes",
+        "given": "Ricardo"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          1
+        ]
+      ]
+    },
+    "container-title": "Revista Acta Científica",
+    "volume": "8",
+    "DOI": "10.21745/ac08-18",
+    "URL": "/docs/publicacoes/reisguimaraes2017_RelacaoProcessamentoOptico.pdf"
+  },
+  {
+    "id": "vilhena2016_Anais4oCongresso",
+    "type": "book",
+    "title": "Anais do 4º congresso brasileiro de neurociências da visão",
+    "author": [
+      {
+        "family": "Vilhena",
+        "given": "Douglas De Araújo"
+      },
+      {
+        "family": "Pinheiro",
+        "given": "A. M. V"
+      },
+      {
+        "family": "Guimarães",
+        "given": "Márcia Reis"
+      },
+      {
+        "family": "Guimarães",
+        "given": "Ricardo Queiroz"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "volume": "1"
+  },
+  {
+    "id": "garcia2016_EfeitoLaminasEspectrais",
+    "type": "thesis",
+    "title": "Efeito das lâminas espectrais sobre desempenho da leitura em escolares do ensino fundamental",
+    "author": [
+      {
+        "family": "Garcia",
+        "given": "Ana Carla Oliveira"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "publisher": "Pontifícia Universidade Católica de São Paulo",
+    "URL": "https://tede2.pucsp.br/handle/handle/19614"
+  },
+  {
+    "id": "seabra2016_EstrategiasProfessorEnsino",
+    "type": "manuscript",
+    "title": "Estratégias do professor do ensino fundamental 1: ensino de aluno diagnosticado com síndrome de irlen",
+    "author": [
+      {
+        "family": "Seabra",
+        "given": "Edison Jacinto"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "publisher": "Centro Universitário de Belo Horizonte",
+    "URL": "/docs/publicacoes/seabra2016_EstrategiasProfessorEnsino.pdf"
+  },
+  {
+    "id": "vilhena2016_ReadingTestSentence",
+    "type": "article-journal",
+    "title": "Reading test - sentence comprehension: an adapted version of lobrot's lecture 3 test for brazilian portuguese. Dyslexia (chichester, england. Print), v. 22, p. 47-63, 2016",
+    "author": [
+      {
+        "family": "Vilhena",
+        "given": "D. A"
+      },
+      {
+        "family": "Sucena",
+        "given": "A"
+      },
+      {
+        "family": "Castro",
+        "given": "S. L"
+      },
+      {
+        "family": "Pinheiro",
+        "given": "A. M. V"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "container-title": "Artigos Completos Publicados Em Periódicos (a Partir De 2010)",
+    "DOI": "https://www.researchgate.net/publication/290598387_Reading_Test-Sentence_Comprehension_An_Adapted_Version_of_Lobrot's_Lecture_3_Test_for_Brazilian_Portuguese",
+    "URL": "https://www.researchgate.net/publication/290598387_Reading_Test-Sentence_Comprehension_An_Adapted_Version_of_Lobrot's_Lecture_3_Test_for_Brazilian_Portuguese"
+  },
+  {
+    "id": "v..2016_RevisedVersionScale",
+    "type": "article-journal",
+    "title": "Revised version of the scale of evaluation of reading competence by the teacher: final validation and standardization",
+    "author": [
+      {
+        "family": "V..",
+        "given": "Vilhena"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "container-title": "Universitas Psychologica",
+    "volume": "15",
+    "issue": "4",
+    "URL": "https://www.researchgate.net/publication/315343001_Revised_version_of_the_Scale_of_Evaluation_of_Reading_Competence_by_the_Teacher_final_validation_and_standardization_Version_revisada_de_la_Escala_de_Evaluacion_de_la_Competencia_de_Lectura_por_el_Pro"
+  },
+  {
+    "id": "pinheiro2016_TreinamentoPaisSobre",
+    "type": "chapter",
+    "title": "Treinamento de pais sobre como estimular a linguagem das crianças desde o nascimento",
+    "author": [
+      {
+        "family": "Pinheiro",
+        "given": "A. M. V"
+      },
+      {
+        "family": "Araujo",
+        "given": "A. L. C"
+      },
+      {
+        "family": "Vilhena",
+        "given": "D. A"
+      },
+      {
+        "family": "Salles",
+        "given": "Jerusa Fumagalli"
+      },
+      {
+        "family": "Haase",
+        "given": "Vitor Geraldi"
+      },
+      {
+        "family": "Malloy-Diniz",
+        "given": "Leandro F."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "container-title": "Neuropsicologia do desenvolvimento: infância e adolescência",
+    "publisher-place": "Porto Alegre, RS",
+    "page": "167-171",
+    "DOI": "10.13140/RG.2.1.4241.5768",
+    "URL": "https://www.researchgate.net/publication/298808503_Treinamento_de_pais_sobre_como_estimular_a_linguagem_das_criancas_desde_o_nascimento"
+  },
+  {
+    "id": "vilhena2015_EvolucaoEscritaAdaptacao",
+    "type": "chapter",
+    "title": "A evolução da escrita e a adaptação do cérebro",
+    "author": [
+      {
+        "family": "Vilhena",
+        "given": "D. A."
+      }
+    ],
+    "editor": [
+      {
+        "literal": "Rafael Silva Pereira"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "container-title": "Abordagem multidisciplinar da aprendizagem",
+    "publisher": "QualConsoante, Lda",
+    "volume": "1",
+    "page": "241-251",
+    "DOI": "10.13140/RG.2.1.1620.1368/1",
+    "URL": "/docs/publicacoes/vilhena2015_EvolucaoEscritaAdaptacao.pdf"
+  },
+  {
+    "id": "vilhena2015_AvaliacaoHabilidadeLeitura",
+    "type": "thesis",
+    "title": "Avaliação da habilidade de leitura de crianças do ensino fundamental: medidas diretas e indiretas",
+    "author": [
+      {
+        "family": "Vilhena",
+        "given": "Douglas de Araújo"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          3,
+          20
+        ]
+      ]
+    },
+    "publisher": "Universidade Federal de Minas Gerais",
+    "publisher-place": "Belo Horizonte, MG",
+    "URL": "https://hdl.handle.net/1843/BUBD-9YDLKC"
+  },
+  {
+    "id": "vilhena2015_AvaliacaoInterdisciplinarTranstorno",
+    "type": "article-journal",
+    "title": "Avaliação interdisciplinar do transtorno do espectro do autismo e comorbidades: caso de um diagnóstico tardio / interdisciplinary assessment of autism spectrum disorder and comorbidities: case of a late diagnosis",
+    "author": [
+      {
+        "family": "Vilhena",
+        "given": "Douglas"
+      },
+      {
+        "family": "Leite",
+        "given": "Rita"
+      },
+      {
+        "family": "Teixeira",
+        "given": "Isadora"
+      },
+      {
+        "family": "Pinheiro",
+        "given": "Ângela"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          1,
+          1
+        ]
+      ]
+    },
+    "container-title": "Cadernos De Pós-Graduação Em Distúrbios Do Desenvolvimento",
+    "volume": "15",
+    "page": "78-88",
+    "URL": "/docs/publicacoes/vilhena2015_AvaliacaoInterdisciplinarTranstorno.pdf"
+  },
+  {
+    "id": "bicalho2015_SindromeIrlenUm",
+    "type": "article-journal",
+    "title": "Síndrome de irlen: um olhar atento sobre o funcionamento cerebral durante a leitura. Acta biomedica brasiliensia, v. 6, p. 35-44, 2015",
+    "author": [
+      {
+        "family": "Bicalho",
+        "given": "L. F"
+      },
+      {
+        "family": "Almeida",
+        "given": "M. Z. T"
+      },
+      {
+        "family": "Guimarães",
+        "given": "Márcia Reis"
+      },
+      {
+        "family": "Silva",
+        "given": "J. R. G"
+      },
+      {
+        "family": "Fully",
+        "given": "F"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "container-title": "Artigos Completos Publicados Em Periódicos (a Partir De 2010)",
+    "DOI": "https://www.researchgate.net/publication/301530481_Sindrome_de_Irlen_um_olhar_atendo_sobre_o_funcionamento_cerebral_durante_a_leitura",
+    "URL": "https://www.researchgate.net/publication/301530481_Sindrome_de_Irlen_um_olhar_atendo_sobre_o_funcionamento_cerebral_durante_a_leitura"
+  },
+  {
+    "id": "alencarcarolinediasdacosta2014_ColouredOverlaysImprove",
+    "type": "paper-conference",
+    "title": "Coloured overlays improve reading performance in people suffering from visual stress",
+    "author": [
+      {
+        "literal": "Alencar, Caroline Dias Da Costa"
+      },
+      {
+        "family": "Luiz",
+        "given": "BARBOSA JUNIOR"
+      },
+      {
+        "family": "Guimaraes",
+        "given": "Ricardo Queiroz"
+      },
+      {
+        "literal": "Guimarães, Márcia Reis"
+      },
+      {
+        "literal": "Silva, Adriana Fernandes"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2014,
+          8,
+          17
+        ]
+      ]
+    },
+    "container-title": "Anais do II FORUM MUNDIAL DISLEXIA (II World Dyslexia Forum)",
+    "publisher": "Universidade Federal de Minas Gerais",
+    "publisher-place": "Belo Horizonte, MG",
+    "URL": "/docs/publicacoes/alencarcarolinediasdacosta2014_ColouredOverlaysImprove.pdf"
+  },
+  {
+    "id": "guimaraes2014_HistoriaCirurgiaRefrativa",
+    "type": "chapter",
+    "title": "História da cirurgia refrativa: córnea e catarata",
+    "author": [
+      {
+        "family": "Guimaraes",
+        "given": "Ricardo"
+      },
+      {
+        "family": "Reis Guimarães",
+        "given": "Márcia"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2014,
+          2,
+          1
+        ]
+      ]
+    },
+    "container-title": "Tratado brasileiro de catarata & cirurgia refrativa",
+    "publisher": "Cultura Médica",
+    "volume": "72",
+    "page": "444-451",
+    "DOI": "10.13140/RG.2.1.1754.2008",
+    "URL": "/docs/publicacoes/guimaraes2014_HistoriaCirurgiaRefrativa.pdf"
+  },
+  {
+    "id": "pinheiro2014_ImplementacaoSiteDislexia",
+    "type": "article-journal",
+    "title": "Implementação do site dislexia brasil na formação de professores",
+    "author": [
+      {
+        "family": "Pinheiro",
+        "given": "A. M. V"
+      },
+      {
+        "family": "Fawcett",
+        "given": "A"
+      },
+      {
+        "family": "Vilhena",
+        "given": "D. A"
+      },
+      {
+        "family": "Luque",
+        "given": "J. L"
+      },
+      {
+        "family": "Goetry",
+        "given": "V"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2014
+        ]
+      ]
+    },
+    "container-title": "Síndromes - Revista Multidisciplinar Do Desenvolvimento Humano",
+    "volume": "17",
+    "page": "64-66",
+    "URL": "/docs/publicacoes/pinheiro2014_ImplementacaoSiteDislexia.pdf"
+  },
+  {
+    "id": "guimaraesmarciareis2014_OsLimitesVisao",
+    "type": "chapter",
+    "title": "Os limites da visão humana. In: renato ambrósio jr; armando crema. (org.). Tratado brasileiro de catarata & cirurgia refrativa",
+    "author": [
+      {
+        "literal": "Guimarães, Márcia Reis"
+      },
+      {
+        "literal": "Alencar, Caroline Dias Da Costa"
+      },
+      {
+        "literal": "Guimarães, Ricardo Queiroz"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2014
+        ]
+      ]
+    },
+    "container-title": "Cultura médica",
+    "publisher": "guanabara koogan",
+    "publisher-place": "Rio de Janeiro, RJ",
+    "volume": "1",
+    "page": "59-64",
+    "DOI": "https://www.researchgate.net/publication/316487256_Os_limites_da_visao_humana",
+    "URL": "https://www.researchgate.net/publication/316487256_Os_limites_da_visao_humana"
+  },
+  {
+    "id": "pinheiro2014_PoliticasPublicasAbrindo",
+    "type": "book",
+    "title": "Políticas públicas: abrindo caminhos para a identificação precoce da dislexia e para as melhores práticas de alfabetização",
+    "author": [
+      {
+        "family": "Pinheiro",
+        "given": "A. M. V"
+      },
+      {
+        "family": "Vilhena",
+        "given": "D. A"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2014
+        ]
+      ]
+    },
+    "publisher": "faculdade de filosofia e ciências humanas",
+    "publisher-place": "Belo Horizonte, MG",
+    "URL": "https://www.researchgate.net/publication/298808736_Politicas_Publicas_abrindo_caminhos_para_a_identificacao_precoce_da_dislexia_e_para_as_melhores_praticas_de_alfabetizacao_Public_Policies_opening_channels_to_early_identification_of_dyslexia_and_best_"
+  },
+  {
+    "id": "reisguimaraes2013_AprendizagemLeituraSindrome",
+    "type": "paper-conference",
+    "title": "Aprendizagem e leitura - síndrome de irlen",
+    "author": [
+      {
+        "family": "Reis Guimarães",
+        "given": "Márcia"
+      },
+      {
+        "family": "Guimaraes",
+        "given": "Izabela"
+      }
+    ],
+    "editor": [
+      {
+        "family": "Assis",
+        "given": "Orly Zucatto Mantovani"
+      },
+      {
+        "family": "Cruz",
+        "given": "Amadeu Roselli"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2013,
+          2,
+          1
+        ]
+      ]
+    },
+    "container-title": "Neurociências e Educação",
+    "publisher": "Book Editora",
+    "publisher-place": "Campinas, SP",
+    "page": "171-182",
+    "DOI": "10.13140/RG.2.1.5028.9049"
+  },
+  {
+    "id": "canestri2013_SistemaIntegradoMonitoramento",
+    "type": "thesis",
     "title": "Sistema integrado de monitoramento da saúde da criança na escola",
-    "creators": [
+    "author": [
       {
-        "creatorType": "author",
-        "firstName": "Jean Andrade",
-        "lastName": "Canestri"
+        "family": "Canestri",
+        "given": "Jean Andrade"
       }
     ],
-    "date": "2010",
-    "publicationTitle": "Dissertações de Mestrado",
-    "key": "sistema-integrado-de-monitoramento-d-2010-d7bb4089"
+    "issued": {
+      "date-parts": [
+        [
+          2013
+        ]
+      ]
+    },
+    "publisher": "Universidade Federal de Minas Gerais",
+    "publisher-place": "Belo Horizonte, MG",
+    "URL": "/docs/publicacoes/canestri2013_SistemaIntegradoMonitoramento.pdf"
   },
   {
-    "itemType": "book",
-    "title": "Teste de Leitura: Compreensão de Sentenças (TELCS): Bloco de Folha de Aplicação e Respostas. 1. ed. São Paulo: Editora NilaPress, 2022. 25p",
-    "creators": [
+    "id": "marciareisguimaraes2012_AvaliacaoVisaoFuncional",
+    "type": "chapter",
+    "title": "Avaliação da visão funcional em distúrbios de aprendizagem - O papel do oftalmologista nos déficits de visão e aprendizagem",
+    "author": [
       {
-        "creatorType": "author",
-        "firstName": "DOUGLAS DE ARAÚJO",
-        "lastName": "VILHENA"
+        "family": "Márcia Reis Guimarães"
       },
       {
-        "creatorType": "author",
-        "firstName": "ÂNGELA MARIA VIEIRA",
-        "lastName": "PINHEIRO"
+        "family": "Ricardo Queiroz Guimaraes"
       }
     ],
-    "date": "2010",
-    "publicationTitle": "Livros publicados/organizados",
-    "key": "teste-de-leitura-compreens-o-de-sent-2010-e68a00a4"
+    "issued": {
+      "date-parts": [
+        [
+          2012
+        ]
+      ]
+    },
+    "container-title": "Dislexia e distúrbios de aprendizagem",
+    "page": "159-174",
+    "DOI": "10.13140/rg.2.1.2087.9768",
+    "URL": "/docs/publicacoes/marciareisguimaraes2012_AvaliacaoVisaoFuncional.pdf"
   },
   {
-    "itemType": "book",
-    "title": "Teste de Leitura: Compreensão de Sentenças (TELCS): Manual Técnico. 1. ed. São Paulo: Editora NilaPress, 2022. 88p",
-    "creators": [
+    "id": "junior2011_DesenvolvimentoUmaPlataforma",
+    "type": "thesis",
+    "title": "Desenvolvimento de uma plataforma de reabilitação para membro superior aplicada a pacientes pós acidente vascular encefálico",
+    "author": [
       {
-        "creatorType": "author",
-        "firstName": "DOUGLAS DE ARAÚJO",
-        "lastName": "VILHENA"
+        "family": "Junior",
+        "given": "Fábio Lúcio Corrêa"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2011
+        ]
+      ]
+    },
+    "publisher-place": "Belo Horizonte, MG"
+  },
+  {
+    "id": "araujo2011_DesenvolvimentoAvaliacaoSistema",
+    "type": "thesis",
+    "title": "Desenvolvimento e avaliação de sistema de auxílio à reabilitação motora do membro superior após acidente vascular encefálico",
+    "author": [
+      {
+        "family": "Araujo",
+        "given": "Rodrigo Cappato"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2011,
+          2,
+          14
+        ]
+      ]
+    },
+    "publisher": "Universidade Federal de Minas Gerais",
+    "publisher-place": "Belo Horizonte, MG",
+    "URL": "/docs/publicacoes/araujo2011_DesenvolvimentoAvaliacaoSistema.pdf"
+  },
+  {
+    "id": "faria2011_FrequenciaSindromeMearesirlen",
+    "type": "thesis",
+    "title": "Frequência da síndrome de meares-irlen entre alunos com dificuldades de leitura observadas no contexto escolar",
+    "author": [
+      {
+        "family": "Faria",
+        "given": "Laura Nequini"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2011,
+          7,
+          8
+        ]
+      ]
+    },
+    "publisher": "Universidade Federal de Minas Gerais",
+    "URL": "/docs/publicacoes/faria2011_FrequenciaSindromeMearesirlen.pdf"
+  },
+  {
+    "id": "reisguimaraes2011_SindromeIrlen",
+    "type": "article-journal",
+    "title": "Síndrome de irlen",
+    "author": [
+      {
+        "family": "Reis Guimarães",
+        "given": "Márcia"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2011,
+          11,
+          1
+        ]
+      ]
+    },
+    "container-title": "Síndromes - Revista Multidisciplinar Do Desenvolvimento Humano",
+    "volume": "1",
+    "page": "41-47",
+    "URL": "/docs/publicacoes/reisguimaraes2011_SindromeIrlen.pdf"
+  },
+  {
+    "id": "gumaraes2011_UmaAnaliseGrau",
+    "type": "thesis",
+    "title": "Uma análise do grau de eficiência de leitura e dos efeitos da intervenção espectral em portadores da síndrome de meares-irlen: análise por rastreador da movimentação ocular",
+    "author": [
+      {
+        "family": "Gumarâes",
+        "given": "Marina Eurides Alves"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2011,
+          12,
+          9
+        ]
+      ]
+    },
+    "publisher": "Universidade Federal de Minas Gerais",
+    "URL": "/docs/publicacoes/gumaraes2011_UmaAnaliseGrau.pdf"
+  },
+  {
+    "id": "guimaraes2010_NeuroadaptacaoPlasticaCortical",
+    "type": "chapter",
+    "title": "Neuroadaptação e plástica cortical na cirurgia refrativa: presente e futuro. In: josé ricardo carvalho lima rehder; marco antônio rey de faria; edmundo josé velasco martinelli. (org.). Estudos clínicos: cirurgia refrativa. 1ed.: navio MSC ópera, 2009, v. 1, p. 21-56",
+    "author": [
+      {
+        "family": "Guimarães",
+        "given": "Márcia Reis"
       },
       {
-        "creatorType": "author",
-        "firstName": "ÂNGELA MARIA VIEIRA",
-        "lastName": "PINHEIRO"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Livros publicados/organizados",
-    "key": "teste-de-leitura-compreens-o-de-sent-2010-e52fd393"
-  },
-  {
-    "itemType": "thesis",
-    "title": "Trabalho de Conclusão de Curso (Graduação em Engenharia Mecânica)",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "Desenvolvimento de uma plataforma de reabilitação para membro superior aplicada a pacientes pós acidente vascular",
-        "lastName": "encefálico"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Especializações e Monografias de Graduação",
-    "key": "trabalho-de-conclus-o-de-curso-gradu-2010-af58589a"
-  },
-  {
-    "itemType": "bookSection",
-    "title": "Treinamento de pais sobre como estimular a linguagem das crianças desde o nascimento. In: J.F.Salles; V.G. Haase; L. Malloy-Diniz. (Org.). Neuropsicologia do desenvolvimento: infância e adolescência. 1ed.Porto Alegre: Artmed, 2016, v. , p. 167-171",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "A. M. V",
-        "lastName": "PINHEIRO"
+        "family": "Baron",
+        "given": "J"
       },
       {
-        "creatorType": "author",
-        "firstName": "A. L. C",
-        "lastName": "ARAUJO"
+        "family": "Baldo",
+        "given": "M. V"
       },
       {
-        "creatorType": "author",
-        "firstName": "D. A",
-        "lastName": "VILHENA"
+        "family": "Guimarães",
+        "given": "R. Q"
+      },
+      {
+        "family": "Bechara",
+        "given": "S"
       }
     ],
-    "date": "2010",
-    "publicationTitle": "Capítulos de livros",
-    "DOI": "https://www.researchgate.net/publication/298808503_Treinamento_de_pais_sobre_como_estimular_a_linguagem_das_criancas_desde_o_nascimento",
-    "url": "https://www.researchgate.net/publication/298808503_Treinamento_de_pais_sobre_como_estimular_a_linguagem_das_criancas_desde_o_nascimento",
-    "key": "treinamento-de-pais-sobre-como-estim-2010-3d7050d9"
+    "issued": {
+      "date-parts": [
+        [
+          2010
+        ]
+      ]
+    },
+    "container-title": "Capítulos de livros",
+    "DOI": "https://www.researchgate.net/publication/316487450_Neuroadaptacao_e_plastica_cortical_na_cirurgia_refrativa_presente_e_futuro",
+    "URL": "https://www.researchgate.net/publication/316487450_Neuroadaptacao_e_plastica_cortical_na_cirurgia_refrativa_presente_e_futuro"
   },
   {
-    "itemType": "thesis",
-    "title": "Uma análise do grau de eficiência de leitura e dos efeitos da intervenção espectral em portadores da Síndrome de Meares-Irlen: análise por rastreamento da movimentação ocular",
-    "creators": [
+    "id": "guzman2010_TextoTremeInvestigacao",
+    "type": "thesis",
+    "title": "O texto treme? Investigação sobre as possíveis causas do estresse visual ou síndrome de irlen",
+    "author": [
       {
-        "creatorType": "author",
-        "firstName": "Marina Eurides Alves",
-        "lastName": "Guimarães"
+        "family": "Guzmán",
+        "given": "Ana Isabel Arroyave"
       }
     ],
-    "date": "2010",
-    "publicationTitle": "Especializações e Monografias de Graduação",
-    "key": "uma-an-lise-do-grau-de-efici-ncia-de-2010-356f3f60"
+    "issued": {
+      "date-parts": [
+        [
+          2010
+        ]
+      ]
+    },
+    "DOI": "10.11606/t.3.2019.tde-14012021-100323"
   },
   {
-    "itemType": "book",
-    "title": "VILHENA, D. A.; GUIMARAES, R. Q. (Org.); GUIMARAES, M. R. (Org.). Livro de publicações do 6º Congresso Brasileiro de Neurovisão = Proceedings of the 6th Brazilian Congress of Neurovision. Belo Horizonte: Faculdade de Filosofia e Ciências Humanas da Universidade Federal de Minas Gerais, 2018. GeraisISBN: 978-65-86989-01-4",
-    "creators": [
+    "id": "guimaraes2010_SelectiveSpectralFiltersa",
+    "type": "article-journal",
+    "title": "Selective spectral filters in the treatment of visually induced headaches and migraines - a clinical study of 93 patients",
+    "author": [
       {
-        "creatorType": "author",
-        "firstName": "",
-        "lastName": "Autor não identificado"
+        "family": "Guimarães",
+        "given": "Márcia Reis"
+      },
+      {
+        "family": "Guimaraes",
+        "given": "J. R"
+      },
+      {
+        "family": "Guimarães",
+        "given": "R. Q"
+      },
+      {
+        "family": "Nogueira",
+        "given": "M. R. V"
+      },
+      {
+        "family": "Botelho",
+        "given": "M. R"
+      },
+      {
+        "family": "Guimaraes",
+        "given": "M. E. A"
       }
     ],
-    "date": "2010",
-    "publicationTitle": "Livros publicados/organizados",
-    "DOI": "https://www.researchgate.net/publication/327944145_Livro_de_publicacoes_do_6_Congresso_Brasileiro_de_Neurovisao",
-    "url": "https://www.researchgate.net/publication/327944145_Livro_de_publicacoes_do_6_Congresso_Brasileiro_de_Neurovisao",
-    "key": "vilhena-d-a-guimaraes-r-q-org-guimar-2010-ec5c73cf"
+    "issued": {
+      "date-parts": [
+        [
+          2010
+        ]
+      ]
+    },
+    "container-title": "Headache Medicine",
+    "publisher": "Brazilian Headache Society",
+    "volume": "1",
+    "issue": "2",
+    "page": "72",
+    "URL": "/docs/publicacoes/guimaraes2010_SelectiveSpectralFiltersa.pdf"
   },
   {
-    "itemType": "book",
-    "title": "VILHENA, D. A.; GUIMARAES, R. Q.; GUIMARAES, M. R.; DUARTE, M. L. M. Livro de publicações do 7º Congresso Brasileiro de Neurovisão = Proceedings of the 7th Brazilian Congress of Neurovision. Belo Horizonte: Faculdade de Filosofia e Ciências Humanas da Universidade Federal de Minas Gerais, 2019. ISSN: 978-65-86989-02-1",
-    "creators": [
+    "id": "soares2009_SistemaTriagemVisual",
+    "type": "article-journal",
+    "title": "Sistema de triagem visual e auditiva de crianças em idade escolar, conectado a um banco de dados",
+    "author": [
       {
-        "creatorType": "author",
-        "firstName": "",
-        "lastName": "Autor não identificado"
+        "family": "Soares",
+        "given": "Fabricio Carvalho"
       }
     ],
-    "date": "2010",
-    "publicationTitle": "Livros publicados/organizados",
-    "DOI": "https://www.researchgate.net/publication/335787521_Livro_de_publicacoes_do_7_Congresso_Brasileiro_de_Neurovisao",
-    "url": "https://www.researchgate.net/publication/335787521_Livro_de_publicacoes_do_7_Congresso_Brasileiro_de_Neurovisao",
-    "key": "vilhena-d-a-guimaraes-r-q-guimaraes--2010-52b8151f"
-  },
-  {
-    "itemType": "book",
-    "title": "VILHENA, D. A.; GUIMARAES, R. Q.; GUIMARAES, M. R.; DUARTE, M. L. M. Livro de publicações do 9º Congresso Brasileiro e 3º Internacional de Neurociências da Visão = Proceedings of the 9th Brazilian and 3rd International Congress of Vision Neurosciences",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "",
-        "lastName": "Autor não identificado"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Livros publicados/organizados",
-    "DOI": "https://www.researchgate.net/publication/355669794_9_Congresso_Brasileiro_de_Neurociencias_da_Visao_-_Livro_de_publicacoes_-_3rd_International_Congress_of_Vision_Neurosciences_-_Proceedings",
-    "url": "https://www.researchgate.net/publication/355669794_9_Congresso_Brasileiro_de_Neurociencias_da_Visao_-_Livro_de_publicacoes_-_3rd_International_Congress_of_Vision_Neurosciences_-_Proceedings",
-    "key": "vilhena-d-a-guimaraes-r-q-guimaraes--2010-2c02978f"
-  },
-  {
-    "itemType": "book",
-    "title": "VILHENA, D. A.; PINHEIRO, A. M. V. (Org.) ; GUIMARAES, R. Q. (Org.); GUIMARAES, M. R. (Org.). Livro de publicações do 5º Congresso Brasileiro de Neurovisão = Proceedings of the 5th Brazilian Congress of Neurovision. 1. ed. Belo Horizonte: Faculdade de Filosofia e Ciências Humanas da Universidade Federal de Minas Gerais, 2017. ISBN: 978-65-86989-03-8",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "",
-        "lastName": "Autor não identificado"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Livros publicados/organizados",
-    "DOI": "https://www.researchgate.net/publication/319944508_Livro_de_publicacoes_do_5_Congresso_Brasileiro_de_Neurovisao",
-    "url": "https://www.researchgate.net/publication/319944508_Livro_de_publicacoes_do_5_Congresso_Brasileiro_de_Neurovisao",
-    "key": "vilhena-d-a-pinheiro-a-m-v-org-guima-2010-0ba8bc22"
-  },
-  {
-    "itemType": "bookSection",
-    "title": "VILHENA, D. A.. A evolução da escrita e a adaptação do cérebro. In: Rafael Silva Pereira. (Org.). Abordagem Multidisciplinar da Aprendizagem. 1ed.Sacavém: QualConsoante, Lda, 2015, v. 1, p. 241-251",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "",
-        "lastName": "Autor não identificado"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Capítulos de livros",
-    "DOI": "https://www.researchgate.net/publication/298808653_A_evolucao_da_escrita_e_a_adaptacao_do_cerebro",
-    "url": "https://www.researchgate.net/publication/298808653_A_evolucao_da_escrita_e_a_adaptacao_do_cerebro",
-    "key": "vilhena-d-a-a-evolu-o-da-escrita-e-a-2010-95c4da43"
-  },
-  {
-    "itemType": "conferencePaper",
-    "title": "XLVIII Reunião Anual da Sociedade Brasileira de Neurociências e Comportamento – SBNeC",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "",
-        "lastName": "Autor não identificado"
-      }
-    ],
-    "date": "2010",
-    "publicationTitle": "Resumos publicados em anais de congressos",
-    "DOI": "https://www.sbnec.org.br/congresso/sbnec2025/",
-    "url": "https://www.sbnec.org.br/congresso/sbnec2025/",
-    "key": "xlviii-reuni-o-anual-da-sociedade-br-2010-493e90c1"
+    "issued": {
+      "date-parts": [
+        [
+          2009,
+          7,
+          1
+        ]
+      ]
+    },
+    "publisher": "Universidade Federal de Minas Gerais",
+    "page": "1-140",
+    "URL": "/docs/publicacoes/soares2009_SistemaTriagemVisual.pdf"
   }
 ]

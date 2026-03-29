@@ -2,27 +2,31 @@ import CSL from "citeproc";
 import abntStyle from "./csl/abnt.csl?raw";
 import localePtBR from "./csl/locales-pt-BR.xml?raw";
 
-interface PublicacaoBruta {
-  key?: string;
-  title?: string;
-  date?: string;
-  DOI?: string;
-  url?: string;
-  itemType?: string;
-  creators?: unknown;
-  publicationTitle?: string;
-  publisher?: string;
-  place?: string;
-  volume?: string;
-  issue?: string;
-  pages?: string;
+interface CslAutor {
+  family?: string;
+  given?: string;
+  literal?: string;
 }
 
-interface CriadorBruto {
-  firstName?: unknown;
-  lastName?: unknown;
-  name?: unknown;
-  creatorType?: unknown;
+interface CslIssued {
+  "date-parts"?: (number | string)[][];
+}
+
+interface CslItem {
+  id?: string;
+  type?: string;
+  title?: string;
+  author?: CslAutor[];
+  editor?: CslAutor[];
+  issued?: CslIssued;
+  "container-title"?: string;
+  publisher?: string;
+  "publisher-place"?: string;
+  volume?: string;
+  issue?: string;
+  page?: string;
+  DOI?: string;
+  URL?: string;
 }
 
 export interface PublicacaoNormalizada {
@@ -48,24 +52,20 @@ const extrairTexto = (valor: unknown): string | undefined => {
   return limpo.length > 0 ? limpo : undefined;
 };
 
-const extrairAno = (valor: unknown): number | undefined => {
-  const texto = extrairTexto(valor);
-  if (!texto) return undefined;
-  const match = texto.match(/\b(19|20)\d{2}\b/);
-  return match ? Number(match[0]) : undefined;
+const possuiEsquemaSeguro = (valor: string): boolean => {
+  try {
+    const url = new URL(valor);
+    return url.protocol === "http:" || url.protocol === "https:";
+  } catch {
+    return false;
+  }
 };
 
-const normalizarDoi = (doi: unknown, url: unknown): string | undefined => {
-  const bruto = extrairTexto(doi) ?? extrairTexto(url);
-  if (!bruto) return undefined;
-
-  const semPrefixo = bruto
-    .replace(/^https?:\/\/(dx\.)?doi\.org\//i, "")
-    .replace(/^doi:\s*/i, "")
-    .trim();
-
-  if (!semPrefixo.includes("/")) return undefined;
-  return semPrefixo;
+const extrairAno = (issued: CslIssued | undefined): number | undefined => {
+  const bruto = issued?.["date-parts"]?.[0]?.[0];
+  const ano = typeof bruto === "string" ? parseInt(bruto, 10) : bruto;
+  if (typeof ano === "number" && !isNaN(ano) && ano >= 1900 && ano <= 2100) return ano;
+  return undefined;
 };
 
 const normalizarUrl = (valor: unknown): string | undefined => {
@@ -74,108 +74,35 @@ const normalizarUrl = (valor: unknown): string | undefined => {
   if (texto.startsWith("/")) {
     return texto;
   }
-  try {
-    return new URL(texto).toString();
-  } catch {
-    return undefined;
-  }
+  return possuiEsquemaSeguro(texto) ? new URL(texto).toString() : undefined;
 };
 
-const normalizarCriadores = (valor: unknown): string[] => {
-  if (!Array.isArray(valor)) return [];
-
-  return valor
-    .map((item) => {
-      const atual = (item ?? {}) as CriadorBruto;
-      const nomeCompleto =
-        extrairTexto(atual.name) ??
-        [extrairTexto(atual.firstName), extrairTexto(atual.lastName)]
-          .filter(Boolean)
-          .join(" ");
-
-      const creatorType = extrairTexto(atual.creatorType);
-      if (creatorType && creatorType !== "author") return undefined;
-      if (!nomeCompleto || nomeCompleto === "Autor não identificado") return undefined;
-
-      return nomeCompleto;
+const normalizarIssued = (issued: CslIssued | undefined): CslIssued | undefined => {
+  if (!Array.isArray(issued?.["date-parts"])) return undefined;
+  const parts = issued["date-parts"].map((part) =>
+    part.map((val) => {
+      const num = typeof val === "string" ? parseInt(val, 10) : val;
+      return typeof num === "number" && !isNaN(num) ? num : val;
     })
-    .filter((autor): autor is string => Boolean(autor));
+  );
+  return { "date-parts": parts as number[][] };
 };
 
-const mapearTipoCsl = (itemType: string | undefined) => {
-  const mapa: Record<string, string> = {
-    journalArticle: "article-journal",
-    bookSection: "chapter",
-    thesis: "thesis",
-    book: "book",
-  };
-
-  return mapa[itemType ?? ""] ?? "article";
-};
-
-const extrairDataCsl = (valor: unknown) => {
-  const texto = extrairTexto(valor);
-  if (!texto) return undefined;
-
-  const match = texto.match(/^(\d{4})(?:-(\d{2}))?(?:-(\d{2}))?/);
-  if (!match) return undefined;
-
-  const partes = [
-    Number(match[1]),
-    match[2] ? Number(match[2]) : undefined,
-    match[3] ? Number(match[3]) : undefined,
-  ].filter((parte): parte is number => typeof parte === "number");
-
-  return { "date-parts": [partes] };
-};
-
-const mapearCriadoresCsl = (valor: unknown, tipo: string) => {
-  if (!Array.isArray(valor)) return [];
-
-  return valor
-    .filter((item) => {
-      const atual = (item ?? {}) as CriadorBruto;
-      return extrairTexto(atual.creatorType) === tipo;
+const normalizarCriadores = (autores: CslAutor[] | undefined): string[] => {
+  if (!Array.isArray(autores)) return [];
+  return autores
+    .map((a) => {
+      const literal = extrairTexto(a?.literal);
+      if (literal) return literal;
+      const partes = [extrairTexto(a?.given), extrairTexto(a?.family)].filter(Boolean);
+      return partes.length > 0 ? partes.join(" ") : undefined;
     })
-    .map((item) => {
-      const atual = (item ?? {}) as CriadorBruto;
-      const family = extrairTexto(atual.lastName);
-      const given = extrairTexto(atual.firstName);
-      const literal = extrairTexto(atual.name);
-
-      if (literal && !family && !given) {
-        return { literal };
-      }
-
-      if (!family && !given) return null;
-      if (family === "Autor não identificado") return null;
-
-      return {
-        family,
-        given,
-      };
-    })
-    .filter(Boolean);
+    .filter((nome): nome is string => Boolean(nome));
 };
 
-const formatarReferenciaAbnt = (item: PublicacaoBruta): string => {
-  const id = extrairTexto(item.key) ?? extrairTexto(item.title) ?? "item-sem-id";
-  const cslItem = {
-    id,
-    type: mapearTipoCsl(item.itemType),
-    title: extrairTexto(item.title),
-    author: mapearCriadoresCsl(item.creators, "author"),
-    editor: mapearCriadoresCsl(item.creators, "editor"),
-    issued: extrairDataCsl(item.date),
-    "container-title": extrairTexto(item.publicationTitle),
-    publisher: extrairTexto(item.publisher),
-    "publisher-place": extrairTexto(item.place),
-    volume: extrairTexto(item.volume),
-    issue: extrairTexto(item.issue),
-    page: extrairTexto(item.pages),
-    DOI: extrairTexto(item.DOI),
-    URL: normalizarUrl(item.url),
-  };
+const formatarReferenciaAbnt = (item: CslItem): string => {
+  const id = extrairTexto(item.id) ?? extrairTexto(item.title) ?? "item-sem-id";
+  const cslItem = { ...item, id, issued: normalizarIssued(item.issued) };
 
   const sys = {
     retrieveLocale: () => localePtBR,
@@ -185,14 +112,14 @@ const formatarReferenciaAbnt = (item: PublicacaoBruta): string => {
 
   try {
     const engine = new CSL.Engine(sys, abntStyle, "pt-BR");
-    engine.setOutputFormat("html");
+    engine.setOutputFormat("text");
     engine.updateItems([id]);
     const bibliography = engine.makeBibliography();
     return bibliography[1][0];
   } catch {
     const titulo = extrairTexto(item.title) ?? "Referência sem título";
-    const ano = extrairAno(item.date);
-    return `<div class="csl-entry">${titulo}${ano ? `. ${ano}.` : "."}</div>`;
+    const ano = extrairAno(item.issued);
+    return `${titulo}${ano ? `. ${ano}.` : "."}`;
   }
 };
 
@@ -211,32 +138,32 @@ export const normalizarPublicacoes = (
 
   const publicacoes = dados
     .map((item, indice) => {
-      const atual = (item ?? {}) as PublicacaoBruta;
+      const atual = (item ?? {}) as CslItem;
       const titulo = extrairTexto(atual.title);
-      const ano = extrairAno(atual.date);
+      const ano = extrairAno(atual.issued);
 
       if (!titulo) {
-        problemas.push({ indice, chave: atual.key, motivo: "Título ausente." });
+        problemas.push({ indice, chave: atual.id, motivo: "Título ausente." });
         return null;
       }
 
       if (!ano) {
-        problemas.push({ indice, chave: atual.key, motivo: "Ano inválido ou ausente." });
+        problemas.push({ indice, chave: atual.id, motivo: "Ano inválido ou ausente." });
         return null;
       }
 
-      const doi = normalizarDoi(atual.DOI, atual.url);
-      const doiUrl = doi ? `https://doi.org/${doi}` : undefined;
-      const urlOriginal = normalizarUrl(atual.url);
+      const doi = extrairTexto(atual.DOI);
+      const doiUrl = doi ? `https://doi.org/${encodeURIComponent(doi)}` : undefined;
+      const urlOriginal = normalizarUrl(atual.URL);
       const urlExterna = urlOriginal && urlOriginal !== doiUrl ? urlOriginal : undefined;
-      const baseId = extrairTexto(atual.key) ?? `${ano}-${titulo.toLowerCase().slice(0, 60)}`;
+      const baseId = extrairTexto(atual.id) ?? `${ano}-${titulo.toLowerCase().slice(0, 60)}`;
       const id = chaves.has(baseId) ? `${baseId}-${indice}` : baseId;
       chaves.add(id);
 
       return {
         id,
         titulo,
-        autores: normalizarCriadores(atual.creators),
+        autores: normalizarCriadores(atual.author),
         ano,
         referenciaAbnt: formatarReferenciaAbnt(atual),
         doi,

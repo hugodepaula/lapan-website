@@ -11,10 +11,10 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     { name: "Metodologia e evidências" },
   ]}
 >
-  <section>
-    <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent-700">Sobre o Laboratório</p>
-    <h1 class="mt-3 text-4xl text-brand-900 sm:text-5xl">Metodologia e evidências</h1>
-    <p class="mt-5 max-w-3xl text-base leading-relaxed text-neutral-700">
+  <section class="mb-16">
+    <p class="text-xs font-black uppercase tracking-[0.2em] text-primary mb-3">Sobre o Laboratório</p>
+    <h1 class="text-4xl text-on-surface sm:text-6xl font-black tracking-tighter leading-tight">Metodologia e Evidências</h1>
+    <p class="mt-6 max-w-3xl text-lg leading-relaxed text-on-surface-variant/90 font-medium">
       O site do LAPAN foi estruturado para funcionar como repositório
       institucional legível por pessoas e por sistemas de busca e IA. Para isso,
       cada página canônica prioriza contexto, rastreabilidade, semântica clara e
@@ -22,18 +22,18 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     </p>
   </section>
 
-  <section class="pt-12 grid gap-6 lg:grid-cols-2">
-    <article class="rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft">
-      <h2 class="text-2xl text-brand-900">Fonte de verdade</h2>
-      <p class="mt-4 text-sm leading-relaxed text-neutral-700">
+  <section class="grid gap-8 lg:grid-cols-2">
+    <article class="card-tonal border border-outline-variant/30">
+      <h2 class="text-2xl font-bold text-on-surface mb-4">Fonte de Verdade</h2>
+      <p class="text-base leading-relaxed text-on-surface-variant/90 font-medium">
         Pessoas, projetos e eventos são mantidos em coleções Markdown com
         frontmatter tipado. O objetivo é preservar legibilidade editorial sem
         abrir mão de campos estruturados para extração, citação e validação.
       </p>
     </article>
-    <article class="rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft">
-      <h2 class="text-2xl text-brand-900">Critério de evidência</h2>
-      <p class="mt-4 text-sm leading-relaxed text-neutral-700">
+    <article class="card-tonal border border-outline-variant/30">
+      <h2 class="text-2xl font-bold text-on-surface mb-4">Critério de Evidência</h2>
+      <p class="text-base leading-relaxed text-on-surface-variant/90 font-medium">
         Sempre que possível, páginas de projeto apontam para fontes primárias,
         publicações, links institucionais, financiamento e equipes vinculadas.
         Páginas sem fonte explícita permanecem candidatas a revisão editorial.
@@ -41,28 +41,31 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     </article>
   </section>
 
-  <section class="pt-12 grid gap-4 md:grid-cols-3">
-    <article class="rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft">
-      <h2 class="text-xl text-brand-900">Semântica HTML</h2>
-      <p class="mt-3 text-sm leading-relaxed text-neutral-700">
-        O site usa títulos hierárquicos, regiões semânticas, breadcrumbs e
-        páginas canônicas para facilitar interpretação por navegadores, motores
-        de busca e modelos generativos.
-      </p>
-    </article>
-    <article class="rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft">
-      <h2 class="text-xl text-brand-900">JSON-LD</h2>
-      <p class="mt-3 text-sm leading-relaxed text-neutral-700">
-        A camada de layout injeta Organization, WebSite, BreadcrumbList e
-        esquemas específicos por página, como ProfilePage e Event.
-      </p>
-    </article>
-    <article class="rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft">
-      <h2 class="text-xl text-brand-900">Validação</h2>
-      <p class="mt-3 text-sm leading-relaxed text-neutral-700">
-        Scripts automatizados verificam presença de canonicals, Open Graph,
-        llms.txt, sitemap e requisitos editoriais mínimos antes de publicar.
-      </p>
-    </article>
+  <section class="pt-24 pb-12">
+    <h2 class="text-3xl font-black tracking-tighter text-on-surface mb-10">Arquitetura de Dados</h2>
+    <div class="grid gap-6 md:grid-cols-3">
+      <article class="p-8 rounded-3xl bg-surface-container-low border border-outline-variant/30">
+        <h3 class="text-xl font-bold text-on-surface mb-4">Semântica HTML</h3>
+        <p class="text-sm leading-relaxed text-on-surface-variant/90 font-medium">
+          O site usa títulos hierárquicos, regiões semânticas, breadcrumbs e
+          páginas canônicas para facilitar interpretação por navegadores, motores
+          de busca e modelos generativos.
+        </p>
+      </article>
+      <article class="p-8 rounded-3xl bg-surface-container-low border border-outline-variant/30">
+        <h3 class="text-xl font-bold text-on-surface mb-4">JSON-LD</h3>
+        <p class="text-sm leading-relaxed text-on-surface-variant/90 font-medium">
+          A camada de layout injeta Organization, WebSite, BreadcrumbList e
+          esquemas específicos por página, como ProfilePage e Event.
+        </p>
+      </article>
+      <article class="p-8 rounded-3xl bg-surface-container-low border border-outline-variant/30">
+        <h3 class="text-xl font-bold text-on-surface mb-4">Validação</h3>
+        <p class="text-sm leading-relaxed text-on-surface-variant/90 font-medium">
+          Scripts automatizados verificam presença de canonicals, Open Graph,
+          llms.txt, sitemap e requisitos editoriais mínimos antes de publicar.
+        </p>
+      </article>
+    </div>
   </section>
 </BaseLayout>

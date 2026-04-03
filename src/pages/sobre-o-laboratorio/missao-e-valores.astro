@@ -11,62 +11,63 @@ import {
   title="Missão e valores | Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)"
   description="Missão e valores do Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)."
 >
-  <section>
-    <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent-700">Sobre o Laboratório</p>
-    <h1 class="mt-3 text-4xl text-brand-900 sm:text-5xl">Missão e valores</h1>
-    <p class="mt-5 max-w-3xl text-base leading-relaxed text-neutral-700">
-      O Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)
+  <section class="mb-16">
+    <p class="text-xs font-black uppercase tracking-[0.2em] text-primary mb-3">Identidade Institucional</p>
+    <h1 class="text-4xl text-on-surface sm:text-6xl font-black tracking-tighter leading-tight">Missão e Valores</h1>
+    <p class="mt-6 max-w-3xl text-lg leading-relaxed text-on-surface-variant/80">
+      O Laboratório de Pesquisa Aplicada à Neurociências da Visão (LAPAN)
       organizou sua atuação para aproximar pesquisa, cuidado e impacto social.
-      Sua missão institucional foi traduzir conhecimento em decisões mais
+      Sua missão institucional é traduzir conhecimento em decisões mais
       seguras para a saúde, a educação e a qualidade de vida.
     </p>
   </section>
 
-  <section class="pt-12 grid gap-6 lg:grid-cols-[1fr_1.1fr]">
-    <article class="rounded-2xl border border-brand-200 bg-brand-50/70 p-6 shadow-soft">
-      <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent-700">
-        Síntese
-      </p>
-      <h2 class="mt-3 text-3xl text-brand-900">{missaoCurta}</h2>
-      <p class="mt-4 text-base leading-relaxed text-neutral-700">
+  <section class="grid gap-8 lg:grid-cols-[1fr_1.1fr]">
+    <article class="rounded-3xl bg-surface-container-low p-8 border border-outline-variant/30 shadow-2xl">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="material-symbols-outlined text-primary" data-icon="auto_awesome">auto_awesome</span>
+        <h3 class="text-xs font-black uppercase tracking-[0.2em] text-on-surface-variant/80">Síntese do Propósito</h3>
+      </div>
+      <h2 class="text-3xl font-serif font-bold text-on-surface leading-tight mb-6">{missaoCurta}</h2>
+      <p class="text-lg leading-relaxed text-on-surface-variant">
         {missaoCompleta}
       </p>
     </article>
 
-    <div class="rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft">
-      <h2 class="text-2xl text-brand-900">Como essa missão se traduzia na prática</h2>
-      <div class="mt-4 grid gap-3">
-        <article class="rounded-2xl border border-brand-200 bg-neutral-50 p-4">
-          <h3 class="text-base text-brand-900">Diagnóstico mais cedo</h3>
-          <p class="mt-2 text-sm leading-relaxed text-neutral-700">
-            O laboratório buscou antecipar sinais visuais que poderiam afetar
-            aprendizagem, leitura e desenvolvimento.
+    <div class="rounded-3xl bg-surface-container-high/40 p-8 border border-outline-variant/30">
+      <h2 class="text-xl font-bold text-on-surface mb-8 border-l-4 border-primary pl-4">A Missão na Prática</h2>
+      <div class="space-y-4">
+        <article class="rounded-2xl bg-surface-container-high p-6 border border-outline-variant/30 hover:bg-surface-container-highest transition-colors">
+          <h3 class="text-base font-bold text-primary mb-2">Diagnóstico Precoce</h3>
+          <p class="text-sm leading-relaxed text-on-surface-variant/90">
+            Busca constante por antecipar sinais visuais que podem afetar o desenvolvimento, a aprendizagem e o bem-estar ocular.
           </p>
         </article>
-        <article class="rounded-2xl border border-brand-200 bg-neutral-50 p-4">
-          <h3 class="text-base text-brand-900">Aplicação concreta</h3>
-          <p class="mt-2 text-sm leading-relaxed text-neutral-700">
-            As pesquisas foram organizadas para gerar instrumentos, protocolos,
-            orientações e decisões úteis para clínicas, escolas e políticas públicas.
+        <article class="rounded-2xl bg-surface-container-high p-6 border border-outline-variant/30 hover:bg-surface-container-highest transition-colors">
+          <h3 class="text-base font-bold text-primary mb-2">Ciência Aplicada</h3>
+          <p class="text-sm leading-relaxed text-on-surface-variant/90">
+            Pesquisas estruturadas para gerar protocolos e instrumentos práticos para clínicas, escolas e políticas públicas.
           </p>
         </article>
-        <article class="rounded-2xl border border-brand-200 bg-neutral-50 p-4">
-          <h3 class="text-base text-brand-900">Compromisso público</h3>
-          <p class="mt-2 text-sm leading-relaxed text-neutral-700">
-            O trabalho institucional esteve voltado à ampliação do acesso ao
-            cuidado e à comunicação clara com diferentes públicos.
+        <article class="rounded-2xl bg-surface-container-high p-6 border border-outline-variant/30 hover:bg-surface-container-highest transition-colors">
+          <h3 class="text-base font-bold text-primary mb-2">Responsabilidade Social</h3>
+          <p class="text-sm leading-relaxed text-on-surface-variant/90">
+            Compromisso com a democratização do acesso ao conhecimento científico e à excelência no cuidado visual.
           </p>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="pt-14">
-    <h2 class="text-3xl text-brand-900">Valores institucionais</h2>
-    <div class="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+  <section class="pt-24 pb-12">
+    <div class="flex items-end justify-between gap-4 mb-10">
+      <h2 class="text-3xl font-black tracking-tighter text-on-surface">Pilares Éticos</h2>
+      <p class="text-[10px] font-black uppercase tracking-widest text-on-surface-variant/80">Valores Institucionais</p>
+    </div>
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
       {valoresInstitucionais.map((valor, index) => (
         <article
-          class={`animate-on-scroll rounded-2xl border border-brand-200 bg-surface p-5 shadow-soft transition duration-300 hover:-translate-y-1 hover:border-brand-300 ${
+          class={`animate-on-scroll card-tonal border border-outline-variant/30 group ${
             index % 4 === 1
               ? "delay-100"
               : index % 4 === 2
@@ -76,8 +77,8 @@ import {
                   : ""
           }`}
         >
-          <h3 class="text-lg text-brand-900">{valor.titulo}</h3>
-          <p class="mt-3 text-sm leading-relaxed text-neutral-700">{valor.descricao}</p>
+          <h3 class="text-lg font-bold text-on-surface group-hover:text-primary transition-colors mb-4 leading-tight">{valor.titulo}</h3>
+          <p class="text-sm leading-relaxed text-on-surface-variant/90">{valor.descricao}</p>
         </article>
       ))}
     </div>

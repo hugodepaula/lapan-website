@@ -27,102 +27,114 @@ const marcos = [
   title="História e fundadores | Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)"
   description="História, fundadores e trajetória institucional do Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)."
 >
-  <section>
-    <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent-700">Sobre o Laboratório</p>
-    <h1 class="mt-3 text-4xl text-brand-900 sm:text-5xl">História e fundadores</h1>
-    <p class="mt-5 max-w-3xl text-base leading-relaxed text-neutral-700">
-      O Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)
-      nasceu de uma parceria entre a Universidade Federal de Minas Gerais
-      (UFMG) e o Hospital de Olhos Dr. Ricardo Guimarães (HOlhos). Sua criação
-      esteve ligada ao esforço de compreender alterações visuais que afetavam a
-      aprendizagem de crianças mesmo quando a acuidade visual parecia adequada.
-    </p>
-    <p class="mt-4 max-w-3xl text-base leading-relaxed text-neutral-700">
-      Na época, a proposta institucional foi aproximar pesquisa básica, prática
-      clínica e desenvolvimento tecnológico. A notícia publicada pela UFMG em
-      11 de setembro de 2019 registrou que o laboratório havia se tornado uma
-      referência em pesquisas de Neurovisão e no desenvolvimento de aparelhos
-      para diagnóstico e tratamento. Esse histórico ajudou a consolidar uma
-      atuação voltada ao melhor atendimento da população.
-    </p>
+  <section class="mb-16">
+    <p class="text-xs font-black uppercase tracking-[0.2em] text-primary mb-3">Sobre o Laboratório</p>
+    <h1 class="text-4xl text-on-surface sm:text-6xl font-black tracking-tighter leading-tight">História e Fundadores</h1>
+    <div class="mt-8 space-y-6">
+      <p class="max-w-3xl text-lg leading-relaxed text-on-surface-variant/90 font-medium">
+        O Laboratório de Pesquisa Aplicada à Neurociências da Visão (LAPAN)
+        nasceu de uma parceria entre a Universidade Federal de Minas Gerais
+        (UFMG) e o Hospital de Olhos Dr. Ricardo Guimarães (HOlhos). Sua criação
+        esteve ligada ao esforço de compreender alterações visuais que afetavam a
+        aprendizagem de crianças mesmo quando a acuidade visual parecia adequada.
+      </p>
+      <p class="max-w-3xl text-lg leading-relaxed text-on-surface-variant/90 font-medium">
+        Na época, a proposta institucional foi aproximar pesquisa básica, prática
+        clínica e desenvolvimento tecnológico. A notícia publicada pela UFMG em
+        11 de setembro de 2019 registrou que o laboratório havia se tornado uma
+        referência em pesquisas de Neurovisão e no desenvolvimento de aparelhos
+        para diagnóstico e tratamento.
+      </p>
+    </div>
     <a
       href="https://www3.ufmg.br/comunicacao/noticias/laboratorio-da-ufmg-e-referencia-em-pesquisas-de-neurovisao"
       target="_blank"
       rel="noreferrer"
-      class="mt-5 inline-flex rounded-md border border-brand-200 px-4 py-2 text-sm font-semibold text-brand-700 transition hover:border-brand-400 hover:bg-brand-50"
+      class="mt-10 inline-flex items-center gap-2 rounded-md border border-outline-variant/30 px-6 py-3 text-xs font-bold uppercase tracking-widest text-on-surface-variant transition hover:border-primary/50 hover:text-primary hover:bg-primary/5"
     >
+      <span class="material-symbols-outlined text-sm" data-icon="newspaper">newspaper</span>
       Ler notícia da UFMG
     </a>
   </section>
 
-  <section class="pt-12">
-    <h2 class="text-3xl text-brand-900">Marcos da trajetória</h2>
-    <div class="mt-6 grid gap-4 md:grid-cols-3">
+  <section class="pt-16 pb-12">
+    <h2 class="text-3xl font-black tracking-tighter text-on-surface mb-10">Marcos da Trajetória</h2>
+    <div class="grid gap-6 md:grid-cols-3">
       {marcos.map((item) => (
-        <article class="rounded-2xl border border-brand-200 bg-surface p-5 shadow-soft">
-          <p class="text-sm font-semibold text-accent-700">{item.ano}</p>
-          <h3 class="mt-2 text-xl text-brand-900">{item.titulo}</h3>
-          <p class="mt-3 text-sm leading-relaxed text-neutral-700">{item.descricao}</p>
+        <article class="card-tonal border border-outline-variant/30 p-8 group">
+          <p class="text-xs font-black uppercase tracking-widest text-primary mb-4">{item.ano}</p>
+          <h3 class="text-xl font-bold text-on-surface group-hover:text-primary transition-colors leading-tight mb-4">{item.titulo}</h3>
+          <p class="text-sm leading-relaxed text-on-surface-variant/80 font-medium">{item.descricao}</p>
         </article>
       ))}
     </div>
   </section>
 
-  <section class="pt-12 grid gap-6 lg:grid-cols-2">
-    <article class="rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft">
-      <h2 class="text-2xl text-brand-900">Instituições fundadoras</h2>
-      <p class="mt-4 text-sm leading-relaxed text-neutral-700">
-        O HOlhos trouxe a experiência assistencial, clínica e cirúrgica. A UFMG
-        contribuiu com pesquisa, formação e articulação acadêmica. O Labbio,
-        da Escola de Engenharia, participou desse processo por meio de sua
-        tradição no desenvolvimento de instrumentos e dispositivos.
-      </p>
-      <p class="mt-4 text-sm leading-relaxed text-neutral-700">
-        Essa combinação tornou possível uma atuação interdisciplinar entre
-        oftalmologia, engenharia e neurociências da visão, com foco em problemas
-        reais de diagnóstico, leitura e desenvolvimento.
-      </p>
+  <section class="pt-16 grid gap-8 lg:grid-cols-2">
+    <article class="rounded-3xl bg-surface-container-low p-10 border border-outline-variant/10 shadow-2xl">
+      <h2 class="text-2xl font-bold text-on-surface mb-8 border-l-4 border-primary pl-4">Instituições Fundadoras</h2>
+      <div class="space-y-6">
+        <p class="text-base leading-relaxed text-on-surface-variant/80 font-medium">
+          O HOlhos trouxe a experiência assistencial, clínica e cirúrgica. A UFMG
+          contribuiu com pesquisa, formação e articulação acadêmica. O Labbio,
+          da Escola de Engenharia, participou desse processo por meio de sua
+          tradição no desenvolvimento de instrumentos e dispositivos.
+        </p>
+        <p class="text-base leading-relaxed text-on-surface-variant/80 font-medium">
+          Essa combinação tornou possível uma atuação interdisciplinar entre
+          oftalmologia, engenharia e neurociências da visão, com foco em problemas
+          reais de diagnóstico, leitura e desenvolvimento.
+        </p>
+      </div>
     </article>
 
-    <article class="rounded-2xl border border-brand-200 bg-brand-50/70 p-6 shadow-soft">
-      <h2 class="text-2xl text-brand-900">Prof. Marcos Pinotti Barbosa</h2>
-      <p class="mt-4 text-sm leading-relaxed text-neutral-700">
-        O professor Marcos Pinotti Barbosa teve papel decisivo na criação e na
-        consolidação do laboratório. Como coordenador do Labbio e pesquisador
-        da UFMG, articulou a interface entre engenharia e saúde que sustentou o
-        desenvolvimento de métodos, equipamentos e soluções aplicadas.
-      </p>
-      <p class="mt-4 text-sm leading-relaxed text-neutral-700">
-        Hoje, sua contribuição permanece como parte da memória institucional do
-        LAPAN. Esta página registra sua importância histórica em tom de
-        homenagem e reconhecimento.
-      </p>
+    <article class="rounded-3xl bg-surface-container-high/40 p-10 border border-outline-variant/10 shadow-2xl">
+      <h2 class="text-2xl font-bold text-on-surface mb-8 border-l-4 border-primary pl-4">Prof. Marcos Pinotti Barbosa</h2>
+      <div class="space-y-6">
+        <p class="text-base leading-relaxed text-on-surface-variant/80 font-medium">
+          O professor Marcos Pinotti Barbosa teve papel decisivo na criação e na
+          consolidação do laboratório. Como coordenador do Labbio e pesquisador
+          da UFMG, articulou a interface entre engenharia e saúde que sustentou o
+          desenvolvimento de métodos, equipamentos e soluções aplicadas.
+        </p>
+        <p class="text-base leading-relaxed text-on-surface-variant/80 font-medium">
+          Hoje, sua contribuição permanece como parte da memória institucional do
+          LAPAN. Esta página registra sua importância histórica em tom de
+          homenagem e reconhecimento.
+        </p>
+      </div>
     </article>
   </section>
 
-  <section class="pt-12 grid gap-6 md:grid-cols-2">
-    <figure class="overflow-hidden rounded-2xl border border-brand-200 bg-surface shadow-soft">
-      <img
-        src="/images/sobre-o-laboratorio/entrada-lapan.jpg"
-        alt="Entrada do laboratório"
-        class="h-full w-full object-cover"
-        loading="lazy"
-        decoding="async"
-      />
-      <figcaption class="border-t border-brand-200 px-4 py-3 text-sm text-neutral-700">
+  <section class="pt-24 grid gap-8 md:grid-cols-2">
+    <figure class="animate-on-scroll overflow-hidden rounded-[2rem] border border-outline-variant/30 bg-surface-container-low shadow-2xl p-4 group">
+      <div class="relative overflow-hidden rounded-[1.5rem] aspect-[16/10]">
+        <img
+          src="/images/sobre-o-laboratorio/entrada-lapan.jpg"
+          alt="Entrada do laboratório"
+          class="h-full w-full object-cover opacity-80 transition-transform duration-700 group-hover:scale-105"
+          loading="lazy"
+          decoding="async"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+      </div>
+      <figcaption class="px-4 py-6 text-xs font-bold uppercase tracking-widest text-on-surface-variant/80">
         Espaço físico do laboratório em sua fase de consolidação institucional.
       </figcaption>
     </figure>
 
-    <figure class="overflow-hidden rounded-2xl border border-brand-200 bg-surface shadow-soft">
-      <img
-        src="/images/sobre-o-laboratorio/ufmg1.jpg"
-        alt="Universidade Federal de Minas Gerais"
-        class="h-full w-full object-cover"
-        loading="lazy"
-        decoding="async"
-      />
-      <figcaption class="border-t border-brand-200 px-4 py-3 text-sm text-neutral-700">
+    <figure class="animate-on-scroll delay-200 overflow-hidden rounded-[2rem] border border-outline-variant/30 bg-surface-container-low shadow-2xl p-4 group">
+      <div class="relative overflow-hidden rounded-[1.5rem] aspect-[16/10]">
+        <img
+          src="/images/sobre-o-laboratorio/ufmg1.jpg"
+          alt="Universidade Federal de Minas Gerais"
+          class="h-full w-full object-cover opacity-80 transition-transform duration-700 group-hover:scale-105"
+          loading="lazy"
+          decoding="async"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+      </div>
+      <figcaption class="px-4 py-6 text-xs font-bold uppercase tracking-widest text-on-surface-variant/80">
         UFMG, parceira fundadora na trajetória científica do laboratório.
       </figcaption>
     </figure>

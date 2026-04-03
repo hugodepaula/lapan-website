@@ -18,35 +18,35 @@ const principios = [
   ]}
 >
   <section>
-    <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent-700">Transparência</p>
-    <h1 class="mt-3 text-4xl text-brand-900 sm:text-5xl">Política editorial</h1>
-    <p class="mt-5 max-w-3xl text-base leading-relaxed text-neutral-700">
+    <p class="text-xs font-black uppercase tracking-[0.2em] text-primary mb-3">Transparência</p>
+    <h1 class="text-4xl text-on-surface sm:text-6xl font-black tracking-tighter leading-tight">Política editorial</h1>
+    <p class="mt-6 max-w-3xl text-lg leading-relaxed text-on-surface-variant/90">
       Esta política define como o site do LAPAN organiza conteúdo institucional,
       científico e histórico para garantir clareza semântica, utilidade pública
       e atribuição confiável em ambientes de busca, pesquisa e sistemas de IA.
     </p>
   </section>
 
-  <section class="pt-12 grid gap-4 md:grid-cols-2">
+  <section class="pt-16 grid gap-6 md:grid-cols-2">
     {principios.map((principio) => (
-      <article class="rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft">
-        <p class="text-sm leading-relaxed text-neutral-700">{principio}</p>
+      <article class="card-tonal border border-outline-variant/30">
+        <p class="text-base leading-relaxed text-on-surface-variant/90 font-medium">{principio}</p>
       </article>
     ))}
   </section>
 
   <section class="pt-12 grid gap-6 lg:grid-cols-2">
-    <article class="rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft">
-      <h2 class="text-2xl text-brand-900">Escopo editorial</h2>
-      <p class="mt-4 text-sm leading-relaxed text-neutral-700">
+    <article class="card-tonal border border-outline-variant/30">
+      <h2 class="text-2xl font-bold text-on-surface mb-4">Escopo editorial</h2>
+      <p class="text-base leading-relaxed text-on-surface-variant/90 font-medium">
         O conteúdo cobre identidade institucional, equipe, projetos, eventos e
         publicações do laboratório. O site não substitui orientação clínica,
         parecer médico nem protocolo assistencial individualizado.
       </p>
     </article>
-    <article class="rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft">
-      <h2 class="text-2xl text-brand-900">Responsabilidade</h2>
-      <p class="mt-4 text-sm leading-relaxed text-neutral-700">
+    <article class="card-tonal border border-outline-variant/30">
+      <h2 class="text-2xl font-bold text-on-surface mb-4">Responsabilidade</h2>
+      <p class="text-base leading-relaxed text-on-surface-variant/90 font-medium">
         O conteúdo é publicado a partir do acervo institucional e revisado para
         consistência factual, nomes canônicos, datas, vínculos e rastreabilidade
         de fontes antes da publicação em produção.

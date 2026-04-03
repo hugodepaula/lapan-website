@@ -25,56 +25,62 @@ const { projetos, vazio } = Astro.props;
 
 {
   projetos.length === 0 ? (
-    <section class="mt-8 rounded-2xl border border-brand-200 bg-surface p-6">
-      <p class="text-neutral-700">{vazio}</p>
+    <section class="mt-8 rounded-2xl bg-surface-container-low p-8 border border-outline-variant/30">
+      <p class="text-on-surface-variant font-medium">{vazio}</p>
     </section>
   ) : (
-    <section class="pt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+    <section class="pt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
       {projetos.map((projeto) => (
-        <article class="rounded-2xl border border-brand-200 bg-surface p-5 shadow-soft">
+        <article class="group rounded-2xl bg-surface-container-low p-6 transition-all duration-300 hover:bg-surface-container-high hover:-translate-y-1 border border-outline-variant/30">
           {projeto.data.imagem && (
-            <img
-              src={projeto.data.imagem}
-              alt={`Imagem do projeto ${projeto.data.titulo}`}
-              class={`h-44 w-full rounded-xl ${
-                projeto.data.imagem.includes("logo")
-                  ? "bg-brand-50 object-contain p-4"
-                  : "object-cover"
-              }`}
-              loading="lazy"
-              decoding="async"
-            />
+            <div class="relative overflow-hidden rounded-xl aspect-video mb-6">
+              <img
+                src={projeto.data.imagem}
+                alt={`Imagem do projeto ${projeto.data.titulo}`}
+                class={`h-full w-full transition-transform duration-500 group-hover:scale-105 ${
+                  projeto.data.imagem.includes("logo")
+                    ? "bg-surface-container-highest object-contain p-6"
+                    : "object-cover"
+                }`}
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </div>
           )}
 
-          <div class={projeto.data.imagem ? "mt-4" : ""}>
-            <p class="text-xs font-semibold uppercase tracking-[0.08em] text-accent-700">
-              {projeto.data.status}
-            </p>
-            {projeto.data.inicio && (
-              <p class="mt-1 text-xs font-semibold uppercase tracking-[0.08em] text-brand-600">
-                Desde {projeto.data.inicio}
-              </p>
-            )}
-            <h2 class="mt-2 text-xl text-brand-900">
-              <a
-                href={`/projetos/${projeto.id}/`}
-                class="transition hover:text-accent-700 hover:underline"
-              >
+          <div class="flex flex-col h-full">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="text-[10px] font-black uppercase tracking-[0.2em] text-primary">
+                {projeto.data.status}
+              </span>
+              {projeto.data.inicio && (
+                <span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/70">
+                  Desde {projeto.data.inicio}
+                </span>
+              )}
+            </div>
+            
+            <h2 class="text-xl font-bold leading-tight text-on-surface group-hover:text-primary transition-colors">
+              <a href={`/projetos/${projeto.id}/`}>
                 {projeto.data.titulo}
               </a>
             </h2>
+
             {projeto.data.area && (
-              <p class="mt-1 text-sm font-semibold text-neutral-700">
+              <p class="mt-2 text-xs font-bold uppercase tracking-widest text-secondary/80">
                 {projeto.data.area}
               </p>
             )}
-            <p class="mt-2 text-sm leading-relaxed text-neutral-700">
+
+            <p class="mt-4 text-sm leading-relaxed text-on-surface-variant line-clamp-3">
               {buildProjectSummary(projeto.data)}
             </p>
-            <div class="mt-4 flex flex-wrap gap-2">
+
+            <div class="mt-8 flex flex-wrap gap-3">
               <a
                 href={`/projetos/${projeto.id}`}
-                class="inline-flex rounded-md bg-accent-500 px-3 py-2 text-sm font-semibold text-surface transition hover:bg-accent-600"
+                class="btn-primary text-xs uppercase tracking-widest py-2.5 px-5"
               >
                 Ver detalhes
               </a>
@@ -83,7 +89,7 @@ const { projetos, vazio } = Astro.props;
                   href={projeto.data.link}
                   target="_blank"
                   rel="noreferrer"
-                  class="inline-flex rounded-md border border-brand-200 px-3 py-2 text-sm font-semibold text-brand-700 transition hover:border-brand-400 hover:bg-brand-50"
+                  class="inline-flex items-center gap-2 rounded-md border border-outline-variant/30 px-4 py-2.5 text-xs font-bold uppercase tracking-widest text-on-surface-variant transition hover:border-primary/50 hover:text-primary hover:bg-primary/5"
                 >
                   Fonte externa
                 </a>

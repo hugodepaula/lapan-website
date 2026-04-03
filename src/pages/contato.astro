@@ -40,69 +40,72 @@ const structuredData = [
   description="Página de contato institucional do Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)."
   structuredData={structuredData}
 >
-  <section class="grid gap-8 xl:grid-cols-[0.9fr_1.1fr] xl:items-start">
-    <div>
-      <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent-700">Fale conosco</p>
-      <h1 class="mt-3 text-4xl text-brand-900 sm:text-5xl">Contato</h1>
-      <p class="mt-4 max-w-3xl text-base leading-relaxed text-neutral-700">
-        Entre em contato com o Laboratório de Pesquisa Aplicação à
+  <section class="grid gap-12 xl:grid-cols-[0.9fr_1.1fr] xl:items-start">
+    <div class="animate-on-scroll">
+      <p class="text-xs font-black uppercase tracking-[0.2em] text-primary mb-3">Fale conosco</p>
+      <h1 class="text-4xl text-on-surface sm:text-6xl font-black tracking-tighter leading-tight">Contato</h1>
+      <p class="mt-6 max-w-3xl text-lg leading-relaxed text-on-surface-variant/80">
+        Entre em contato com o Laboratório de Pesquisa Aplicada à
         Neurociências da Visão (LAPAN) para informações institucionais,
         parcerias e demandas de imprensa.
       </p>
 
-      <div class="mt-8 rounded-2xl border border-brand-200 bg-surface p-5 shadow-soft">
-        <h2 class="text-xl text-brand-900">Local</h2>
-        <address class="mt-3 not-italic text-sm leading-relaxed text-neutral-700">
-          Rua da Paisagem, 220 - Vila da Serra<br />
-          Belo Horizonte - MG, CEP 30720-600<br />
-          Brasil
-        </address>
-        <p class="mt-3 text-sm text-neutral-700">
-          Tel.: {contactPhone}<br />
-          E-mail institucional: <a href={`mailto:${email}`} class="font-semibold text-accent-700">{email}</a>
-        </p>
+      <div class="mt-12 space-y-6">
+        <div class="rounded-2xl bg-surface-container-low p-8 border border-outline-variant/10 shadow-xl shadow-black/20">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+            <h2 class="text-xl font-bold text-on-surface">Localização</h2>
+          </div>
+          <address class="not-italic text-base leading-relaxed text-on-surface-variant/80">
+            Rua da Paisagem, 220 - Vila da Serra<br />
+            Belo Horizonte - MG, CEP 30720-600<br />
+            Brasil
+          </address>
+        </div>
+
+        <div class="rounded-2xl bg-surface-container-low p-8 border border-outline-variant/30 shadow-xl shadow-black/20">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="material-symbols-outlined text-primary" data-icon="alternate_email">alternate_email</span>
+            <h2 class="text-xl font-bold text-on-surface">Canais Diretos</h2>
+          </div>
+          <div class="space-y-4">
+            <div class="flex flex-col">
+              <span class="text-[10px] font-black uppercase tracking-widest text-on-surface-variant/80 mb-1">Telefone Institucional</span>
+              <p class="text-lg font-bold text-on-surface">{contactPhone}</p>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-[10px] font-black uppercase tracking-widest text-on-surface-variant/80 mb-1">E-mail de Contato</span>
+              <a href={`mailto:${email}`} class="text-lg font-bold text-primary hover:text-primary-light transition-colors">{email}</a>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="mt-8 overflow-hidden rounded-2xl border border-brand-200 bg-surface shadow-soft">
+      <div class="mt-12 overflow-hidden rounded-3xl border border-outline-variant/30 bg-surface-container-low shadow-2xl">
         <iframe
           title="Mapa do endereço do laboratório"
           src="https://www.google.com/maps?q=Rua+da+Paisagem,+220,+Vila+da+Serra,+Belo+Horizonte,+MG,+30720-600&output=embed"
-          class="h-[360px] w-full"
+          class="h-[400px] w-full opacity-90"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-
-      <div class="mt-8 rounded-2xl border border-brand-200 bg-brand-50/70 p-6 shadow-soft">
-        <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent-700">
-          Parcerias e imprensa
-        </p>
-        <h2 class="mt-3 text-2xl text-brand-900">Como trabalhamos</h2>
-        <p class="mt-3 text-sm leading-relaxed text-neutral-700">
-          Conduzimos parcerias institucionais, interlocução com imprensa e demandas externas com transparência,
-          responsabilidade ética e alinhamento de prazos desde o primeiro contato.
-        </p>
-        <div class="mt-5 grid gap-3">
-          {valoresParceria.map((valor) => (
-            <article class="rounded-2xl border border-brand-200 bg-surface p-4">
-              <h3 class="text-base text-brand-900">{valor.titulo}</h3>
-              <p class="mt-2 text-sm leading-relaxed text-neutral-700">{valor.descricao}</p>
-            </article>
-          ))}
-        </div>
-      </div>
     </div>
 
-    <div>
-      <div class="rounded-2xl border border-brand-200 bg-surface p-6 shadow-soft">
-        <h2 class="text-2xl text-brand-900">Envie sua mensagem</h2>
-        <p class="mt-2 text-sm leading-relaxed text-neutral-700">
-          Campos obrigatórios: nome, e-mail, assunto e mensagem.
+    <div class="animate-on-scroll delay-200">
+      <div class="rounded-3xl bg-surface-container-low p-8 lg:p-12 border border-outline-variant/30 shadow-2xl shadow-black/40">
+        <div class="flex items-center gap-3 mb-8">
+          <span class="material-symbols-outlined text-primary" data-icon="send">send</span>
+          <h2 class="text-3xl font-bold text-on-surface tracking-tight">Envie sua mensagem</h2>
+        </div>
+        
+        <p class="mb-10 text-on-surface-variant/90 leading-relaxed italic">
+          Utilize o formulário abaixo para solicitações acadêmicas, parcerias ou contatos de imprensa. Nossa equipe responderá em breve.
         </p>
 
         <form
           id="contato-form"
-          class="mt-5 space-y-4"
+          class="space-y-8"
           method="post"
           action={formEndpoint || "#"}
           data-endpoint={formEndpoint}
@@ -111,91 +114,115 @@ const structuredData = [
         >
           <input type="hidden" name="_subject" value="Contato pelo site do LAPAN" />
 
-          <div>
-            <label for="your-name" class="mb-1 block text-sm font-semibold text-brand-800">Nome</label>
+          <div class="space-y-2">
+            <label for="your-name" class="text-[10px] font-black uppercase tracking-[0.2em] text-on-surface-variant/90">Nome Completo</label>
             <input
               id="your-name"
               name="your-name"
               type="text"
               autocomplete="name"
               required
-              class="w-full rounded-md border border-brand-200 bg-surface px-3 py-2 text-sm text-ink transition focus:border-accent-500 focus:outline-none"
+              class="w-full bg-surface-container-highest border-b-2 border-outline-variant/50 px-0 py-3 text-on-surface transition-all focus:outline-none focus:border-primary placeholder:text-on-surface-variant/60"
+              placeholder="Como gostaria de ser chamado?"
             />
           </div>
 
-          <div>
-            <label for="your-email" class="mb-1 block text-sm font-semibold text-brand-800">E-mail</label>
+          <div class="space-y-2">
+            <label for="your-email" class="text-[10px] font-black uppercase tracking-[0.2em] text-on-surface-variant/90">E-mail Institucional</label>
             <input
               id="your-email"
               name="your-email"
               type="email"
               autocomplete="email"
               required
-              class="w-full rounded-md border border-brand-200 bg-surface px-3 py-2 text-sm text-ink transition focus:border-accent-500 focus:outline-none"
+              class="w-full bg-surface-container-highest border-b-2 border-outline-variant/50 px-0 py-3 text-on-surface transition-all focus:outline-none focus:border-primary placeholder:text-on-surface-variant/60"
+              placeholder="seu.nome@instituicao.edu"
             />
           </div>
 
-          <div>
-            <label for="your-subject" class="mb-1 block text-sm font-semibold text-brand-800">Assunto</label>
+          <div class="space-y-2">
+            <label for="your-subject" class="text-[10px] font-black uppercase tracking-[0.2em] text-on-surface-variant/90">Assunto</label>
             <input
               id="your-subject"
               name="your-subject"
               type="text"
               required
-              class="w-full rounded-md border border-brand-200 bg-surface px-3 py-2 text-sm text-ink transition focus:border-accent-500 focus:outline-none"
+              class="w-full bg-surface-container-highest border-b-2 border-outline-variant/50 px-0 py-3 text-on-surface transition-all focus:outline-none focus:border-primary placeholder:text-on-surface-variant/60"
+              placeholder="Ex: Parceria de Pesquisa"
             />
           </div>
 
-          <div>
-            <label for="your-message" class="mb-1 block text-sm font-semibold text-brand-800">Mensagem</label>
+          <div class="space-y-2">
+            <label for="your-message" class="text-[10px] font-black uppercase tracking-[0.2em] text-on-surface-variant/90">Mensagem</label>
             <textarea
               id="your-message"
               name="your-message"
-              rows="6"
+              rows="5"
               required
               maxlength="2000"
-              class="w-full rounded-md border border-brand-200 bg-surface px-3 py-2 text-sm text-ink transition focus:border-accent-500 focus:outline-none"
+              class="w-full bg-surface-container-highest border-b-2 border-outline-variant/50 px-0 py-3 text-on-surface transition-all focus:outline-none focus:border-primary placeholder:text-on-surface-variant/60 resize-none"
+              placeholder="Como podemos ajudar?"
             ></textarea>
           </div>
 
-          <p id="form-status" class="text-sm text-neutral-700" aria-live="polite"></p>
+
+          <div id="form-status-container" class="hidden">
+             <p id="form-status" class="text-sm font-bold uppercase tracking-widest p-4 rounded-xl" aria-live="polite"></p>
+          </div>
 
           <button
             type="submit"
-            class="inline-flex items-center rounded-md bg-accent-500 px-5 py-2.5 text-sm font-semibold text-surface transition duration-200 hover:bg-accent-600"
+            class="btn-primary w-full py-4 uppercase tracking-[0.2em] text-xs flex justify-center items-center gap-2"
           >
-            Enviar
+            Enviar Mensagem
+            <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
           </button>
         </form>
+      </div>
+
+      <div class="mt-12 p-8 bg-primary/5 rounded-3xl border border-primary/10">
+        <h2 class="text-xs font-black uppercase tracking-[0.2em] text-primary mb-6">Como trabalhamos</h2>
+        <div class="space-y-6">
+          {valoresParceria.map((valor) => (
+            <article>
+              <h3 class="text-sm font-bold text-on-surface mb-2">{valor.titulo}</h3>
+              <p class="text-sm leading-relaxed text-on-surface-variant/70">{valor.descricao}</p>
+            </article>
+          ))}
+        </div>
       </div>
     </div>
   </section>
 
   <script is:inline>
     const form = document.querySelector("#contato-form");
+    const statusContainer = document.querySelector("#form-status-container");
     const status = document.querySelector("#form-status");
 
-    if (form && status) {
+    if (form && status && statusContainer) {
       form.addEventListener("submit", async (event) => {
         const endpoint = form.getAttribute("data-endpoint");
         const fallbackEmail = form.getAttribute("data-fallback-email");
+        
+        statusContainer.classList.remove("hidden");
+
         if (!endpoint) {
           event.preventDefault();
-          status.textContent = `Envio online ainda não configurado. Utilize o e-mail ${fallbackEmail}.`;
-          status.className = "text-sm text-accent-700";
+          status.textContent = `Envio online pendente. Use: ${fallbackEmail}.`;
+          status.className = "text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 p-4 rounded-xl";
           return;
         }
 
         if (!form.reportValidity()) {
           event.preventDefault();
-          status.textContent = "Revise os campos obrigatórios antes de enviar.";
-          status.className = "text-sm text-accent-700";
+          status.textContent = "Revise os campos obrigatórios.";
+          status.className = "text-xs font-bold uppercase tracking-widest text-red-400 bg-red-400/10 p-4 rounded-xl";
           return;
         }
 
         event.preventDefault();
-        status.textContent = "Enviando mensagem...";
-        status.className = "text-sm text-neutral-700";
+        status.textContent = "Transmitindo...";
+        status.className = "text-xs font-bold uppercase tracking-widest text-on-surface-variant bg-surface-container-high p-4 rounded-xl";
 
         const formData = new FormData(form);
         const data = new URLSearchParams();
@@ -217,11 +244,11 @@ const structuredData = [
           }
 
           form.reset();
-          status.textContent = "Mensagem enviada com sucesso.";
-          status.className = "text-sm text-brand-800";
+          status.textContent = "Transmitido com sucesso.";
+          status.className = "text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 p-4 rounded-xl";
         } catch {
-          status.textContent = `Não foi possível enviar agora. Tente novamente ou use ${fallbackEmail}.`;
-          status.className = "text-sm text-accent-700";
+          status.textContent = `Falha na transmissão. Use ${fallbackEmail}.`;
+          status.className = "text-xs font-bold uppercase tracking-widest text-red-400 bg-red-400/10 p-4 rounded-xl";
         }
       });
     }

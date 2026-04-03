@@ -2,65 +2,80 @@
 @import "tailwindcss";
 
 :root {
-  /* Derivada do logo: neutros grafite + laranja institucional */
-  --color-brand-50: 245 245 246;
-  --color-brand-100: 230 231 233;
-  --color-brand-200: 204 206 209;
-  --color-brand-400: 117 120 126;
-  --color-brand-600: 63 66 72;
-  --color-brand-800: 29 31 35;
-  --color-brand-900: 14 15 18;
-
-  --color-accent-50: 255 244 237;
-  --color-accent-100: 255 232 218;
-  --color-accent-500: 243 111 33;
-  --color-accent-600: 218 93 20;
-  --color-accent-700: 175 72 9;
-
-  --color-neutral-50: 241 243 246;
-  --color-neutral-100: 232 235 239;
-  --color-neutral-200: 219 223 228;
-  --color-neutral-400: 121 124 130;
-  --color-neutral-700: 52 56 63;
-  --color-neutral-900: 24 27 33;
-
-  --color-surface: 255 255 255;
-  --color-ink: 24 27 33;
+  /* The Amber Lens: Tonal Depth & Ocular Comfort */
+  --color-primary: 255 183 131; /* #FFB783 */
+  --color-primary-container: 243 138 46; /* #F38A2E */
+  --color-on-primary: 79 37 0; /* #4F2500 */
+  
+  --color-surface: 18 20 22; /* #121416 */
+  --color-surface-container-lowest: 12 14 16; /* #0C0E10 */
+  --color-surface-container-low: 26 28 30; /* #1A1C1E */
+  --color-surface-container-high: 40 42 44; /* #282A2C */
+  --color-surface-container-highest: 51 53 55; /* #333537 */
+  
+  --color-on-surface: 240 240 243; /* #F0F0F3 */
+  --color-on-surface-variant: 224 215 208; /* #E0D7D0 */
+  
+  --color-secondary: 181 200 223; /* #B5C8DF */
+  --color-tertiary: 134 207 255; /* #86CFFF */
+  
+  --color-outline-variant: 86 67 55; /* #564337 */
 }
 
 html {
-  @apply scroll-smooth bg-neutral-100;
+  @apply scroll-smooth bg-surface-container-lowest text-on-surface;
 }
 
 body {
-  @apply m-0 bg-neutral-100 text-ink antialiased;
-  font-family: "Source Sans 3", ui-sans-serif, sans-serif;
+  @apply m-0 bg-surface-container-lowest text-on-surface antialiased selection:bg-primary/30;
+  font-family: "Manrope", ui-sans-serif, sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Literata", ui-serif, serif;
-  letter-spacing: -0.01em;
+/* Tipografia Clinical Nocturne */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-headline font-bold tracking-tight text-on-surface;
 }
 
-a {
-  @apply underline-offset-4;
+.display-lg {
+  @apply text-5xl md:text-6xl font-black tracking-tighter;
+  letter-spacing: -0.02em;
 }
 
-a:focus-visible,
-button:focus-visible,
-summary:focus-visible {
-  @apply outline-none ring-2 ring-accent-500 ring-offset-2 ring-offset-surface;
+.headline-sm {
+  @apply text-2xl font-bold;
+}
+
+.label-md {
+  @apply text-xs font-bold uppercase tracking-widest;
+  letter-spacing: 0.05em;
+}
+
+/* Glassmorphism Rule */
+.glass-panel {
+  @apply bg-surface/90 backdrop-blur-[20px] border border-outline-variant/30;
+}
+
+/* Signature CTA Texture */
+.btn-primary {
+  @apply bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold px-6 py-3 rounded-md transition-all active:scale-[0.98] shadow-lg shadow-primary-container/20;
+}
+
+/* Layering Principle */
+.card-tonal {
+  @apply bg-surface-container-low rounded-xl p-6 transition-all duration-300;
+}
+
+.card-tonal:hover {
+  @apply bg-surface-container-high;
+}
+
+/* No-Line Rule: Boundaries defined through background shifts */
+.section-split {
+  @apply border-none bg-surface-container-low;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
+  *, *::before, *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     scroll-behavior: auto !important;
@@ -68,28 +83,14 @@ summary:focus-visible {
   }
 }
 
-/* Animações de Scroll: sem JS, o conteúdo permanece visível */
+/* Animações de Scroll */
 html.js .animate-on-scroll {
   opacity: 0;
   transform: translateY(20px);
-  transition:
-    opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-  will-change: opacity, transform;
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 html.js .animate-on-scroll.is-visible {
   opacity: 1;
   transform: translateY(0);
-}
-
-/* Staggering delays para cartões em grid */
-.delay-100 {
-  transition-delay: 100ms;
-}
-.delay-200 {
-  transition-delay: 200ms;
-}
-.delay-300 {
-  transition-delay: 300ms;
 }

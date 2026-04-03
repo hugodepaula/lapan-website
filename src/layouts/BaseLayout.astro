@@ -141,7 +141,7 @@ const socialLinks = [
       crossorigin="anonymous"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,600;7..72,700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Literata:opsz,wght@7..72,500;7..72,600;7..72,700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
       rel="stylesheet"
     />
     <title>{title}</title>
@@ -151,7 +151,7 @@ const socialLinks = [
       ))
     }
   </head>
-  <body class="selection:bg-accent-100 selection:text-brand-900">
+  <body class="bg-surface-container-lowest text-on-surface selection:bg-primary/30 antialiased">
     <a
       href="#conteudo-principal"
       class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-surface focus:px-3 focus:py-2 focus:text-sm focus:font-semibold"
@@ -160,7 +160,7 @@ const socialLinks = [
     </a>
 
     <header
-      class="sticky top-0 z-50 border-b border-brand-200 bg-surface/80 backdrop-blur-md shadow-sm transition-all duration-300"
+      class="sticky top-0 z-50 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/10 shadow-[0_20px_40px_rgba(0,0,0,0.25)] transition-all duration-300"
     >
       <div class="mx-auto w-full max-w-content px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between py-3 md:py-4">
@@ -171,7 +171,7 @@ const socialLinks = [
             <img
               src="/images/logo_rect.png"
               alt="Logo do LAPAN"
-              class="h-11 w-auto md:h-12"
+              class="h-10 w-auto md:h-12 brightness-110"
               loading="eager"
               decoding="async"
             />
@@ -184,19 +184,19 @@ const socialLinks = [
                   <li class="group relative">
                     <a
                       href={item.href}
-                      class="inline-flex items-center gap-2 rounded-md px-4 py-2 text-base font-semibold text-brand-600 transition-all duration-300 hover:bg-brand-50/80 hover:text-accent-700 hover:-translate-y-0.5"
+                      class="inline-flex items-center gap-2 rounded-md px-4 py-2 text-sm font-bold uppercase tracking-widest text-on-surface-variant transition-all duration-300 hover:text-primary hover:-translate-y-0.5"
                     >
                       {item.label}
-                      {item.children && <span aria-hidden="true" class="text-xs">▾</span>}
+                      {item.children && <span aria-hidden="true" class="text-[10px] opacity-50">▾</span>}
                     </a>
                     {item.children && (
-                      <div class="invisible absolute left-0 top-full z-50 min-w-72 translate-y-2 rounded-2xl border border-brand-200 bg-surface p-2 opacity-0 shadow-soft transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
+                      <div class="invisible absolute left-0 top-full z-50 min-w-72 translate-y-2 rounded-xl bg-surface/95 backdrop-blur-xl border border-outline-variant/20 p-2 opacity-0 shadow-2xl transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
                         <ul class="space-y-1">
                           {item.children.map((child) => (
                             <li>
                               <a
                                 href={child.href}
-                                class="block rounded-xl px-3 py-2 text-sm font-semibold text-brand-700 transition hover:bg-brand-50 hover:text-accent-700"
+                                class="block rounded-lg px-4 py-2 text-sm font-semibold text-on-surface-variant transition hover:bg-primary/10 hover:text-primary"
                               >
                                 {child.label}
                               </a>
@@ -213,14 +213,14 @@ const socialLinks = [
 
           <details class="group relative lg:hidden">
             <summary
-              class="inline-flex cursor-pointer list-none items-center rounded-md border border-brand-200 px-3 py-2 text-sm font-semibold text-brand-800 transition hover:border-brand-400 hover:bg-brand-50"
+              class="inline-flex cursor-pointer list-none items-center rounded-md border border-outline-variant/30 px-3 py-2 text-xs font-bold uppercase tracking-widest text-on-surface-variant transition hover:bg-primary/10 hover:text-primary"
               aria-label="Abrir menu"
             >
               Menu
             </summary>
             <nav
               aria-label="Navegação principal mobile"
-              class="absolute right-0 mt-2 w-64 rounded-xl border border-brand-200 bg-surface p-2 shadow-soft"
+              class="absolute right-0 mt-2 w-64 rounded-xl bg-surface/95 backdrop-blur-xl border border-outline-variant/20 p-2 shadow-2xl"
             >
               <ul class="space-y-1">
                 {
@@ -228,14 +228,14 @@ const socialLinks = [
                     <li>
                       {item.children ? (
                         <details class="rounded-md">
-                          <summary class="cursor-pointer list-none rounded-md px-3 py-2 text-base font-semibold text-brand-700 transition hover:bg-brand-50/80 hover:text-accent-700">
+                          <summary class="cursor-pointer list-none rounded-md px-3 py-2 text-sm font-bold uppercase tracking-widest text-on-surface-variant transition hover:text-primary">
                             {item.label}
                           </summary>
                           <ul class="mt-1 space-y-1 pl-3">
                             <li>
                               <a
                                 href={item.href}
-                                class="block rounded-md px-3 py-2 text-sm font-semibold text-brand-700 transition hover:bg-brand-50/80 hover:text-accent-700"
+                                class="block rounded-md px-3 py-2 text-sm font-semibold text-on-surface-variant transition hover:bg-primary/10 hover:text-primary"
                               >
                                 Visão geral
                               </a>
@@ -244,7 +244,7 @@ const socialLinks = [
                               <li>
                                 <a
                                   href={child.href}
-                                  class="block rounded-md px-3 py-2 text-sm font-semibold text-brand-700 transition hover:bg-brand-50/80 hover:text-accent-700"
+                                  class="block rounded-md px-3 py-2 text-sm font-semibold text-on-surface-variant transition hover:bg-primary/10 hover:text-primary"
                                 >
                                   {child.label}
                                 </a>
@@ -255,7 +255,7 @@ const socialLinks = [
                       ) : (
                         <a
                           href={item.href}
-                          class="block rounded-md px-3 py-2 text-base font-semibold text-brand-700 transition-all duration-300 hover:bg-brand-50/80 hover:text-accent-700 hover:translate-x-1"
+                          class="block rounded-md px-3 py-2 text-sm font-bold uppercase tracking-widest text-on-surface-variant transition-all duration-300 hover:text-primary hover:translate-x-1"
                         >
                           {item.label}
                         </a>
@@ -276,7 +276,7 @@ const socialLinks = [
     >
       {
         pathname !== "/" && resolvedBreadcrumbs.length > 1 && (
-          <nav aria-label="Breadcrumb" class="mb-8 text-sm text-neutral-600">
+          <nav aria-label="Breadcrumb" class="mb-12 text-xs font-bold uppercase tracking-widest text-on-surface-variant/80">
             <ol class="flex flex-wrap items-center gap-2">
               {resolvedBreadcrumbs.map((crumb, index) => {
                 const isLast = index === resolvedBreadcrumbs.length - 1;
@@ -285,16 +285,16 @@ const socialLinks = [
                     {crumb.item && !isLast ? (
                       <a
                         href={crumb.item}
-                        class="transition hover:text-accent-700 hover:underline"
+                        class="transition hover:text-primary"
                       >
                         {crumb.name}
                       </a>
                     ) : (
-                      <span aria-current={isLast ? "page" : undefined}>
+                      <span aria-current={isLast ? "page" : undefined} class={isLast ? "text-primary/80" : ""}>
                         {crumb.name}
                       </span>
                     )}
-                    {!isLast && <span aria-hidden="true">/</span>}
+                    {!isLast && <span aria-hidden="true" class="opacity-30">/</span>}
                   </li>
                 );
               })}
@@ -305,45 +305,45 @@ const socialLinks = [
       <slot />
     </main>
 
-    <footer class="mt-12 border-t border-brand-200 bg-brand-900 text-brand-100">
+    <footer class="mt-20 bg-surface-container-low text-on-surface-variant border-t border-outline-variant/5">
       <div
-        class="mx-auto grid w-full max-w-content gap-8 px-4 py-10 sm:px-6 md:grid-cols-2 lg:grid-cols-[1.2fr_0.8fr_0.9fr] lg:px-8"
+        class="mx-auto grid w-full max-w-content gap-12 px-4 py-16 sm:px-6 md:grid-cols-2 lg:grid-cols-[1.2fr_0.8fr_0.9fr] lg:px-8"
       >
         <div>
-          <p class="text-xs uppercase tracking-[0.14em] text-brand-200">
+          <p class="text-[10px] font-black uppercase tracking-[0.2em] text-primary/70">
             Laboratório de Pesquisa
           </p>
-          <p class="mt-2 text-lg font-semibold text-surface">
-            Laboratório de Pesquisa Aplicação à Neurociências da Visão (LAPAN)
+          <p class="mt-4 text-2xl font-serif font-bold text-on-surface leading-tight">
+            Laboratório de Pesquisa Aplicada à Neurociências da Visão (LAPAN)
           </p>
-          <p class="mt-3 max-w-prose text-sm leading-relaxed text-brand-100">
+          <p class="mt-6 max-w-prose text-base leading-relaxed opacity-80">
             Desenvolvimento científico, tecnológico e de inovação para o
             tratamento dos Distúrbios Neurológicos Relacionados à Visão.
           </p>
-          <div class="mt-5">
-            <p class="text-xs uppercase tracking-[0.14em] text-brand-200">
-              Valores em 3 palavras
+          <div class="mt-8 p-6 bg-surface-container-high rounded-2xl border border-outline-variant/10">
+            <p class="text-[10px] font-black uppercase tracking-[0.2em] text-primary/70">
+              Valores fundamentais
             </p>
-            <p class="mt-2 text-sm font-semibold text-surface">
-              {valoresEmTresPalavras.join(", ")}
+            <p class="mt-3 text-sm font-bold text-on-surface">
+              {valoresEmTresPalavras.join(" • ")}
             </p>
             <a
               href="/sobre-o-laboratorio/missao-e-valores"
-              class="mt-2 inline-flex text-sm font-semibold text-accent-300 transition duration-200 hover:text-accent-200"
+              class="mt-4 inline-flex text-xs font-bold uppercase tracking-widest text-primary transition duration-200 hover:text-primary-light"
             >
-              Missão e valores
+              Missão e valores →
             </a>
           </div>
         </div>
 
         <div>
-          <p class="text-sm font-semibold text-surface">Transparência</p>
-          <ul class="mt-3 space-y-2 text-sm text-brand-100">
+          <p class="text-xs font-black uppercase tracking-[0.2em] text-on-surface mb-6">Transparência</p>
+          <ul class="space-y-4 text-sm font-medium">
             {trustLinks.map((link) => (
               <li>
                 <a
                   href={link.href}
-                  class="transition hover:text-accent-200 hover:underline"
+                  class="transition hover:text-primary"
                 >
                   {link.label}
                 </a>
@@ -353,26 +353,26 @@ const socialLinks = [
         </div>
 
         <div class="md:justify-self-end">
-          <p class="text-sm font-semibold text-surface">Contato e Redes</p>
-          <p class="mt-3 max-w-xs text-sm leading-relaxed text-brand-100">
+          <p class="text-xs font-black uppercase tracking-[0.2em] text-on-surface mb-6">Contato e Redes</p>
+          <p class="max-w-xs text-sm leading-relaxed opacity-80 mb-8">
             Contato institucional e pedidos de informação:{" "}
-            <a href={`mailto:${contactEmail}`} class="font-semibold text-accent-200">
+            <a href={`mailto:${contactEmail}`} class="font-bold text-primary hover:text-primary-light transition-colors">
               {contactEmail}
             </a>
           </p>
-          <ul class="mt-3 flex flex-wrap items-center gap-4 text-sm">
+          <ul class="flex flex-wrap items-center gap-4">
             {
               footerLinks.map((link) => (
                 <li>
                   <a
                     href={link.href}
                     aria-label={link.label}
-                    class="inline-flex h-9 w-9 items-center justify-center rounded-md bg-brand-900 ring-1 ring-brand-600 transition duration-200 hover:bg-brand-800 hover:ring-brand-400"
+                    class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-surface-container-high border border-outline-variant/10 transition duration-200 hover:bg-primary/10 hover:border-primary/30 group"
                   >
                     <svg
                       viewBox="0 0 24 24"
                       aria-hidden="true"
-                      class="h-4 w-4 fill-surface"
+                      class="h-5 w-5 fill-on-surface-variant group-hover:fill-primary transition-colors"
                     >
                       <path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm0 2v.5l9 6 9-6V7H3zm18 2.9-8.43 5.62a1 1 0 0 1-1.14 0L3 9.9V18h18V9.9z" />
                     </svg>
@@ -388,13 +388,13 @@ const socialLinks = [
                     target="_blank"
                     rel="noreferrer"
                     aria-label={link.label}
-                    class="inline-flex h-9 w-9 items-center justify-center rounded-md bg-brand-900 ring-1 ring-brand-600 transition duration-200 hover:bg-brand-800 hover:ring-brand-400"
+                    class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-surface-container-high border border-outline-variant/10 transition duration-200 hover:bg-primary/10 hover:border-primary/30 group"
                   >
                     {link.id === "linkedin" ? (
                       <svg
                         viewBox="0 0 24 24"
                         aria-hidden="true"
-                        class="h-4 w-4 fill-surface"
+                        class="h-5 w-5 fill-on-surface-variant group-hover:fill-primary transition-colors"
                       >
                         <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.33V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.27 2.38 4.27 5.47v6.27zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45z" />
                       </svg>
@@ -402,7 +402,7 @@ const socialLinks = [
                       <svg
                         viewBox="0 0 24 24"
                         aria-hidden="true"
-                        class="h-4 w-4 fill-surface"
+                        class="h-5 w-5 fill-on-surface-variant group-hover:fill-primary transition-colors"
                       >
                         <path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2zm8.2 2H8a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V8a4 4 0 0 0-4-4zm-4 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 1.8a2.7 2.7 0 1 0 0 5.4 2.7 2.7 0 0 0 0-5.4zm5.1-3.2a1.05 1.05 0 1 1 0 2.1 1.05 1.05 0 0 1 0-2.1z" />
                       </svg>
@@ -415,9 +415,9 @@ const socialLinks = [
         </div>
       </div>
       <div
-        class="border-t border-brand-600 px-4 py-4 text-center text-xs text-brand-200 sm:px-6 lg:px-8"
+        class="border-t border-outline-variant/5 px-4 py-8 text-center text-[10px] font-bold uppercase tracking-[0.2em] text-on-surface-variant/80 sm:px-6 lg:px-8"
       >
-        © {new Date().getFullYear()} LAPAN. Todos os direitos reservados.
+        © {new Date().getFullYear()} LAPAN • Laboratório de Pesquisa Aplicada à Neurociências da Visão
       </div>
     </footer>
 

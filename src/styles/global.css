@@ -1,96 +1,156 @@
-@config "../../tailwind.config.mjs";
 @import "tailwindcss";
 
-:root {
+@theme {
   /* The Amber Lens: Tonal Depth & Ocular Comfort */
-  --color-primary: 255 183 131; /* #FFB783 */
-  --color-primary-container: 243 138 46; /* #F38A2E */
-  --color-on-primary: 79 37 0; /* #4F2500 */
+  --color-primary: #FFB783;
+  --color-primary-container: #F38A2E;
+  --color-on-primary: #4F2500;
   
-  --color-surface: 18 20 22; /* #121416 */
-  --color-surface-container-lowest: 12 14 16; /* #0C0E10 */
-  --color-surface-container-low: 26 28 30; /* #1A1C1E */
-  --color-surface-container-high: 40 42 44; /* #282A2C */
-  --color-surface-container-highest: 51 53 55; /* #333537 */
+  --color-surface: #121416;
+  --color-surface-container-lowest: #0C0E10;
+  --color-surface-container-low: #1A1C1E;
+  --color-surface-container-high: #282A2C;
+  --color-surface-container-highest: #333537;
   
-  --color-on-surface: 240 240 243; /* #F0F0F3 */
-  --color-on-surface-variant: 224 215 208; /* #E0D7D0 */
+  --color-on-surface: #F0F0F3;
+  --color-on-surface-variant: #E0D7D0;
   
-  --color-secondary: 181 200 223; /* #B5C8DF */
-  --color-tertiary: 134 207 255; /* #86CFFF */
+  --color-secondary: #B5C8DF;
+  --color-tertiary: #86CFFF;
   
-  --color-outline-variant: 86 67 55; /* #564337 */
+  --color-outline-variant: #564337;
+
+  --font-headline: "Manrope", sans-serif;
+  --font-serif: "Literata", ui-serif, serif;
 }
 
-html {
-  @apply scroll-smooth bg-surface-container-lowest text-on-surface;
-}
+@layer base {
+  html {
+    @apply scroll-smooth bg-surface-container-lowest text-on-surface;
+  }
 
-body {
-  @apply m-0 bg-surface-container-lowest text-on-surface antialiased selection:bg-primary/30;
-  font-family: "Manrope", ui-sans-serif, sans-serif;
-}
-
-/* Tipografia Clinical Nocturne */
-h1, h2, h3, h4, h5, h6 {
-  @apply font-headline font-bold tracking-tight text-on-surface;
-}
-
-.display-lg {
-  @apply text-5xl md:text-6xl font-black tracking-tighter;
-  letter-spacing: -0.02em;
-}
-
-.headline-sm {
-  @apply text-2xl font-bold;
-}
-
-.label-md {
-  @apply text-xs font-bold uppercase tracking-widest;
-  letter-spacing: 0.05em;
-}
-
-/* Glassmorphism Rule */
-.glass-panel {
-  @apply bg-surface/90 backdrop-blur-[20px] border border-outline-variant/30;
-}
-
-/* Signature CTA Texture */
-.btn-primary {
-  @apply bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold px-6 py-3 rounded-md transition-all active:scale-[0.98] shadow-lg shadow-primary-container/20;
-}
-
-/* Layering Principle */
-.card-tonal {
-  @apply bg-surface-container-low rounded-xl p-6 transition-all duration-300;
-}
-
-.card-tonal:hover {
-  @apply bg-surface-container-high;
-}
-
-/* No-Line Rule: Boundaries defined through background shifts */
-.section-split {
-  @apply border-none bg-surface-container-low;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    scroll-behavior: auto !important;
-    transition-duration: 0.01ms !important;
+  body {
+    @apply m-0 bg-surface-container-lowest text-on-surface antialiased selection:bg-primary/30;
+    font-family: "Manrope", ui-sans-serif, sans-serif;
   }
 }
 
-/* Animações de Scroll */
-html.js .animate-on-scroll {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+@layer components {
+  /* Tipografia Clinical Nocturne */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline font-bold tracking-tight text-on-surface;
+  }
+
+  .display-lg {
+    @apply text-5xl md:text-6xl font-black tracking-tighter;
+    letter-spacing: -0.02em;
+  }
+
+  .headline-sm {
+    @apply text-2xl font-bold;
+  }
+
+  .label-md {
+    @apply text-xs font-bold uppercase tracking-widest;
+    letter-spacing: 0.05em;
+  }
+
+  /* Glassmorphism Rule */
+  .glass-panel {
+    @apply bg-surface/90 backdrop-blur-[20px] border border-outline-variant/30;
+  }
+
+  /* Signature CTA Texture */
+  .btn-primary {
+    @apply bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold px-6 py-3 rounded-md transition-all active:scale-[0.98] shadow-lg shadow-primary-container/20;
+  }
+
+  /* Layering Principle */
+  .card-tonal {
+    @apply bg-surface-container-low rounded-xl p-6 transition-all duration-300;
+  }
+
+  .card-tonal:hover {
+    @apply bg-surface-container-high;
+  }
+
+  /* No-Line Rule: Boundaries defined through background shifts */
+  .section-split {
+    @apply border-none bg-surface-container-low;
+  }
 }
 
-html.js .animate-on-scroll.is-visible {
-  opacity: 1;
-  transform: translateY(0);
+@layer utilities {
+  /* Animações de Scroll */
+  html.js .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  html.js .animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* LAPAN Atmosphere: Design System Library */
+
+  /* 1. Global Animations */
+  @keyframes lapan-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  @keyframes lapan-spin-reverse {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0deg); }
+  }
+
+  @keyframes lapan-pulse-glow {
+    0%, 100% { opacity: 0.3; filter: blur(2px); }
+    50% { opacity: 0.8; filter: blur(4px); }
+  }
+
+  @keyframes lapan-dash-scan {
+    0%, 100% { stroke-dashoffset: 0; opacity: 0.2; }
+    50% { stroke-dashoffset: 20; opacity: 0.6; }
+  }
+
+  .animate-lapan-spin-slow { animation: lapan-spin 60s linear infinite; transform-origin: center; }
+  .animate-lapan-spin-reverse { animation: lapan-spin-reverse 40s linear infinite; transform-origin: center; }
+  .animate-lapan-scan { animation: lapan-dash-scan 4s ease-in-out infinite; }
+  .animate-lapan-pulse { animation: lapan-pulse-glow 3s ease-in-out infinite; }
+
+  /* 2. Global Background Atmosphere (Mesh + Grain) */
+  .lapan-atmosphere {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+    background-color: var(--color-surface-container-lowest);
+  }
+
+  .lapan-atmosphere::before {
+    content: "";
+    position: absolute;
+    inset: -50%;
+    width: 200%;
+    height: 200%;
+    background: 
+      radial-gradient(circle at 80% 20%, color-mix(in srgb, var(--color-primary) 12%, transparent) 0%, transparent 40%),
+      radial-gradient(circle at 20% 80%, color-mix(in srgb, var(--color-tertiary) 10%, transparent) 0%, transparent 40%),
+      radial-gradient(circle at 50% 50%, color-mix(in srgb, var(--color-primary-container) 8%, transparent) 0%, transparent 60%);
+    filter: blur(80px);
+    animation: lapan-spin 120s linear infinite;
+  }
+
+  .lapan-atmosphere::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.04;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    pointer-events: none;
+  }
 }

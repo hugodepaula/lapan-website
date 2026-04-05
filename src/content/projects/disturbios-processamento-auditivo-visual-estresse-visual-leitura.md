@@ -16,6 +16,6 @@ equipe:
 publicationKeywords:
 - Association between auditory temporal and visual processing in reading skill
 - Effects of Spectral Overlays on Reading Performance of Brazilian Elementary School Children
-- Eﬀects of Spectral Overlays on Reading Performance of Brazilian Elementary School Children
+- Effects of Spectral Overlays on Reading Performance of Brazilian Elementary School Children
 fontes: []
 ---

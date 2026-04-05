@@ -18,7 +18,7 @@ equipe:
 - laura-nequini-de-faria
 publicationKeywords:
 - Association between auditory temporal and visual processing in reading skill
-- Eﬀects of Spectral Overlays on Reading Performance of Brazilian Elementary School Children
+- Effects of Spectral Overlays on Reading Performance of Brazilian Elementary School Children
 - 'Teste de Leitura: Compreensão de Sentenças (TELCS): Manual Técnico'
 - 'Teste de Leitura: Compreensão de Sentenças (TELCS): Bloco de Folha de Aplicação e Respostas'
 fontes: []

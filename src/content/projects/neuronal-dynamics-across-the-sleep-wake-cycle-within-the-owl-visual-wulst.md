@@ -12,7 +12,7 @@ equipe:
 - jerome-baron
 - maria-margarida-ribeiro-de-souza
 publicationKeywords:
-- Melanopsin expression in the retinas of owls with diﬀerent daily activity patterns
+- Melanopsin expression in the retinas of owls with different daily activity patterns
 - 'LWS visual pigment in owls: Spectral tuning inferred by genetics'
 - 'Contrast response functions in the visual wulst of the alert burrowing owl: A single-unit study'
 fontes: []

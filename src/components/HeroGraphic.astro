@@ -1,0 +1,91 @@
+---
+/* HeroGraphic.astro - Gráfico Técnico Animado para o LAPAN */
+---
+
+<div class="absolute inset-0 z-0 overflow-hidden pointer-events-none select-none">
+  <!-- Neural Mesh Background (Local) -->
+  <div class="absolute inset-0 opacity-30 blur-[100px] animate-lapan-spin-slow">
+    <div class="absolute top-0 right-0 w-1/2 h-1/2 bg-primary/20 rounded-full"></div>
+    <div class="absolute bottom-0 left-0 w-1/2 h-1/2 bg-tertiary/10 rounded-full"></div>
+  </div>
+
+  <svg
+    viewBox="0 0 800 800"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    class="absolute -right-20 -top-20 w-[120%] h-[120%] lg:w-[100%] lg:h-[100%] max-w-none"
+    style="transform-box: fill-box;"
+  >
+    <!-- Definições de Gradientes e Filtros -->
+    <defs>
+      <radialGradient id="grad-primary" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="var(--color-primary)" stop-opacity="0.4" />
+        <stop offset="100%" stop-color="var(--color-primary)" stop-opacity="0" />
+      </radialGradient>
+      
+      <filter id="glow">
+        <feGaussianBlur stdDeviation="3" result="blur" />
+        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+      </filter>
+    </defs>
+
+    <!-- Fundo de Grade Técnica -->
+    <g class="opacity-10">
+      <path d="M 0 400 L 800 400 M 400 0 L 400 800" stroke="white" stroke-width="0.5" />
+      <circle cx="400" cy="400" r="100" stroke="white" stroke-width="0.5" stroke-dasharray="4 4" />
+      <circle cx="400" cy="400" r="200" stroke="white" stroke-width="0.5" stroke-dasharray="8 8" />
+      <circle cx="400" cy="400" r="300" stroke="white" stroke-width="0.5" stroke-dasharray="12 12" />
+    </g>
+
+    <!-- O "Olho" de Processamento (Retina/Dados) -->
+    <g class="retina-core" transform="translate(400 400)">
+      <!-- Anel Externo Lento -->
+      <circle 
+        r="320" 
+        stroke="var(--color-primary)" 
+        stroke-width="1" 
+        stroke-dasharray="20 180 40 160" 
+        class="animate-lapan-spin-slow"
+        style="transform-origin: center;"
+      />
+      
+      <!-- Anel de Varredura Rápida -->
+      <circle 
+        r="280" 
+        stroke="var(--color-tertiary)" 
+        stroke-width="2" 
+        stroke-dasharray="2 278" 
+        stroke-linecap="round"
+        class="animate-lapan-scan opacity-60"
+        style="transform-origin: center;"
+      />
+
+      <!-- Conexões Neurais (Linhas Pulsantes) -->
+      <g class="neural-network opacity-50" stroke="var(--color-primary)" stroke-width="0.5">
+        <path d="M -150 -100 L 0 0 L 150 50" class="animate-lapan-scan" style="stroke-dasharray: 5 5;" />
+        <path d="M -80 180 L 0 0 L 200 -80" class="animate-lapan-scan" style="stroke-dasharray: 5 5; animation-delay: 0.5s;" />
+        <path d="M 50 -220 L 0 0 L -180 40" class="animate-lapan-scan" style="stroke-dasharray: 5 5; animation-delay: 1s;" />
+        
+        <!-- Nodes -->
+        <circle cx="-150" cy="-100" r="3" fill="var(--color-primary)" filter="url(#glow)" />
+        <circle cx="150" cy="50" r="3" fill="var(--color-primary)" filter="url(#glow)" />
+        <circle cx="-80" cy="180" r="3" fill="var(--color-primary)" filter="url(#glow)" />
+        <circle cx="200" cy="-80" r="3" fill="var(--color-tertiary)" filter="url(#glow)" />
+        <circle cx="50" cy="-220" r="3" fill="var(--color-primary)" filter="url(#glow)" />
+        <circle cx="-180" cy="40" r="3" fill="var(--color-primary)" filter="url(#glow)" />
+      </g>
+
+      <!-- Núcleo Central -->
+      <circle r="40" fill="url(#grad-primary)" />
+      <circle r="12" fill="var(--color-primary)" class="animate-lapan-pulse" filter="url(#glow)" />
+      
+      <!-- Linhas de Coordenadas em Rotação -->
+      <g class="animate-lapan-spin-reverse" style="transform-origin: center;">
+         <line x1="-350" y1="0" x2="-300" y2="0" stroke="var(--color-primary)" stroke-width="1" />
+         <line x1="300" y1="0" x2="350" y2="0" stroke="var(--color-primary)" stroke-width="1" />
+         <line x1="0" y1="-350" x2="0" y2="-300" stroke="var(--color-primary)" stroke-width="1" />
+         <line x1="0" y1="300" x2="0" y2="350" stroke="var(--color-primary)" stroke-width="1" />
+      </g>
+    </g>
+  </svg>
+</div>

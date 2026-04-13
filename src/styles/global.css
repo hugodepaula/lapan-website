@@ -6,11 +6,11 @@
   --color-primary-container: #F38A2E;
   --color-on-primary: #4F2500;
   
-  --color-surface: #121416;
-  --color-surface-container-lowest: #0C0E10;
-  --color-surface-container-low: #1A1C1E;
-  --color-surface-container-high: #282A2C;
-  --color-surface-container-highest: #333537;
+  --color-surface: #4B4D50;
+  --color-surface-container-lowest: #57595C; /* Noble Gray */
+  --color-surface-container-low: #414346;
+  --color-surface-container-high: #313336;
+  --color-surface-container-highest: #212326;
   
   --color-on-surface: #F0F0F3;
   --color-on-surface-variant: #E0D7D0;

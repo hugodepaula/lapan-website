@@ -2609,25 +2609,6 @@
     "URL": "https://www.researchgate.net/publication/316487450_Neuroadaptacao_e_plastica_cortical_na_cirurgia_refrativa_presente_e_futuro"
   },
   {
-    "id": "guzman2010_TextoTremeInvestigacao",
-    "type": "thesis",
-    "title": "O texto treme? Investigação sobre as possíveis causas do estresse visual ou síndrome de irlen",
-    "author": [
-      {
-        "family": "Guzmán",
-        "given": "Ana Isabel Arroyave"
-      }
-    ],
-    "issued": {
-      "date-parts": [
-        [
-          2010
-        ]
-      ]
-    },
-    "DOI": "10.11606/t.3.2019.tde-14012021-100323"
-  },
-  {
     "id": "guimaraes2010_SelectiveSpectralFiltersa",
     "type": "article-journal",
     "title": "Selective spectral filters in the treatment of visually induced headaches and migraines - a clinical study of 93 patients",
@@ -2693,5 +2674,29 @@
     "publisher": "Universidade Federal de Minas Gerais",
     "page": "1-140",
     "URL": "/docs/publicacoes/soares2009_SistemaTriagemVisual.pdf"
+  },
+  {
+    "id": "guzman2010_TextoTremeInvestigacao",
+    "type": "thesis",
+    "title": "O texto treme? Investigação sobre as possíveis causas do estresse visual ou síndrome de irlen",
+    "author": [
+	    {
+		    "family": "Guzmán",
+		    "given": "Ana Isabel Arroyave"
+	    }
+    ],
+    "issued": {
+	    "date-parts": [
+		    [
+			    "2010"
+		    ]
+	    ]
+    },
+    "DOI": "10.11606/t.3.2019.tde-14012021-100323",
+    "publisher": "Universidade de São Paulo",
+    "source": "teses.usp.br",
+    "URL": "/docs/publicacoes/Guzman2010_OTextoTremeInvestig.pdf"
   }
 ]
+
+

@@ -19,7 +19,7 @@
   "dependencies": {
     "@astrojs/sitemap": "^3.7.2",
     "@tailwindcss/vite": "^4.2.1",
-    "astro": "^6.0.5",
+    "astro": "^6.1.5",
     "citeproc": "^2.4.63",
     "tailwindcss": "^4.2.1"
   }

@@ -1,5 +1,11 @@
 # LAPAN Website
 
+[![Astro](https://img.shields.io/badge/Astro-BC52EE?style=for-the-badge&logo=astro&logoColor=white)](https://astro.build)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+[![Decap CMS](https://img.shields.io/badge/Decap_CMS-FF6B00?style=for-the-badge&logo=netlify&logoColor=white)](https://decapcms.org)
+[![CITATION.cff](https://img.shields.io/badge/CITATION.cff-cited-blue?style=for-the-badge&logo=github)](CITATION.cff)
+
+
 @author Prof. Hugo de Paula
 
 Site institucional do LAPAN, construído com Astro + Tailwind CSS + Decap CMS.
@@ -64,3 +70,7 @@ Ele inclui:
 - validação antes de publicar
 - deploy em Netlify, Vercel, Cloudflare Pages, GitHub Pages e servidor próprio
 - checklist de pós-deploy
+
+## 👥 Autores e Colaboradores
+
+- 👨‍🏫 [Prof. Hugo de Paula](https://github.com/hugodepaula) (Universidade Federal de Minas Gerais / LAPAN)

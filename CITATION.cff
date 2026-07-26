@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+title: LAPAN — Laboratório de Aplicações em Processamento de Sinais, Visão e Neurociências
+message: Se você utilizar este repositório/software, por favor cite-o utilizando os
+  metadados deste arquivo.
+type: software
+authors:
+- family-names: de Paula
+  given-names: Hugo
+  affiliation: Universidade Federal de Minas Gerais / LAPAN
+  website: https://github.com/hugodepaula
+repository-code: https://github.com/LAPAN-RESEARCH/web-lapan-ufmg.git
+abstract: Website institucional do LAPAN/UFMG desenvolvido com Astro, Tailwind CSS
+  4 e Decap CMS.
+keywords:
+- lapan
+- ufmg
+- astro
+- tailwind
+- decap-cms
+- neurociencias
+date-released: '2026-07-26'
